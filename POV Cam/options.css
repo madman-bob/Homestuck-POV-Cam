@@ -1,0 +1,32 @@
+body {
+	font-family:Courier, monospace;
+}
+
+h1 {
+	text-align:center;
+}
+
+fieldset {
+	margin:1pc auto;
+	border:1px dashed #808080;
+	padding:1pc;
+	max-width:950px;
+}
+
+input[type='button'] {
+	margin-bottom:15px;
+}
+
+#timelinespanel label {
+	margin-left: 12px;
+}
+
+label[for='docscratchtextyes'] {
+	color:white;
+	background-color:#0E4603;
+}
+
+#footer {
+	font-size:small;
+	text-align:center;
+}

@@ -1,0 +1,40 @@
+@ Kids
+@ Kids' Sprites
+
+Die
+ 3840
+
+Be found by John
+ 3846
+
+Be found by Grandpa
+Be stuffed
+ 3870-3872
+
+Be in laboratory
+ 3886-3887
+
+Be found by Jade
+Be prototyped
+ 5108-5117
+5112-5117
+
+Drop
+5120-5125
+
+Talk to Jade
+5140-5150
+
+Be on battlefield
+Meet Davesprite
+5786-5789
+
+Talk to Davesprite
+5826-5827
+
+Teleport sword to Dave
+5844-5848
+5798
+
+Fuse with Jade
+~ jade-6009

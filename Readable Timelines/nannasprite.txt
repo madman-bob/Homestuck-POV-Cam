@@ -1,0 +1,39 @@
+@ Kids' Guardians
+@ Kids' Sprites
+
+Sneak up on John
+2184-2185
+
+Pull prank on John
+Talk with John
+Inform John of game mechanics
+2317-2328
+
+Start baking
+2391
+
+Assist John in strife
+2779-2780
+
+Give John birthright
+2785
+
+Write message to John
+3049
+2659
+
+Be contacted by John
+3329
+
+Prank John
+Give John boon
+4694-4702
+
+Catch Dad's bloodied hat
+5833-5835
+
+Talk with fedorafreak as he dies
+5854-5856
+
+Continue existing
+6518

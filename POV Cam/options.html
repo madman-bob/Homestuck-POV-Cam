@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="options.css" />
+		<script src="timelines.js"></script>
+		<script src="options.js"></script>
+		
+		<title>Homestuck POV Cam - Settings</title>
+	</head>
+	<body>
+		<h1>
+			Homestuck POV Cam
+		</h1>
+		<fieldset id="timelinespanel">
+			<legend>Enabled timelines:</legend>
+			<input id="timelinesenableall" type="button" value="Enable all" />
+			<input id="timelinesdisableall" type="button" value="Disable all" />
+			<input id="timelinesflipall" type="button" value="Invert selection" />
+		</fieldset>
+		<fieldset>
+			<legend>Auto-open pesterlogs:</legend>
+			<input id="autoopenpesterlogyes" name="autoopenpesterlog" type="radio" value="yes" />
+			<label for="autoopenpesterlogyes">Open pesterlogs</label>
+			<br />
+			<input id="autoopenpesterlogno" name="autoopenpesterlog" type="radio" value="no" />
+			<label for="autoopenpesterlogno">Leave pesterlogs closed</label>
+		</fieldset>
+		<fieldset>
+			<legend>Use arrow keys for navigation:</legend>
+			<input id="arrownavigationyes" name="arrownavigation" type="radio" value="yes" />
+			<label for="arrownavigationyes">Use left/right arrow to change page</label>
+			<br />
+			<input id="arrownavigationno" name="arrownavigation" type="radio" value="no" />
+			<label for="arrownavigationno">Use mouse to click on links to change page</label>
+		</fieldset>
+		<fieldset>
+			<legend>Highlight Doc Scratch's text:</legend>
+			<input id="docscratchtextyes" name="docscratchtext" type="radio" value="yes" />
+			<label for="docscratchtextyes">Highlight white text</label>
+			<br />
+			<input id="docscratchtextno" name="docscratchtext" type="radio" value="no" />
+			<label for="docscratchtextno">Leave as normal</label>
+		</fieldset>
+		<fieldset>
+			<legend>Add controls to flash pages (temperamental):</legend>
+			This works on some flash pages, but not all.
+			<br />
+			<input id="flashcontrolsyes" name="flashcontrols" type="radio" value="yes" />
+			<label for="flashcontrolsyes">Add controls</label>
+			<br />
+			<input id="flashcontrolsno" name="flashcontrols" type="radio" value="no" />
+			<label for="flashcontrolsno">Leave as normal</label>
+		</fieldset>
+		<div id="footer">
+			Refresh any open Homestuck windows to update any changed settings.
+		</div>
+	</body>
+</html>

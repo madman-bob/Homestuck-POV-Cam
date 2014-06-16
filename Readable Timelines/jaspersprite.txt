@@ -1,0 +1,25 @@
+@ Kids' Sprites
+
+Be created
+Save Rose
+3049
+
+Wander around LOLAR
+3491-3492
+
+Talk with Rose
+3523-3526
+
+Be summoned by Rose
+Be freed
+4713-4716
+
+Say goodbye to Nepeta
+5794
+
+Wish John happy birthday
+Be chased by Jade
+6637-6639
+
+Watch Con Air with John, Jade
+7181-7182
