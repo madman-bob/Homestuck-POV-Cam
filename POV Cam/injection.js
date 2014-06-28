@@ -1,30 +1,5 @@
-/*
-Checks before release:
-==> Update version number
-==> Reactivate link removal when following
-*/
-
-function createlink(person, pageindex) {
+function createlink(nextpages) {
 	var container = document.createElement("div");
-	
-	var nextpages = [];
-	
-	var nextpageindex = timelines[person].indexOf(pageno, pageindex) + 1;
-	while ((nextpageindex < timelines[person].length) && (isNaN(timelines[person][nextpageindex]))) {
-		var timelinesplit = timelines[person][nextpageindex].split("-");
-		if (timelinesplit[0] in timelines) {
-			if (timelinesplit.length == 2) {
-				console.log(timelines[timelinesplit[0]].indexOf(timelinesplit[1]));
-				nextpages.push([timelinesplit[0], timelines[timelinesplit[0]].indexOf(parseInt(timelinesplit[1]))]);
-			} else {
-				nextpages.push([timelinesplit[0], 0]);
-			}
-		}
-		nextpageindex ++;
-	}
-	if ((nextpageindex < timelines[person].length) && (timelines[person][nextpageindex] != 0)) {
-		nextpages.push([person, nextpageindex]);
-	}
 	
 	if (nextpages.length == 0) {
 		container.innerText = "> No more";
@@ -47,9 +22,9 @@ function createlink(person, pageindex) {
 		link.href = "/?s=6&p=" + zeropad(nextpageno);
 		link.hash = nextpage[0] + "-" + nextpage[1];
 		
-		// In trickster section, replace "==>" in page name with sucker image
-		if ((document.location.pathname == "/trickster.php") && (names[nextpageno].indexOf("==&gt;") != -1)) {
-			link.innerHTML = names[nextpageno].replace("==&gt;", "");
+		if ((document.location.pathname == "/trickster.php") && (names[nextpageno].indexOf("==>") != -1)) {
+			// In trickster section, replace "==>" in page name with sucker image
+			link.innerHTML = names[nextpageno].replace("==>", "");
 			
 			var sucker = document.createElement("img");
 			sucker.src = "http://mspaintadventures.com/images/trickster_sitegraphics/sucker.gif";
@@ -60,8 +35,11 @@ function createlink(person, pageindex) {
 			}
 			
 			link.appendChild(sucker);
+		} else if (nextpage[0] == "lordenglish") {
+			// Give Lord English colourful links
+			link.appendChild(lordenglishtext(names[nextpageno]));
 		} else {
-			link.innerHTML = names[nextpageno];
+			link.innerText = names[nextpageno];
 		}
 		
 		if (colours[nextpage[0]]) {
@@ -96,22 +74,29 @@ function modifypage() {
 		// Can't find next page link
 		// Try to create one in right place
 		linkcontainer = document.createElement("font");
-		// Where to put it?
+		linkcontainer.size = "5";
+		
+		// Try to find "Save Game" menu
+		var savegamemenu = document.querySelector("span[style='font-size: 10px;']");
+		if (savegamemenu) {
+			// If we've found it, then the link container is normally the first child of it's parent
+			var linklocation = savegamemenu.parentNode;
+			linklocation.insertBefore(linkcontainer, linklocation.firstElementChild);
+		}
 	}
 
 	if (following.length == 1) {
 		for (var person in timelines) {
-			var pageindex = timelines[person].indexOf(pageno);
-			if (pageindex != - 1) {
-				linkcontainer.appendChild(createlink(person, pageindex));
+			if (timelines[person].indexOf(pageno) != - 1) {
+				linkcontainer.appendChild(createlink(getallnextpages(person, pageno)));
 			}
 		}
 	} else if (following[0] in timelines) {
 		linkcontainer.innerHTML = "";
-		linkcontainer.appendChild(createlink(following[0], parseInt(following[1])));
+		linkcontainer.appendChild(createlink(getspecificnextpages(following[0], parseInt(following[1]))));
 	}
 
-	chrome.storage.sync.get({autoopenpesterlog: "no", arrownavigation: "no", docscratchtext: "no", flashcontrols: "no"}, function(items) {
+	chrome.storage.sync.get({autoopenpesterlog: "no", arrownavigation: "no", docscratchtext: "no", disableletext: "no", flashcontrols: "no"}, function(items) {
 		// Auto-open pesterlog
 		if (items.autoopenpesterlog == "yes") {
 			buttons = document.getElementsByTagName("button");
@@ -151,6 +136,11 @@ function modifypage() {
 		// Give background colour to text of Doc Scratch
 		if (items.docscratchtext == "yes") {
 			sheet.addRule('span[style$="FFFFFF"], span[style$="ffffff"], span[style$="white"]', 'background-color: #0E4603;');
+		}
+		
+		// Give Lord English colourful links
+		if (items.disableletext == "no") {
+			lordenglishinit();
 		}
 		
 		// Flash controls

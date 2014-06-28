@@ -1,3 +1,37 @@
+function getspecificnextpages(person, timelineindex) {
+	var nextpages = [];
+	
+	timelineindex ++;
+	while ((timelineindex < timelines[person].length) && (isNaN(timelines[person][timelineindex]))) {
+		var timelinesplit = timelines[person][timelineindex].split("-");
+		if (timelinesplit[0] in timelines) {
+			if (timelinesplit.length == 2) {
+				nextpages.push([timelinesplit[0], timelines[timelinesplit[0]].indexOf(parseInt(timelinesplit[1]))]);
+			} else {
+				nextpages.push([timelinesplit[0], 0]);
+			}
+		}
+		timelineindex ++;
+	}
+	if ((timelineindex < timelines[person].length) && (timelines[person][timelineindex] != 0)) {
+		nextpages.push([person, timelineindex]);
+	}
+	
+	return nextpages;
+}
+
+function getallnextpages(person, pageno) {
+	var timelineindex = timelines[person].indexOf(pageno);
+	var nextpages = [];
+	
+	while (timelineindex != -1) {
+		nextpages = getspecificnextpages(person, timelineindex).concat(nextpages);
+		timelineindex = timelines[person].indexOf(pageno, timelineindex + 1);
+	}
+	
+	return nextpages;
+}
+
 function outputreadabletimelinedata(person) {
 	var previousstart = "";
 	var longstring = "Timeline data for " + person + ":";
@@ -14,9 +48,9 @@ function outputreadabletimelinedata(person) {
 	console.log(longstring);
 }
 
-function whoson(page) {
+function whoson(pageno) {
 	for (var person in timelines) {
-		if (timelines[person].indexOf(page) != -1) {
+		if (timelines[person].indexOf(pageno) != -1) {
 			console.log(person);
 		}
 	}
@@ -693,6 +727,33 @@ chrome.storage.sync.get({timelinesenabled: []}, function(items) {
 		];
 	}
 	
+	if ((timelinesenabled.length == 0) || (['Cherubs'].filter(function (group) {return timelinesenabled[group]}).length > 0)) {
+		timelines.calliope = [
+			7874, 7875, 7876, 7882, 7883, 7884, 7885, 7886, 7890, 6043, 6044, 6080, 6081, 6412, 6413, 6414, 6464, 6465, 6466, 6721, 6929, 6930, 6931, 6932, 6933, 6862, 6914, 6915, 7593, 7594, 6982, 6983, 6988, 6989, 6990, 6991, 6992, 6993, 6994, 6995, 6996, 6997, 6998, 6999, 7000, 7001, 7002, 7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012, 7013, 7014, 7015, 7016, 7017, 7018, 7019, 7020, 7021, 7022, 7023, 7024, 7025, 7026, 7027, 7028, 7029, 7030, 7031, 7032, 7033, 7034, 7035, 7036, 7119, 7120, 7121, 7122, 7123, 7124, 7481, 7482, 7489, 7490, 7491, 7492, 7493, 7494, 7495, 7496, 7497, 7498, 7499, 7500, 7501, 7502, 7503, 7504, 7505, 7506, 7507, 7508, 7509, 7510, 7511, 7512, 7513, 7514, 7515, 7516, 7517, 7518, 7519, 7520, 7521, 7522, 7523, 7524, 7525, 8570, 8571, 8572, 8573, 8574, 8575, 8576, 8577, 8578, 8579, 8580, 8581, 8615, 8616, 8617
+		];
+		timelines.calliope.groups = [
+			'Cherubs'
+		];
+	}
+	
+	if ((timelinesenabled.length == 0) || (['Cherubs'].filter(function (group) {return timelinesenabled[group]}).length > 0)) {
+		timelines.caliborn = [
+			7874, 7875, 7876, 7882, 7883, 7884, 7887, 7888, 7889, 7890, 6929, 6930, 6931, 6932, 6933, 7037, 7038, 7039, 7040, 7041, 7042, 7043, 7044, 7045, 7046, 7047, 7048, 7049, 7050, 7051, 7052, 7053, 7070, 7071, 7072, 7073, 7074, 7075, 7076, 7077, 7078, 7079, 7080, 7081, 7082, 7083, 7084, 7085, 7086, 7087, 7088, 7089, 7090, 7091, 7092, 7093, 7094, 7095, 7096, 7097, 7098, 7099, 7100, 7101, 7102, 6545, 6546, 6547, 6548, 6549, 6550, 6551, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6878, 6879, 6880, 6881, 6882, 6971, 6972, 6973, 6974, 6975, 7161, 7340, 7341, 7342, 7343, 7344, 7345, 7346, 7347, 7348, 7349, 7350, 7351, 7352, 7353, 7354, 7355, 7356, 7357, 7358, 7359, 7360, 7361, 7362, 7363, 7364, 7365, 7366, 7367, 7368, 7369, 7370, 7371, 7372, 7373, 7374, 7375, 7376, 7377, 7378, 7379, 7380, 7381, 7382, 7383, 7384, 7385, 7386, 7387, 7388, 7389, 7390, 7391, 7392, 7393, 7394, 7395, 7396, 7397, 7398, 7399, 7400, 7401, 7402, 7403, 7404, 7405, 7406, 7407, 7408, 7409, 7410, 7450, 7451, 7452, 7453, 7454, 7455, 7456, 7568, 7569, 7570, 7571, 7572, 7573, 7574, 7575, 7576, 7577, 7578, 7579, 7580, 7581, 7582, 7614, 7678, 7679, 7680, 7681, 7682, 7683, 7684, 7685, 7686, 7687, 7708, 7710, 7712, 7714, 7716, 7718, 7720, 7896, 7897, 7898, 7899, 7900, 7901, 7902, 7903, 7904, 7839, 7846, 7922, 7965, 8011, 8092, 8093, 8094, 8095, 8096, 8097, 8098, 8099, 8100, 8101, 8102, 8103, 8104, 8138, 8139, 8140, 8141, 8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 8150, 8151, 8152, 8153, 8154, 8155, 8156, 8157, 8158, 8159, 8160, 8161, 8162, 8163, 8164, 8165, 8166, 8167, 8168, 8169, 8170, 8171, 8172, 8173, 8174, 8175, 8176, 8177, 8375, 8376, 8377, 8378, 8379, 8380, 8381, 8382, 8383, 8384, 8385, 8386, 8387, 8388, 8389, 8390, 8391, 8392, 8393, 8394, 8395, 8396, 8397, 8398, 8399, 8400, 8401, 8402, 8403, 8404, 8405, 8406, 8407, 8408, 8409, 8410, 8411, 8412, 8413, 8414, 8415, 8416, 8417, 8418, 8419, 8420, 8421, 8422, 8423, 8424, 8425, 8426, 8427, 8428, 8429, 8430
+		];
+		timelines.caliborn.groups = [
+			'Cherubs'
+		];
+	}
+	
+	if ((timelinesenabled.length == 0) || (['The Felt', 'Cherubs'].filter(function (group) {return timelinesenabled[group]}).length > 0)) {
+		timelines.lordenglish = [
+			6011, 5976, 5977, 5978, 5979, 5980, 5981, 6577, 6578, 6579, 6580, 6581, 6582, 6583, 6584, 6688, 6689, 6690, 6691, 6700, 6701, 6702, 6703, 6704, 6705, 6706, 6707, 6708, 6709, 6710, 6711, 6712, 6713, 7161, 7848, 7923
+		];
+		timelines.lordenglish.groups = [
+			'The Felt', 'Cherubs'
+		];
+	}
+	
 	if (typeof modifypage != "undefined") {
 		modifypage();
 	}
@@ -718,7 +779,7 @@ groups = {
 		"spadesslick", "diamondsdroog", "heartsboxcars", "clubsdeuce"
 	],
 	"The Felt": [
-		"itchy", "altitchy", "doze", "trace", "clover", "fin", "die", "crowbar", "altcrowbar", "snowman", "stitch", "altstitch", "altaltstitch", "sawbuck", "altsawbuck", "matchsticks", "eggs", "biscuits", "quarters", "cans", "docscratch"
+		"itchy", "altitchy", "doze", "trace", "clover", "fin", "die", "crowbar", "altcrowbar", "snowman", "stitch", "altstitch", "altaltstitch", "sawbuck", "altsawbuck", "matchsticks", "eggs", "biscuits", "quarters", "cans", "docscratch", "lordenglish"
 	],
 	"Trolls": [
 		"aradia", "doomedaradia", "tavros", "sollux", "karkat", "nepeta", "kanaya", "terezi", "vriska", "equius", "gamzee", "eridan", "feferi", "tavrisprite", "fefetasprite", "arquiusprite", "erisolsprite"
@@ -728,5 +789,8 @@ groups = {
 	],
 	"Alpha Kids' Sprites": [
 		"tavrisprite", "fefetasprite", "arquiusprite", "erisolsprite"
+	],
+	"Cherubs": [
+		"calliope", "caliborn", "lordenglish"
 	]
 }

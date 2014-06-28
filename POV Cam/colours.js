@@ -91,5 +91,10 @@ colours = {
 	"tavrisprite": "#0715CD",
 	"fefetasprite": "#B536DA",
 	"arquiusprite": "#E00707",
-	"erisolsprite": "#4AC925"
+	"erisolsprite": "#4AC925",
+	
+	// Cherubs
+	"calliope": "#929292",
+	"caliborn": "#323232",
+	"lordenglish": "#2ED73A"
 }

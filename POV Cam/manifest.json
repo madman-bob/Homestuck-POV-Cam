@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 
 	"name": "Homestuck POV Cam",
-	"version": "1.8",
+	"version": "1.9",
 	"description": "View Homestuck from the point of view of any character",
 	"options_page": "options.html",
 	
@@ -21,6 +21,7 @@
 				"timelines.js",
 				"names.js",
 				"colours.js",
+				"lordenglishtext.js",
 				"flashmodifier.js"
 			],
 			"run_at": "document_end"
