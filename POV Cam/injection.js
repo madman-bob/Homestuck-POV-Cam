@@ -84,7 +84,13 @@ function modifypage() {
 			linklocation.insertBefore(linkcontainer, linklocation.firstElementChild);
 		}
 	}
-
+	
+	// Find the element containing the image/flash, any pesterlogs, and all the links
+	outercontainer = linkcontainer;
+	while (outercontainer.parentElement && outercontainer.tagName != "CENTER") {
+		outercontainer = outercontainer.parentElement;
+	}
+	
 	if (following.length == 1) {
 		for (var person in timelines) {
 			if (timelines[person].indexOf(pageno) != - 1) {
@@ -99,18 +105,9 @@ function modifypage() {
 	chrome.storage.sync.get({autoopenpesterlog: "no", arrownavigation: "no", docscratchtext: "no", disableletext: "no", flashcontrols: "no"}, function(items) {
 		// Auto-open pesterlog
 		if (items.autoopenpesterlog == "yes") {
-			buttons = document.getElementsByTagName("button");
-			if (document.location.pathname == "/ACT6ACT5ACT1x2COMBO.php") {
-				if (buttons.length > 4) {
-					buttons[0].click();
-				}
-				if (buttons.length > 6) {
-					buttons[2].click();
-				}
-			} else {
-				if (buttons.length > 2) {
-					buttons[0].click();
-				}
+			buttons = outercontainer.getElementsByTagName("button");
+			for (var i = 0; i < buttons.length; i += 2) {
+				buttons[i].click();
 			}
 		}
 		
