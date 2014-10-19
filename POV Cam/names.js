@@ -6880,5 +6880,20 @@ names = {
 	8782: "SERIOUSLY. CAN I GET A GOD DAMN?",
 	8783: "ALSO, HOW ABOUT A HAT?",
 	8784: "BIG MAN: HOLLER FOR YOUR WOMAN.",
-	8785: "GODDESS OF MANGA: BOW DOWN."
+	8785: "GODDESS OF MANGA: BOW DOWN.",
+	8786: "SOMETHING IS A MISS.",
+	8787: "HIS EYES ARE SUPPOSED TO FLICKER ABOUT.",
+	8788: "...........",
+	8789: "...........",
+	8790: "...........",
+	8791: "...........",
+	8792: "...........",
+	8793: "...........",
+	8794: "...........",
+	8795: "...........",
+	8796: "...........",
+	8797: "...........",
+	8798: "...........",
+	8799: "LADIES AND GENTLEMEN. WE HAVE A HATER.",
+	8800: "GAME OVER KID."
 }

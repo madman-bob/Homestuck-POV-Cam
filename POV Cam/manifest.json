@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 
 	"name": "Homestuck POV Cam",
-	"version": "2.0",
+	"version": "2.1",
 	"description": "View Homestuck from the point of view of any character",
 	"options_page": "options.html",
 	
