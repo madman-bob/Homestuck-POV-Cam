@@ -118,4 +118,5 @@ Be interrupted by John
 
 Continue Homosuck
 Be interrupted by John
-8753-8800
+GAME OVER
+8753-8801

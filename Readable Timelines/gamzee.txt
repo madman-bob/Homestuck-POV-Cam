@@ -212,3 +212,6 @@ Be attacked by Terezi
 Condesce arrives
 8748
 8752
+
+GAME OVER
+8801

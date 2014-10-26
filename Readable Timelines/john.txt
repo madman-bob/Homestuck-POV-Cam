@@ -467,4 +467,8 @@ Enter Homosuck
 8382-8430
 
 Escape Homosuck
-8784-8800
+GAME OVER
+8784-8802
+
+what the fuck happened here?
+8816-8820

@@ -213,3 +213,6 @@ Continue attacking anyway
 
 Condesce arrives
 8745-8752
+
+GAME OVER
+8801

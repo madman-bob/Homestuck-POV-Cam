@@ -402,3 +402,6 @@ Auspisticize between Terezi and Gamzee
 Witness arrival of Condesce
 8747-8748
 8752
+
+GAME OVER
+8801

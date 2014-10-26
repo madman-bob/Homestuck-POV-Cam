@@ -6,7 +6,7 @@
 # ~ doomeddave
 # @ Kids
 
-from collections import OrderedDict
+from collections import defaultdict, OrderedDict
 from os import listdir, path
 
 def parsePerson(personstring):
@@ -30,6 +30,8 @@ def parsePerson(personstring):
 	return pages, persongroups
 
 currentlocation = path.dirname(__file__)
+peopledetails = defaultdict(lambda: [False, False, False])
+# [Got timeline data, Got colour, Got image]
 
 # Get the names of the timelines we expect to find, and the order we want them in
 coloursfile = open(path.join(currentlocation, "POV Cam", "colours.js"), "r")
@@ -39,15 +41,19 @@ people = []
 for line in colourslines:
 	if line[:2] == "\t\"":
 		people.append(line[2:line.find("\"", 2)])
+		peopledetails[people[-1]][1] = True
+
+for image in listdir(path.join(currentlocation, "POV Cam", "images")):
+	peopledetails[image[:-4]][2] = True
 
 # Read the timeline data
 timelinefiles = listdir(path.join(currentlocation, "Readable Timelines"))
 peopledata = OrderedDict()
-peoplewithoutfiles = []
 groups = OrderedDict()
 groups["Other"] = []
 for person in people:
 	if (person + ".txt") in timelinefiles:
+		peopledetails[person][0] = True
 		timelinefiles.remove(person + ".txt")
 		f = open(path.join(currentlocation, "Readable Timelines", person + ".txt"), "r")
 		readstr = f.read()
@@ -63,8 +69,6 @@ for person in people:
 					groups[persongroup] = [person]
 		else:
 			groups["Other"].append(person)
-	else:
-		peoplewithoutfiles.append(person)
 
 # Do we need the group "Other"?
 if groups["Other"]:
@@ -109,8 +113,7 @@ for groupname in groups:
 timelinesfile.write("\n}")
 timelinesfile.close()
 
-print("Timelines without colours:")
-print("\n".join(timelinefiles))
-print("Colours without timelines:")
-print("\n".join(peoplewithoutfiles))
-input("")
+print("Problems:")
+for person in peopledetails:
+	if not all(peopledetails[person]):
+		print(person, peopledetails[person])

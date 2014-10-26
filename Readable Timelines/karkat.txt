@@ -242,3 +242,6 @@ See Terezi in danger
 Witness arrival of Condesce
 8739-8743
 8752
+
+GAME OVER
+8801

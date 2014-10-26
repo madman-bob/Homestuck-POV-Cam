@@ -200,3 +200,6 @@ Be hit by stray shot from Rose
 8729-8733
 8748
 8752
+
+GAME OVER
+8801

@@ -2,7 +2,6 @@ function createlink(nextpages) {
 	var container = document.createElement("div");
 	
 	if (nextpages.length == 0) {
-		container.innerText = "> No more";
 		return container;
 	}
 	
@@ -10,10 +9,15 @@ function createlink(nextpages) {
 		var nextpage = nextpages.pop();
 		var nextpageno = timelines[nextpage[0]][nextpage[1]];
 		
-		// Put icons before >?
-		// chrome.extension.getURL("images/blah.png")
-		
 		var innercontainer = document.createElement("div");
+		
+		var personicon = document.createElement("img");
+		personicon.src = chrome.extension.getURL("images/" + nextpage[0] +".png");
+		personicon.width = 32;
+		personicon.height = 32;
+		personicon.style["vertical-align"] = "middle";
+		innercontainer.appendChild(personicon);
+		
 		var entercommand = document.createElement("span");
 		entercommand.innerText = "> ";
 		innercontainer.appendChild(entercommand);
@@ -145,4 +149,19 @@ function modifypage() {
 			initFlashControls();
 		}
 	});
+	
+	// Add link to go to the options page
+	// sogb = Start Over | Go Back
+	var sogb = outercontainer.querySelector("a[href='?s=6']");
+	if (sogb) {
+		sogb = sogb.parentElement.parentElement;
+		var optionslink = document.createElement("a");
+		optionslink.href = chrome.extension.getURL("options.html");
+		optionslink.innerText = "POV Cam Options";
+		optionslink.style["font-weight"] = "bold";
+		optionslink.style["font-size"] = "10px";
+		optionslink.style.display = "block";
+		
+		sogb.parentElement.insertBefore(optionslink, sogb);
+	}
 }
