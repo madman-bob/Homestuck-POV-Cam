@@ -404,4 +404,8 @@ Witness arrival of Condesce
 8752
 
 GAME OVER
-8801
+8801-8802
+
+Be carried by Roxy to LOPAN
+Bleed out
+8863-8881

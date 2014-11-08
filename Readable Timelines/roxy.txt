@@ -181,4 +181,7 @@ Be taken to safety
 8650-8655
 
 GAME OVER
-8801
+8801-8802
+
+Carry Rose to LOPAN
+8863-8883
