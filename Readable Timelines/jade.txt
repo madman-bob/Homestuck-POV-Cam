@@ -348,3 +348,8 @@ Arrive in Calliope's realm
 
 Fail to remember you're dead
 8615-8617
+
+Talk with Calliope about where you lived
+Remember Calliope
+Tell story about how John died
+8907-8921

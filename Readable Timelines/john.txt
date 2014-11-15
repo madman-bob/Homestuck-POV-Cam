@@ -468,7 +468,7 @@ Enter Homosuck
 
 Escape Homosuck
 GAME OVER
-8784-8802
+8784-8801
 
 what the fuck happened here?
 8816-8820
@@ -476,4 +476,15 @@ what the fuck happened here?
 Fly around
 Find Dirk
 Follow Roxy, Rose to LOPAN
-8844-8883
+Watch Rose bleed out
+Apologise for failure
+Talk with Roxy
+Notice arrival of Terezi
+Be headbutted by Terezi
+8844-8906
+
+Notice Jade's shoes
+Be told of Jade's death
+ 3V3RYBODY 1S D34D, JOHN
+Be asked if you've ever seen your denizen
+8922-8928

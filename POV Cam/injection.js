@@ -63,7 +63,20 @@ function zeropad(pageno) {
 
 function modifypage() {
 	following = window.location.hash.substr(1).split("-");
-	pageno = parseInt(document.location.search.slice(7));
+	
+	if (document.location.pathname == "/DOTA/") {
+		pageno = 6715;
+	} else if (document.location.pathname == "/007395/") {
+		pageno = 7395;
+	} else if (document.location.pathname.substr(0, 8) == "/007680/") {
+		pageno = 7680;
+	} else if (document.location.pathname == "/GAMEOVER/") {
+		pageno = 8801;
+	} else {
+		pageno = parseInt(document.location.search.slice(7));
+	}
+	
+	
 	if ((pageno > 7688) && (pageno < 7826)) {
 		// Compensate for Act 6 Act 5 Act 1 x2 combo
 		pageno -= pageno % 2;
@@ -86,6 +99,16 @@ function modifypage() {
 			// If we've found it, then the link container is normally the first child of it's parent
 			var linklocation = savegamemenu.parentNode;
 			linklocation.insertBefore(linkcontainer, linklocation.firstElementChild);
+		} else {
+			// Still not found it. Just add it to the end of the body
+			document.body.appendChild(linkcontainer);
+			
+			// Add some formatting to try and make it look right
+			linkcontainer.style.display = "block";
+			linkcontainer.style.width = 600;
+			linkcontainer.style.margin = "auto";
+			linkcontainer.style["margin-top"] = 20;
+			linkcontainer.style["font-family"] = "Verdana, Arial, Helvetica, sans-serif";
 		}
 	}
 	

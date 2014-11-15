@@ -6,9 +6,18 @@
 // Rewind
 // GetVariable, SetVariable
 
+flashlengths = {
+	1931: -1, 1977: 544, 1982: 827, 1988: 391, 1990: -1, 2010: -1, 2037: 1201, 2038: -1, 2040: 130, 2077: 120, 2086: 173, 2122: 917, 2146: 1124,
+	2150: 1074, 2151: 473, 2153: -1, 2207: 620, 2238: -1, 2288: -1, 2293: -1, 2297: -1, 2300: -1, 2318: 74, 2322: 511, 2323: 97, 2324: 699, 2344: 1126, 2376: -1, 2401: 179, 2544: 433, 2551: 680, 2565: 2011, 2621: 1071, 2655: 1049, 2657: 3859,
+	
+	6009: -1,
+	6714: -1, 7395: 450, 7680: 78,
+	8801: -1
+};
+
 function initFlashControls() {
 	var x = document.embeds;
-	if (x.length > (document.location.pathname == "/trickster.php")) {
+	if ((x.length > (document.location.pathname == "/trickster.php")) && (flashlengths[pageno] != -1)) {
 		var flash = x[x.length - 1];
 		addFlashControls(flash);
 	}
@@ -48,7 +57,11 @@ function addFlashControls(flash) {
 	slider.style.width = "100%";
 	slider.type = "range";
 	slider.min = 0;
-	slider.max = 0;	// Actually set during first run of update
+	if (pageno in flashlengths) {
+		slider.max = flashlengths[pageno];
+	} else {
+		slider.max = 0;	// Actually set during first run of update
+	}
 	slider.value = 0;
 	sliderCell.appendChild(slider);
 	var sliderWidth;

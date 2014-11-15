@@ -181,7 +181,13 @@ Be taken to safety
 8650-8655
 
 GAME OVER
-8801-8802
+8801
 
 Carry Rose to LOPAN
-8863-8883
+Watch Rose bleed out
+Talk with John
+Meet Terezi
+8863-8906
+
+Ask John if he's ever seen his denizen
+8922-8928
