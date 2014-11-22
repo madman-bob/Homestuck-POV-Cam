@@ -353,3 +353,9 @@ Talk with Calliope about where you lived
 Remember Calliope
 Tell story about how John died
 8907-8921
+
+# Split to alt Jade?
+Start telling story
+Start intermission
+Have intermission interrupted
+8959-8977
