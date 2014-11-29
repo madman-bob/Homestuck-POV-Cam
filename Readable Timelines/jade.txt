@@ -358,4 +358,5 @@ Tell story about how John died
 Start telling story
 Start intermission
 Have intermission interrupted
-8959-8977
+Finish story
+8959-8998

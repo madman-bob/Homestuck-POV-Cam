@@ -494,3 +494,11 @@ Get Terezi to try mindy thing
 Think of phrase "there's no place like home."
 Go to denizen
 8922-8958
+
+Enter denizen's lair
+8972-8973
+8979-8983
+
+Perform oil retcon
+Play the wind
+8985-8998
