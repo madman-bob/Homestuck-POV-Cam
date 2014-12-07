@@ -155,7 +155,8 @@ function modifypage() {
 		}
 		
 		// Style modifications
-		sheet = document.styleSheets[0];
+		document.body.appendChild(document.createElement("style"));
+		sheet = document.styleSheets[document.styleSheets.length - 1];
 		
 		// Give background colour to text of Doc Scratch
 		if (items.docscratchtext == "yes") {
