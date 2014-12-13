@@ -93,6 +93,9 @@ colours = {
 	"arquiusprite": "#E00707",
 	"erisolsprite": "#4AC925",
 	
+	// Alpha trolls
+	"meenah": "#77003C",
+	
 	// Cherubs
 	"calliope": "#929292",
 	"caliborn": "#323232",
