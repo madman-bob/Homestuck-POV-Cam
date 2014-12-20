@@ -94,6 +94,7 @@ colours = {
 	"erisolsprite": "#4AC925",
 	
 	// Alpha trolls
+	"aranea": "#005682",
 	"meenah": "#77003C",
 	
 	// Cherubs
