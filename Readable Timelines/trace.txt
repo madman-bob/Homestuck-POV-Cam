@@ -1,4 +1,7 @@
-@ The Felt
+Name: Trace
+Colour: #DF0000
+Image: ball03.png
+Group: The Felt
 
 Become minion of Caliborn
 7846
@@ -7,6 +10,9 @@ Assist Caliborn in his quest
 7965
 8011
 7906
+
+Midnight Crew: Act 1031
+2733
 
 Punch DD from future
 3102-3103

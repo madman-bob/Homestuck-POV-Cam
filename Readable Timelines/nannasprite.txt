@@ -1,5 +1,7 @@
-@ Kids' Guardians
-@ Kids' Sprites
+Name: Nannasprite
+Colour: #00D5F2
+Image: nannasprite.png
+Group: Kids' Guardians
 
 Sneak up on John
 2184-2185
@@ -37,3 +39,10 @@ Talk with fedorafreak as he dies
 
 Continue existing
 6518
+
+Wander off
+7840-7841
+
+Meet other sprites
+IT IS E%CEEDING A CERTAIN AMOUNT IN QUANTITY
+8501-8505

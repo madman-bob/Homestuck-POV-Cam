@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	
 	"name": "Homestuck POV Cam",
-	"version": "2.9",
+	"version": "3.0",
 	"description": "View Homestuck from the point of view of any character",
 	"options_page": "options.html",
 	
@@ -28,14 +28,14 @@
 				"http://*.mspaintadventures.com/DOTA/",
 				"http://*.mspaintadventures.com/007395/",
 				"http://*.mspaintadventures.com/007680/*",
-				"http://*.mspaintadventures.com/GAMEOVER/"
+				"http://*.mspaintadventures.com/GAMEOVER/",
+				"http://*.mspaintadventures.com/index_pw.php"
 			],
 			"js": [
-				"injection.js",
 				"timelines.js",
 				"names.js",
-				"colours.js",
 				"lordenglishtext.js",
+				"injection.js",
 				"flashmodifier.js"
 			],
 			"run_at": "document_end"

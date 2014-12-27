@@ -1,4 +1,7 @@
-@ Trolls
+Name: Aradia
+Colour: #A10000
+Image: aradia.png
+Group: Trolls
 
 Archaeology
 5479-5490
@@ -72,8 +75,10 @@ Wake.
 Trap Jack Noir
 Flee to Green Sun
 5463-5476
-~ doomedaradia
+======>
 5477-5513
+	Name: Doomed Aradia
+	5477-5513
 
 Visit coinflip Dave
 5379-5392
@@ -107,3 +112,4 @@ Reveal treasure
 
 Be in dream bubble
 8647
+9126-9127

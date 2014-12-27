@@ -1,4 +1,7 @@
-@ Kids' Guardians
+Name: Nanna
+Colour: #00D5F2
+Image: nanna.png
+Group: Kids' Guardians
 
 Be created
 3787
@@ -7,7 +10,8 @@ Be created
 
 Be sent to Earth
 3840
-~ jane
+==>
+	~ Jane
 
 Lose father, gain brother
 Grow up
@@ -26,4 +30,5 @@ Be in urn on mantelpiece
 
 Topple again
 2181
-~ nannasprite
+
+~ Nannasprite

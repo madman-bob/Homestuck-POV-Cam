@@ -1,12 +1,13 @@
-@ Cherubs
+Name: Caliborn
+Colour: #323232
+Image: caliborn.png
+Group: Cherubs
 
 Land on Earth
 Be found by Gamzee
 Hatch
 Separate into distinct personalities
 Bite Gamzee
-# No 7891 as 6933
-# No 7892,7893 as 7161
 7874-7876
 7882-7884
 7887-7890
@@ -14,6 +15,8 @@ Bite Gamzee
 Play chess with Calliope
 Reveal non-switch of king/queen
 6929-6933
+	7891
+<==
 
 Jeer Calliope about death of Jane
 Complain about loss of viewport
@@ -40,6 +43,8 @@ Tell Dirk to throw Lil' Cal into ocean
 
 Enter
 7161
+	7892-7893
+<==
 
 Wander around LO-A-
 Have Roxy attempt to contact you

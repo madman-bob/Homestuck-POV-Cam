@@ -1,10 +1,16 @@
-@ The Felt
+Name: Biscuits
+Colour: #FF6000
+Image: ball13.png
+Group: The Felt
 
 Become minion of Caliborn
 8011
 
 Assist Caliborn in his quest
 7906
+
+Midnight Crew: Act 1031
+2733
 
 Be in oven
 3123-3125

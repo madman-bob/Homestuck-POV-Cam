@@ -1,4 +1,7 @@
-@ Kids' Guardians
+Name: Dad
+Colour: #4B4B4B
+Image: dad.png
+Group: Kids' Guardians
 
 Walk with mother on fine day
 Notice meteor land

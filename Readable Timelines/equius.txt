@@ -1,4 +1,7 @@
-@ Trolls
+Name: Equius
+Colour: #000056
+Image: equius.png
+Group: Trolls
 
 You are now... oh god.
 4079
@@ -8,8 +11,9 @@ Introduction
 
 Talk with Nepeta
 Tell Nepeta she's on your team
-# No 4120 as 4062
 4062
+	4120
+<======
 
 Talk to Gamzee
 Roleplay with Gamzee
@@ -79,4 +83,5 @@ Be subjugglated
 Be in dream bubble
 6386
 
-~ arquiusprite
+======>
+	~ Equiusprite

@@ -1,4 +1,7 @@
-@ Trolls
+Name: Sollux
+Colour: #A1A100
+Image: sollux.png
+Group: Trolls
 
 Be manipulated into killing Aradia
 5490
@@ -95,7 +98,8 @@ Mayor arrives
 Give meteor push
 6282-6288
 
-~ erisolsprite
+======>
+	~ Erisolsprite
 
 Be in Vriska's crew
 7848-7914

@@ -1,4 +1,7 @@
-@ Kids
+Name: John
+Colour: #0715CD
+Image: john.png
+Group: Kids
 
 Be created
 3790-3791
@@ -41,13 +44,21 @@ Create apple
 Enter
 2140-2146
 
+	Name: (John)
+	Be watched by future self
+	9026-9029
+<==
+
 BOY.
 YOU THERE. BOY.
 MAKE HASTE ON THE NARROW CATWALK!
 2150-2170
 
 Second tier prototype sprite
-2175-2194
+2175-2193
+	2973
+<==
+2194
 
 STAY WARY OF THESE FOES.
 2234-2236
@@ -94,14 +105,18 @@ Shuffle in captchalogue cards
 Make pogo hammer
 Sleep
 2527-2544
-2551
-2973
 
+Wake up
 Prepare for boss battle
-2552-2563
+2551-2563
 
 Boss battle!
+2743
 2779-2785
+
+	Write captcha code walkthrough
+	2745
+<==
 
 Enter Dad's room
 2808-2810
@@ -163,7 +178,25 @@ Enter return gate
 
 Make rocket pack.
 3533-3537
-~ doomedjohn
+==>
+	Name: Doomed John
+	
+	PCHOOOOO
+	3538-3540
+	
+	Die
+	
+	Be trolled by Vriska's ghost
+	5781-5785
+	
+	Meet Vriska
+	5805-5825
+	
+	Tell Vriska how you died
+	5849-5853
+	
+	Double die
+	7161
 
 Be convinced by future Dave not to go
 3546-3549
@@ -316,7 +349,7 @@ Talk with Vriska about killing Tavros
 5362-5368
 5372-5375
 
- 8e cre8tive.
+8e cre8tive.
 5393-5399
 
 Locate Tumor
@@ -357,6 +390,9 @@ Learn that Dave, Rose are gods
 Send message to meteor
 6232-6245
 
+	6518
+<==
+
 Year 1
 Play Ghostbusters MMORPG
 Get knocked unconscious
@@ -365,6 +401,10 @@ Meet Meenah
 Guard Roxy
 Wake up
 6628-6659
+
+Sing warhammer of Zillyhoo
+Kiss Gamzee (wtf?)
+6844
 
 Year 2
 Watch movie, realise it sucks
@@ -376,7 +416,7 @@ Enter dream bubble
 Fight Jack Noir
 Learn new ability
 Distraction
- 8onk
+8onk
 Meet PM
 Wander dream battlefield/LOMAT
 Find ring
@@ -420,6 +460,8 @@ Chance upon the Slab of the Jaded Fool's Ennui
 
 Have everyone teleport to you
 8131-8134
+	Name: (John)
+	9110-9119
 
 John Egbert has gone missing.
 8183
@@ -444,15 +486,21 @@ Teleport away from Jade
 8271
 
 Teleport to LOHAC
-Interrupt Dave, Jade
-8302-8304
 
-Put timeline back
-8284-8286
+==>
+	Interrupt Dave, Jade
+	8302-8304
 
 Be told by future self to visit Roxy
 Breeze glitches out of Jake's cell
-8317-8339
+8317-8319
+	Be grabbed by future self
+	8284-8286
+<==
+8320-8334
+	9041-9048
+<==
+8335-8339
 
 Enter Roxy's cell
 Talk with Roxy
@@ -485,30 +533,53 @@ Be headbutted by Terezi
 
 Notice Jade's shoes
 Be told of Jade's death
- 3V3RYBODY 1S D34D, JOHN
+3V3RYBODY 1S D34D, JOHN
 Be asked if you've ever seen your denizen
 Tell Roxy of nameless blind prankstress
 Agree to go see denizen
 Get Roxy to see her denizen
 Get Terezi to try mindy thing
 Think of phrase "there's no place like home."
+8922-8948
+	???????
+	Name: (John)
+	9059-9062
+	
+	Go to denizen
+	9071-9072
+
 Go to denizen
-8922-8958
+8949-8958
 
 Enter denizen's lair
 8972-8973
 8979-8983
 
 Perform oil retcon
+8985-8997
+
 Play the wind
+8998
+
 Interrogate rogue teen babe
+8999-9025
+
 Re-enter narrative
 Visit early self
+9026-9033
+
 Go to intermission 1
+9034-9044
+
 Tell past self to find Roxy
+	8285-8286
+<==
+9045-9048
+	8318-8334
+<==
+
 there's no place like home...
-# Throw in another John for good measure?
-8985-9056
+9049-9056
 9059-9062
 
 Be given instructions by Terezi
@@ -520,3 +591,14 @@ Get ring
 Forget name of irrelevant troll
 9106-9108
 9110-9125
+
+FR4M3D
+Save key witness
+9131-9134
+9136-9143
+
+MOM3NT
+Write message on wall
+you don't need him.
+9146-9149
+9151-9163

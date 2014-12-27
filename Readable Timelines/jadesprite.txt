@@ -1,22 +1,9 @@
-@ Kids
-@ Kids' Sprites
+Name: Jadesprite
+Colour: #1F9400
+Image: jadesprite.png
+Group: Kids' Sprites
 
-Die
- 3840
-
-Be found by John
- 3846
-
-Be found by Grandpa
-Be stuffed
- 3870-3872
-
-Be in laboratory
- 3886-3887
-
-Be found by Jade
 Be prototyped
- 5108-5117
 5112-5117
 
 Drop
@@ -37,4 +24,3 @@ Teleport sword to Dave
 5798
 
 Fuse with Jade
-~ jade-6009

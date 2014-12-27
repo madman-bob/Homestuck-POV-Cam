@@ -1,4 +1,7 @@
-@ Trolls
+Name: Terezi
+Colour: #008282
+Image: terezi.png
+Group: Trolls
 
 Talk to Aradia about Tavros losing use of his legs
 4138
@@ -28,12 +31,18 @@ Become leader of red team
 
 Introduction
 Cr1m1n4l, cr1m1n4l
+Key witness gets murdered
 Invite Nepeta to red team
 3929-3955
-# No 3956 as 3924
+	FR4M3D
+	Key witness goes missing
+	9136-9141
+	9144-9145
 
 Invite Gamzee to red team
 3924
+	3956
+<======
 
 Have leadership stolen by Karkat
 3957-3958
@@ -63,8 +72,10 @@ Be told to exile SS, BQ and to destroy ring
 Psswoop
 Talk with Dragonsprite
 Inform Karkat of plan
-# "Moment" has passed
 4469-4476
+	MOM3NT
+	you don't need him.
+	9151-9163
 
 Fight Black King
 4493-4504
@@ -113,6 +124,10 @@ Apologise to John
 Send link to Google LOWAS
 3584-3585
 
+Laugh at Karkat watching John's reunion with loving wife and daughter
+5081
+3831
+
 Troll Dave
 3834-3835
 3839
@@ -127,12 +142,12 @@ Tell Dave to summon Davesprite
 Tell Dave to send you money
 4641-4642
 
-Try to convince Dave to kill coinflipdave
+Try to convince Dave to kill coin flip Dave
 4989-4998
 
-Apologise to conflipdave
-Watch coinflipdave die
-5089-5095
+Apologise to coin flip Dave
+Watch coin flip Dave die
+5088-5095
 
 Find Tavros' body
 5198-5200
@@ -224,6 +239,8 @@ Be found by Karkat
 Arrive in new session
 Arrive on LOMAX
 8121-8134
+	R3UN1ON
+	9110-9119
 
 Somehow be on LOLAR with Rose
 8243-8269
@@ -240,6 +257,7 @@ Fight Gamzee
 8656
 8658
 8663
+8670-8671
 8675-8679
 8685-8689
 8694
@@ -259,17 +277,16 @@ Crash into LOPAN
 Tell John to F1X TH1S
 8894-8906
 
- 3V3RYBODY 1S D34D, JOHN
+3V3RYBODY 1S D34D, JOHN
 Ask John to think up phrase
 Try to do mindy thing
 Burn out
 8922-8958
 
-# Timeline split?
-Let's try that again
-9059-9062
-
-Write instructions for John
-Draw chalk outline for self
-Die
-9071-9085
+	Let's try that again
+	9059-9062
+	
+	Write instructions for John
+	Draw chalk outline for self
+	Die
+	9071-9085

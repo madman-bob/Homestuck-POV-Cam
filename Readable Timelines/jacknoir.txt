@@ -1,4 +1,7 @@
-@ Kids' Agents
+Name: Jack Noir
+Colour: #000000
+Image: spades.png
+Group: Kids' Agents
 
 Dad breaking out of prison
 2790-2791
@@ -84,10 +87,21 @@ Kill Bilious Slick
 5920-5925
 6009
 
-~ altjacknoir
+==>
+	Be found by Vriska
+	Follow trail
+	5700-5705
+	
+	Return with trophies
+	5712-5714
+	
+	Fight
+	5720-5731
 
 Be chased by PM
 6206-6220
+6681-6687
+6844
 7161
 7210-7268
 

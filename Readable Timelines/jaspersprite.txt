@@ -1,4 +1,7 @@
-@ Kids' Sprites
+Name: Jaspersprite
+Colour: #F141EF
+Image: jaspersprite.png
+Group: Kids' Sprites
 
 Be created
 Save Rose
@@ -17,9 +20,19 @@ Be freed
 Say goodbye to Nepeta
 5794
 
+Continue existing
+6518
+
 Wish John happy birthday
 Be chased by Jade
 6637-6639
 
 Watch Con Air with John, Jade
 7181-7182
+
+Wander off
+7840-7841
+
+Meet other sprites
+IT IS E%CEEDING A CERTAIN AMOUNT IN QUANTITY
+8501-8505

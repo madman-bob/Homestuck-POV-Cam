@@ -1,4 +1,7 @@
-@ The Felt
+Name: Doc Scratch
+Colour: #FFFFFF
+Image: ballcue.png
+Group: The Felt
 
 Be created
 5513

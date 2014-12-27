@@ -1,4 +1,7 @@
-@ Trolls
+Name: Tavros
+Colour: #A15000
+Image: tavros.png
+Group: Trolls
 
 Go Flarping
 4067-4077
@@ -84,8 +87,7 @@ Wake in another dream bubble
 
 iRRRRRRRRECONCILA8LE
 6729-6733
-~ tavrisprite
-0
+~ Tavrisprite
 
 Reconcile with Vriska
 6738-6740

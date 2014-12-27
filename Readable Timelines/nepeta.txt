@@ -1,4 +1,7 @@
-@ Trolls
+Name: Nepeta
+Colour: #416600
+Image: nepeta.png
+Group: Trolls
 
 Be invited to join red team by Terezi
 3955
@@ -75,8 +78,7 @@ Have head presented on the motherfuckin JURY
 Notice sleepwalking Roxy
 6386
 
-~ fefetasprite
-0
+~ Fefetasprite
 
 Be in Vriska's crew
 7848-7914

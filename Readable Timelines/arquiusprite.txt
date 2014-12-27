@@ -1,9 +1,11 @@
-@ Trolls
-@ Alpha Kids' Sprites
+Name: Equiusprite
+Colour: #E00707
+Image: arquiusprite.png
+Group: Alpha Kids' Sprites
 
-Be Equiusprite
-Become ARquiusprite
-7547-7557
+7547-7554
+Name: ARquiusprite
+7555-7557
 
 Witness arival of tricksters
 Witness Fefetasplosion

@@ -1,4 +1,7 @@
-@ Alpha Trolls
+Name: Meenah
+Colour: #77003C
+Image: feferi.png
+Group: Alpha Trolls
 
 Hunt Roxy
 6537-6543
@@ -52,3 +55,6 @@ Braid Vriska's hair
 
 Enter Dark Carnival with Vriska
 9063-9070
+
+Watch destruction of dream bubbles with Meenah
+9126-9130

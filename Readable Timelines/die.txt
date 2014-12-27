@@ -1,4 +1,7 @@
-@ The Felt
+Name: Die
+Colour: #008140
+Image: ball06.png
+Group: The Felt
 
 Become minion of Caliborn
 7922

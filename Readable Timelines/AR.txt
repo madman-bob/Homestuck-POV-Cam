@@ -1,6 +1,8 @@
-@ Kids' Exiles
+Name: Authority Regulator
+Colour: #000000
+Image: dersite.png
+Group: Kids' Exiles
 
-Be Authority Regulator
 Ticket car
 3355-3359
 3361
@@ -21,7 +23,7 @@ Find John
 Sacrifice board for John's safety
 3864-3868
 
-Be Aimless Renegade
+Name: Aimless Renegade
 3863
 
 Prepare for company
@@ -57,7 +59,7 @@ EGG!
 DOG!
 4841-4842
 
-Be Armaments Regent
+Name: Armaments Regent
 Rig pods with explosives
 5165
 5170

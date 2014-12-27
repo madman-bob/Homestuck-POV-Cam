@@ -1,4 +1,7 @@
-@ The Felt
+Name: Doze
+Colour: #4040FD
+Image: ball02.png
+Group: The Felt
 
 Become minion of Caliborn
 7839
@@ -8,6 +11,9 @@ Assist Caliborn in his quest
 7965
 8011
 7906
+
+Midnight Crew: Act 1031
+2733
 
 Be tied up by CD
 Slow time for self

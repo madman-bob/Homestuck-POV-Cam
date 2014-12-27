@@ -1,4 +1,7 @@
-@ Kids
+Name: Jade
+Colour: #4AC925
+Image: jade.png
+Group: Kids
 
 Be created on meteor
 3790-3791
@@ -36,6 +39,8 @@ Receive package from Jake
 Be introduced
 Talk to Dave
 2660-2735
+	2282
+<==
 
 Talk with Rose
 Inform Rose she's about to lose her internet connection
@@ -70,10 +75,15 @@ Fly to John's tower
 
 Talk to John
 Wake up
-# No 2069, 2193 as 2973
-# No 2552 as 2974
 Harpoon to frog temple
-2973-2980
+2973
+	2069
+	2193
+<==
+2974
+	2552
+<==
+2975-2980
 
 Place down package, time-bait
 3012-3015
@@ -201,7 +211,9 @@ Create Jadesprite
 5096-5107
 4969
 5108-5111
-~ jadesprite-5112
+==>
+	~ Jadesprite
+
 5112-5117
 
 Drop.
@@ -253,6 +265,7 @@ Talk with Karkat
 Be killed by CD
 6001-6007
 
+<==
 Cascade
 6009
 
@@ -264,9 +277,37 @@ View meteor
 Send letter to meteor
 6232-6245
 
+==>
+	Arrive in Calliope's realm
+	8571-8581
+	8615-8617
+	
+	Talk with Calliope about where you lived
+	Remember Calliope
+	Tell story about how John died
+	8907-8921
+	
+	Start telling story
+	Start intermission
+	Have intermission interrupted
+	Finish story
+	8959-8998
+	
+	Be found by Jane
+	Get excited about making Jane a trollsona
+	9092-9105
+
+Name: Jade
+# Repeating name as need no-op to separate above split with below split
+	6518
+<==
+
 Year 1
 Play Ghostbusters MMORPG
 6628-6639
+
+Read Midnight Crew with Davesprite
+6844
 
 Year 2
 Watch Con Air with John
@@ -277,7 +318,9 @@ Save Jake, Jane from Union Jack
 Teleport Union Jack to the outer ring
 Be mind controlled by )(IC
 Zap tiaratop onto Jane
-7764-7804-2
+7764-7790-2
+Colour: #000000
+7792-7804-2
 
 Beat up Dirk
 Teleport Dirk to the outer ring
@@ -310,15 +353,15 @@ Create Caledfwlch
 8217-8223
 
 Attempt to fight Dave
-Have timeline messed up by John
-8302-8304
 
-Fail to notice notice John preventing John from messing up the timeline
-8317-8319
+	Be interrupted by John
+	8302-8304
 
-Attempt to fight Dave
-Push the Meyor into lava
-8283-8294
+Push WV into lava
+8283-8285
+	8317-8319
+<==
+8286-8294
 
 Be informed of Prospitian battleship on Derse
 8469-8471
@@ -342,25 +385,3 @@ Be KO'd by Jake
 Be killed by Aranea
 Have death be registered as just by intervention from Aranea
 8525-8552
-
-Arrive in Calliope's realm
-8571-8581
-
-Fail to remember you're dead
-8615-8617
-
-Talk with Calliope about where you lived
-Remember Calliope
-Tell story about how John died
-8907-8921
-
-# Split to alt Jade?
-Start telling story
-Start intermission
-Have intermission interrupted
-Finish story
-8959-8998
-
-Be found by Jane
-Get excited about making Jane a trollsona
-9092-9105

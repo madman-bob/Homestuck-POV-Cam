@@ -1,4 +1,7 @@
-@ Midnight Crew
+Name: Spades Slick
+Colour: #000000
+Image: spades.png
+Group: Midnight Crew
 
 Learn Karkat's blood colour
 Be in cahoots with Karkat
@@ -11,6 +14,7 @@ Watch Feferi ressurect Sollux
 
 Follow Karkat
 4447
+4478
 
 Be exiled
 Become Scurrilous Straggler

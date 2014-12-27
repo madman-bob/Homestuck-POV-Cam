@@ -1,12 +1,17 @@
-@ Kids
-@ Kids' Sprites
+Name: Davesprite
+Colour: #E00707
+Image: dave.png
+Group: Kids' Sprites
 
 Enter doomed timeline
 3541-3544
 
 Travel back in time
 Prototype self
-3548-3551
+3548-3550
+Colour: #F2A400
+Image: davesprite.png
+3551
 
 Scold Terezi
 Talk to Dave
@@ -49,10 +54,14 @@ Cascade
 
 Be on battleship
 6243-6245
+	6518
+<==
 6631
+6844
 
 Arrive in new session
 7840-7845
 
 Meet other sprites
+IT IS E%CEEDING A CERTAIN AMOUNT IN QUANTITY
 8501-8505

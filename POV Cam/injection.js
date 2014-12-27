@@ -1,21 +1,44 @@
-function createlink(nextpages) {
+function createlink(link) {
+	var name = peoplenames[link[0]];
+	var colour = colours[link[1]];
+	var image = images[link[2]];
+	var nextpages = link[4];
+	
 	var container = document.createElement("div");
 	
 	if (nextpages.length == 0) {
+		var personicon = document.createElement("img");
+		personicon.src = chrome.extension.getURL("images/" + image);
+		personicon.width = 32;
+		personicon.height = 32;
+		personicon.style["vertical-align"] = "middle";
+		personicon.title = name;
+		container.appendChild(personicon);
+		
+		var entercommand = document.createElement("span");
+		entercommand.innerText = "> ";
+		container.appendChild(entercommand);
+		
 		return container;
 	}
 	
 	while (nextpages.length > 0) {
 		var nextpage = nextpages.pop();
-		var nextpageno = timelines[nextpage[0]][nextpage[1]];
+		var nextpageno = nextpage[0];
+		var nextpageindex = nextpage[1];
+		var nextpagecaption = name;
+		if (nextpage.length == 4) {
+			nextpagecaption = nextpagecaption + " - " + nextpage[2];
+		}
 		
 		var innercontainer = document.createElement("div");
 		
 		var personicon = document.createElement("img");
-		personicon.src = chrome.extension.getURL("images/" + nextpage[0] +".png");
+		personicon.src = chrome.extension.getURL("images/" + image);
 		personicon.width = 32;
 		personicon.height = 32;
 		personicon.style["vertical-align"] = "middle";
+		personicon.title = nextpagecaption;
 		innercontainer.appendChild(personicon);
 		
 		var entercommand = document.createElement("span");
@@ -24,7 +47,8 @@ function createlink(nextpages) {
 		
 		var link = document.createElement("a");
 		link.href = "/?s=6&p=" + zeropad(nextpageno);
-		link.hash = nextpage[0] + "-" + nextpage[1];
+		link.hash = nextpageindex;
+		link.title = nextpagecaption;
 		
 		if ((document.location.pathname == "/trickster.php") && (names[nextpageno].indexOf("==>") != -1)) {
 			// In trickster section, replace "==>" in page name with sucker image
@@ -32,25 +56,20 @@ function createlink(nextpages) {
 			
 			var sucker = document.createElement("img");
 			sucker.src = "http://mspaintadventures.com/images/trickster_sitegraphics/sucker.gif";
-			
-			if (colours[nextpage[0]]) {
-				sucker.style.backgroundColor = colours[nextpage[0]];
-				sucker.style.boxShadow = "0px 0px 2px 2px " + colours[nextpage[0]];
-			}
+			sucker.style.backgroundColor = colour;
+			sucker.style.boxShadow = "0px 0px 2px 2px " + colour;
 			
 			link.appendChild(sucker);
-		} else if (nextpage[0] == "lordenglish") {
+		} else if (name == "Lord English") {
 			// Give Lord English colourful links
 			link.appendChild(lordenglishtext(names[nextpageno]));
 		} else {
 			link.innerText = names[nextpageno];
 		}
 		
-		if (colours[nextpage[0]]) {
-			link.style.color = colours[nextpage[0]];
-		}
-		
+		link.style.color = colour;
 		innercontainer.appendChild(link);
+		
 		container.appendChild(innercontainer);
 	}
 	
@@ -62,8 +81,6 @@ function zeropad(pageno) {
 }
 
 function modifypage() {
-	following = window.location.hash.substr(1).split("-");
-	
 	if (document.location.pathname == "/DOTA/") {
 		pageno = 6715;
 	} else if (document.location.pathname == "/007395/") {
@@ -76,14 +93,12 @@ function modifypage() {
 		pageno = parseInt(document.location.search.slice(7));
 	}
 	
-	
 	if ((pageno > 7688) && (pageno < 7826)) {
 		// Compensate for Act 6 Act 5 Act 1 x2 combo
 		pageno -= pageno % 2;
 	}
-
-	// Modify page links
-
+	
+	// Try to find where to put the links
 	a = document.querySelectorAll("font[size='5']");
 	if (a.length > 0) {
 		linkcontainer = a[a.length - 1];
@@ -112,24 +127,28 @@ function modifypage() {
 		}
 	}
 	
+	// Link to click on when right arrow button pressed
+	nextpagelink = linkcontainer.getElementsByTagName("a")[0];
+	
 	// Find the element containing the image/flash, any pesterlogs, and all the links
 	outercontainer = linkcontainer;
 	while (outercontainer.parentElement && outercontainer.tagName != "CENTER") {
 		outercontainer = outercontainer.parentElement;
 	}
 	
-	if (following.length == 1) {
-		for (var person in timelines) {
-			if (timelines[person].indexOf(pageno) != - 1) {
-				linkcontainer.appendChild(createlink(getallnextpages(person, pageno)));
+	chrome.storage.sync.get({timelinesenabled: {}, autoopenpesterlog: "no", arrownavigation: "no", docscratchtext: "no", disableletext: "no", flashcontrols: "no"}, function(items) {
+		// Add links to page
+		for (var i in timelines[pageno]) {
+			var currentgroup = groups[timelines[pageno][i][3]];
+			if (items.timelinesenabled[currentgroup] != false) {
+				currentlink = createlink(timelines[pageno][i]);
+				if ("#" + i == document.location.hash) {
+					nextpagelink = currentlink.getElementsByTagName("a")[0];
+				}
+				linkcontainer.appendChild(currentlink);
 			}
 		}
-	} else if (following[0] in timelines) {
-		linkcontainer.innerHTML = "";
-		linkcontainer.appendChild(createlink(getspecificnextpages(following[0], parseInt(following[1]))));
-	}
-
-	chrome.storage.sync.get({autoopenpesterlog: "no", arrownavigation: "no", docscratchtext: "no", disableletext: "no", flashcontrols: "no"}, function(items) {
+		
 		// Auto-open pesterlog
 		if (items.autoopenpesterlog == "yes") {
 			buttons = outercontainer.getElementsByTagName("button");
@@ -143,8 +162,12 @@ function modifypage() {
 			document.onkeydown = function(e) {
 				if (e.keyCode == 39) {
 					// Press right
-					linkcontainer.getElementsByTagName("a")[0].click();
-					return false;
+					if (nextpagelink) {
+						nextpagelink.click();
+						return false;
+					} else {
+						return true;
+					}
 				} else if (e.keyCode == 37) {
 					// Press left
 					history.back();
@@ -189,3 +212,5 @@ function modifypage() {
 		sogb.parentElement.insertBefore(optionslink, sogb);
 	}
 }
+
+modifypage();

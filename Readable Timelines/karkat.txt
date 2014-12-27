@@ -1,4 +1,7 @@
-@ Trolls
+Name: Karkat
+Colour: #626262
+Image: karkat.png
+Group: Trolls
 
 Be talked to by Tavros after he jumps off a cliff
 4077
@@ -180,7 +183,9 @@ Mayor arrives
 
 Talk to self
 6585-6594
-6585-6594
+Colour: #FF0000
+6586-6594
+Colour: #626262
 
 I GOT A LAB FULL OF HUMANS, A MOUTH FULL OF YELLING, AND A TORTURED PSYCHOLOGICAL PROFILE FULL OF TOTALLY HYSTERICAL EMOTIONS AND UNAIRED GRIEVANCES AT PRACTICALLY EVERYBODY.
 6609-6627
@@ -212,6 +217,8 @@ See Terezi's eyes
 Arrive in new session
 Arrive on LOMAX
 8121-8134
+	R3UN1ON
+	9110-9119
 
 Somehow be on LOFAF
 

@@ -1,4 +1,7 @@
-@ Trolls
+Name: Kanaya
+Colour: #008141
+Image: kanaya.png
+Group: Trolls
 
 Meet Doc Scratch
 5220
@@ -10,12 +13,13 @@ Be introduced
 Talk with Feferi
 Take matriorb from belly of lusus
 Ask Vriska if her lusus is dead yet
-# No 4241 as 4104
 Talk with Eridan
 Read Rose's walkthrough
 Imagine Rose as a troll
 4221-4240
 4104
+	4241
+<======
 4242-4247
 
 Talk to Aradia
@@ -54,8 +58,10 @@ Agree to troll Rose
 
 Attempt to troll Rose
 Be trolled by John
-# No 4595 as 3614
-3614-3615
+3614
+	4595
+<======
+3615
 
 View Rose
 Troll John
@@ -64,17 +70,19 @@ Troll John
 # Have conversations with two other humans?
 
 Troll Rose
-# No 4612 as 2993
-# No 4613 as 3838
-# Find fourth through sixth conversations
 4607-4611
 2993
+	4612
+<======
 3838
+	4613
+<======
 4614
 
 Troll Dave
-# No 4615 as 3489
 3489
+	4615
+<======
 
 Troll Rose
 4616
@@ -85,8 +93,10 @@ Hop to 8=8.
 
 Have sixteenth conversation with Rose
 Mention you've read her guide
-# No 4592 as 4626
-4626-4631
+4626
+	4592
+<======
+4627-4631
 
 Try to talk Rose out of suicide mission
 4945-4947
@@ -164,6 +174,8 @@ Talk with Rose about her substance abuse
 
 Arrive in new session
 8121-8134
+	R3UN1ON
+	9110-9119
 
 Somehow be on LOFAF with Karkat
 Talk with Dave about missing time

@@ -1,4 +1,7 @@
-@ Kids
+Name: Dave
+Colour: #E00707
+Image: dave.png
+Group: Kids
 
 Be created
 3790-3791
@@ -51,7 +54,10 @@ Have game stolen by Rambunctious crow
 2237-2257
 
 Talk to dream Jade about John's presents
-2281-2284
+2281-2282
+	2735
+<==
+2283-2284
 
 Tell John to bone up on data structures
 2010
@@ -77,7 +83,6 @@ Puppets
 Duel Bro
 2564-2565
 2657
-# No 2735 as 2282
 2736
 2771
 2970-2972
@@ -125,7 +130,8 @@ Enter game
 
 Prepare to second tier prototype
 3545-3546
-~ davesprite
+==>
+	~ Davesprite
 
 See self come back from future
 3547-3551
@@ -157,7 +163,14 @@ Wake up and jam.
 
 Go to burn book
 3761-3762
-~ meowdave
+==>
+	Name: Doomed Dave
+	Be killed
+	4963-4964
+	3763-3764
+	
+	Be double killed
+	7161
 
 Throw yourself out the window.
 3763-3764
@@ -202,6 +215,7 @@ nak nak nak
 
 Be woken by Jade teleporting past
 4901
+Caption: Sleeping
 
 Talk with Rose about horrorterrors
 Learn of the Green Sun, the Tumor
@@ -211,13 +225,29 @@ Learn of the Green Sun, the Tumor
 Witness John's ascension
 4987
 
-~ coinflipdave
+==>
+	Name: Doomed Dave
+	Go to sleep on Quest Bed
+	4989-4991
+	4994-4995
+	
+	Wake up
+	Be killed
+	5089-5091
+	5103
+	
+	Be in dream bubble
+	5379-5392
+	
+	Be double killed
+	7161
 
 Make a goddamn killing in the LOHACSE.
 4637-4641
 
 See Jade teleport past in LOHACSE
 4901
+Caption: In LOHACSE
 
 Wire money to Terezi
 4642
@@ -236,6 +266,7 @@ Console Jade about your death
 
 See Jade teleport past on LOFAF
 4901
+Caption: On LOFAF
 
 Talk to Jade about her moving through space and you, time
 Deploy laserstation
@@ -276,6 +307,9 @@ The Mayor arrives
 Be given push by Aradia, Sollux
 6282-6288
 
+Hang out in dream bubble
+6386
+
 Talk to Rose, Kanaya
 Learn about alpha session
 No reckoning (CD kills BK)
@@ -315,6 +349,8 @@ Arrive in new session
 Meet up with grimbark Jade
 Be teleported to LOMAX
 8121-8134
+	R3UN1ON
+	9110-9119
 
 Somehow be on LOHAC
 Talk to Katkat, Kanaya, Rose (glitchy)
@@ -324,14 +360,17 @@ Reminisce in old house
 Meet up with John, Jade
 8200-8223
 
-Have timeline messed up by John
-8302-8304
+Be taunted by Jade
 
-John puts timeline back
-8317-8319
+	Be interrupted by John
+	8302-8304
 
-Save Mayor from Jade
-8283-8296
+Witness WV be pushed into lava pit
+Catch WV
+8283-8285
+	8317-8319
+<==
+8286-8296
 
 Be called to action by Karkat
 8522-8524

@@ -1,4 +1,7 @@
-@ The Felt
+Name: Itchy
+Colour: #FFEA00
+Image: ball01.png
+Group: The Felt
 
 Become minion of Caliborn
 7839
@@ -9,6 +12,9 @@ Assist Caliborn in his quest
 8011
 7906
 
+Midnight Crew: Act 1031
+2733
+
 Swap everyone's hats around
 Untie Doze
 3082
@@ -17,6 +23,10 @@ Untie Doze
 Swap SS's hat
 Be killed by SS
 3086-3089
+
+	Play cards with die
+	3110-3112
+<==
 
 Be resurrected by SS
 Be commanded by SS

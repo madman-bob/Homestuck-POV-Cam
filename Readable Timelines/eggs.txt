@@ -1,4 +1,7 @@
-@ The Felt
+Name: Eggs
+Colour: #A357FF
+Image: ball12.png
+Group: The Felt
 
 Become minion of Caliborn
 8011

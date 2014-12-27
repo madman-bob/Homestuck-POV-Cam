@@ -1,4 +1,7 @@
-@ Alpha Kids
+Name: Dirk
+Colour: #F2A400
+Image: dirk.png
+Group: Alpha Kids
 
 Talk with Caliborn
 Produce pornography for Caliborn
@@ -12,11 +15,13 @@ Rap off with Squarewave
 Be snuck up upon by HB
 Kill HB
 Talk to Roxy, Lil' Hal
-# No 6388-6389 as 6450-6451
 6366-6368
 6417-6448
 6386
-6449-6453
+6449-6451
+	6388-6389
+<==
+6452-6453
 
 Talk to Jane
 6354-6360
@@ -35,6 +40,9 @@ Notice arrival of drones
 
 Be brain ghost Dirk in Jake's memory
 6744-6777
+
+Hang out on Derse
+6844
 
 Talk with Caliborn while fighting drones
 Tell Caliborn to find past Dirk
@@ -60,13 +68,20 @@ Notice Jake on Derse
 Notice Jane on Derse
 6946-6950
 
-# Jake gets killed
+Tell Jane to leave Derse
+Witness Jane be killed by Red Miles
+7038-7045
 
 Tell Jake to get off Derse
+Get bunny to remove Jake from Derse
+7051-7056
+
 Consider kissing Jane
 Have dream self get knocked unconscious
 Feedback knocks out waking self
-7087-7090
+	7087
+<==
+7088-7090
 7092-7100
 7102
 
@@ -138,8 +153,14 @@ Talk to Dave
 Continue glitching out
 8295-8296
 
+Name: Brain Ghost Dirk
+
 Be brain ghost Dirk with Jake in Derse cell
 8342-8346
+
+Start appearing behind Aranea
+8568-8569
+8584
 
 Become real
 8590-8592
@@ -159,5 +180,9 @@ Start becoming fake
 8662
 8669
 
+Name: Dirk
+
 Be found by John
+Ask to be left alone
+Be consumed by glitches
 8852-8860

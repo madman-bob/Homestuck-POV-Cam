@@ -1,4 +1,7 @@
-@ Kids' Agents
+Name: Draconian Dignitary
+Colour: #C39797
+Image: diamonds.png
+Group: Kids' Agents
 
 Be in background
 3432

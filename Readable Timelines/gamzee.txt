@@ -1,10 +1,14 @@
-@ Trolls
+Name: Gamzee
+Colour: #2B0057
+Image: gamzee.png
+Group: Trolls
 
 Talk to Karkat about typing quirk, friendship
 Be introduced
 Be invited to join red team by Terezi
-# No 3956 as 3924
 3910-3924
+	3956
+<======
 
 Tell Tavros he's on the red team
 4023
@@ -76,7 +80,7 @@ Kill Nepeta
 Interupt fight between Vriska, Eridan
 5411-5416
 
- 3x SHOWDOWN COMBO.
+3x SHOWDOWN COMBO.
 Be interrupted by Kanaya
 5420-5425
 

@@ -1,9 +1,8 @@
-@ Trolls
-@ Alpha Kids' Sprites
+Name: Tavrisprite
+Colour: #0715CD
+Image: tavrisprite.png
+Group: Alpha Kids' Sprites
 
 Be brought into existance
 Tavrisplode
 6734-6737
-
-~ vriska-6738
-~ tavros-6738

@@ -1,6 +1,8 @@
-@ Kids' Exiles
+Name: White Queen
+Colour: #FFFFFF
+Image: prospitian.png
+Group: Kids' Exiles
 
-Be White Queen
 Abdicate
 3512-3520
 
@@ -8,8 +10,9 @@ Descend
 3840
 
 Leave kingdom
-Be Windswept Questant
-3873-3877
+3873
+Name: Windswept Questant
+3874-3877
 
 Talk to Rose
 3330-3333

@@ -1,4 +1,7 @@
-@ Kids' Agents
+Name: Hegemonic Brute
+Colour: #BF0000
+Image: hearts.png
+Group: Kids' Agents
 
 Bring safe door
 2857

@@ -1,4 +1,7 @@
-@ The Felt
+Name: Matchsticks
+Colour: #DF0000
+Image: ball11.png
+Group: The Felt
 
 Become minion of Caliborn
 7965

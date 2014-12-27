@@ -1,4 +1,7 @@
-@ Trolls
+Name: Feferi
+Colour: #77003C
+Image: feferi.png
+Group: Trolls
 
 Teaser
 4080-4082
@@ -85,8 +88,7 @@ Have head in motherfuckin JURY
 Meet Jade in dream bubble
 4890-4894
 
-~ fefetasprite
-0
+~ Fefetasprite
 
 Be in Vriska's crew
 7848-7914

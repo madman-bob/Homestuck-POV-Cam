@@ -1,4 +1,7 @@
-@ Alpha Kids
+Name: Roxy
+Colour: #FF6FF2
+Image: roxy.png
+Group: Alpha Kids
 
 Talk to Jane
 6055-6057
@@ -51,6 +54,9 @@ Run!!!!! Again!!!!!
 You got a lab full of cats, a skirt full of scamper, and a head full of vodka.
 Hide!!!!!
 6552-6561
+
+Talk to Jane
+6722
 
 Hand out pumpkins
 6751-6753
@@ -170,15 +176,20 @@ Watch fight
 Have LOFAF teleported in underneath you
 8519
 
+Watch fight
+8525-8551
+
 Be noticed by Aranea
 8560-8562
 
 Be put to sleep by Aranea
 8566-8569
+8584
 
 Be found by Rose
 Be taken to safety
 8650-8655
+8659-8661
 
 GAME OVER
 8801

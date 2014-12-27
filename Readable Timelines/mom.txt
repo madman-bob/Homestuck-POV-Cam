@@ -1,4 +1,7 @@
-@ Kids' Guardians
+Name: Mom
+Colour: #FF6FF2
+Image: mom.png
+Group: Kids' Guardians
 
 Be created
 3787
@@ -8,7 +11,8 @@ Be created
 
 Be sent to Earth on meteor
 3840
-~ roxy
+==>
+	~ Roxy
 
 Visit joke shop
 3782-3783

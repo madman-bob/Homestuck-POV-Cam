@@ -1,4 +1,7 @@
-@ The Felt
+Name: Snowman
+Colour: #000000
+Image: ball08.png
+Group: The Felt
 
 Be Black Queen
 Become Snowman

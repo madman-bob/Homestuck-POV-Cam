@@ -1,10 +1,15 @@
-@ Alpha Kids
+Name: Jake
+Colour: #1F9400
+Image: jake.png
+Group: Alpha Kids
 
 Be introduced
 Talk with Calliope, Lil' Hal, Jane, Lil' Hal
-# No 6036 as 6088
 6019-6020
-6063-6093
+6063-6088
+	6036
+<==
+6089-6093
 
 Talk with Jane
 Be told about death of dreamself
@@ -28,7 +33,11 @@ Ask Jane if she likes you
 Brobot selfdestructs in background
 6472-6493
 
-# Be unconscious in frog temple
+Attempt to contact Jane
+Lose consciousness
+6723
+
+Be unconscious in frog temple
 6741-6742
 
 Have memory of past in dream bubble
@@ -41,6 +50,7 @@ Reveal Dirk is brain ghost Dirk
 
 Talk with Aranea
 6825-6831
+6844
 
 Join dream party
 Attack Meenah
@@ -73,6 +83,7 @@ Notice Jane
 
 Be dragged back to transportilizer by bunny
 Fly high into the air
+7042
 7051-7064
 
 Crash land in house
@@ -177,6 +188,7 @@ Have Jade attempt to overpower you
 Overpower Jade
 8525-8541
 8546-8551
+8584-8586
 
 Make brain ghost Dirk real
 8590-8592

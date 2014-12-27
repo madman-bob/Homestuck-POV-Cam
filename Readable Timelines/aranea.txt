@@ -1,4 +1,7 @@
-@ Alpha Trolls
+Name: Aranea
+Colour: #005682
+Image: vriska.png
+Group: Alpha Trolls
 
 Meet Jake
 6480-6484

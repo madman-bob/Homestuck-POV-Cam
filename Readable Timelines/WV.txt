@@ -1,6 +1,8 @@
-@ Kids' Exiles
+Name: Warweary Villein
+Colour: #000000
+Image: dersite.png
+Group: Kids' Exiles
 
-Be Warweary Villein
 WV?: Rise up.
 3700-3701
 
@@ -15,8 +17,9 @@ Observe ascension
 4987
 5097
 
-Be Wizardly Vassal
-5293-5294
+5293
+Name: Wizardly Vassal
+5294
 5298-5303
 
 Fly car
@@ -39,7 +42,7 @@ Pilot Dersite battleship
 Crash battleship
 5888-5893
 
-Be Wayward Vagabond
+Name: Wayward Vagabond
 3843
 2148
 
@@ -103,7 +106,7 @@ JOHN. RISE UP.
 5033-5038
 5156-5159
 
-Be Wastelandic Vindicator
+Name: Wastelandic Vindicator
 5164
 5167-5169
 
@@ -118,7 +121,11 @@ Get brought to A2 by PM
 6218-6225
 
 Get sent to meteor by PM
-6278-6289
+6278-6284
+
+Become Mayor of the Fruity Rumpus Asshole Factory
+Name: The Mayor
+6285-6289
 
 Be healed, re-found can town
 6588-6591
@@ -133,19 +140,21 @@ Expand can town
 7955-7964
 
 Arrive in alpha session
-8121-8131
+8121-8134
+	R3UN1ON
+	9110-9119
 
 Be on LOHAC
 8200-8201
 
-Be pushed into lava
-8302-8304
+	Watch John interrupt Jade, Dave
+	8302-8304
 
-Have never been pushed into lava
-8317-8319
-
-Be pushed into lava for the first time, again
-8283-8296
+Narrowly avoid getting pushed into lava
+8283-8285
+	8317-8319
+<==
+8286-8296
 
 Goodbye, Dave
 8522-8524

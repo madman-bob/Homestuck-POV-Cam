@@ -18,8 +18,9 @@ function gettimelineoptions() {
 	var values = {timelinesenabled: timelineoptions};
 	chrome.storage.sync.get(values, function(items) {
 		timelineoptions = items.timelinesenabled;
-		for (group in items.timelinesenabled) {
-			document.getElementById(group).checked = items.timelinesenabled[group];
+		for (var i in groups) {
+			group = groups[i];
+			document.getElementById(group).checked = (items.timelinesenabled[group] != false);
 		}
 	});
 }
@@ -42,8 +43,8 @@ window.onload = function () {
 	}
 	
 	var t = document.getElementById("timelinespanel");
-	for (var group in groups) {
-		timelineoptions[group] = true;
+	for (var i in groups) {
+		group = groups[i];
 		var container = document.createElement("div");
 		var tcheckbox = document.createElement("input");
 		tcheckbox.type = "checkbox";

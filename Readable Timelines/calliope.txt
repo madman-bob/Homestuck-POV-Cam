@@ -1,11 +1,13 @@
-@ Cherubs
+Name: Calliope
+Colour: #929292
+Image: calliope.png
+Group: Cherubs
 
 Land on Earth
 Be found by Gamzee
 Hatch
 Separate into distinct personalities
 Hug Gamzee
-# No 7891 as 6933
 7874-7876
 7882-7886
 7890
@@ -27,6 +29,8 @@ Cheer Jane after she enters
 
 Play chess with Caliborn
 6929-6933
+	7891
+<==
 
 Be pestered by Jane
 6862

@@ -1,4 +1,7 @@
-@ Kids' Guardians
+Name: Grandpa
+Colour: #1F9400
+Image: grandpa.png
+Group: Kids' Guardians
 
 Be created
 3787
@@ -8,7 +11,8 @@ Be created
 
 Be sent to Earth
 3840
-~ jake
+==>
+	~ Jake
 
 Arrive on Earth
 Kill Colonel Sassacre

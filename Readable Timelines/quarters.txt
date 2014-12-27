@@ -1,4 +1,7 @@
-@ The Felt
+Name: Quarters
+Colour: #008140
+Image: ball14.png
+Group: The Felt
 
 Become minion of Caliborn
 Witness intense staredown

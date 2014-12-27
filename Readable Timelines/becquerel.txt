@@ -1,4 +1,7 @@
-@ Kids' Guardians
+Name: Becquerel
+Colour: #FFFFFF
+Image: becquerel.png
+Group: Kids' Guardians
 
 Be created
 3840
@@ -42,6 +45,9 @@ Teleport globe into space
 Prototype self, destroy meteor
 4827
 
+Name: Becsprite
+Group: Kids' Sprites
+
 Destroy uranium imp
 4901-4913
 
@@ -54,4 +60,4 @@ Be controlled by Tavros (reprise)
 Be given irradiated steak
 Become Jadesprite
 5109-5111
-~ jadesprite
+~ Jadesprite

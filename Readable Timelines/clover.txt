@@ -1,4 +1,7 @@
-@ The Felt
+Name: Clover
+Colour: #A357FF
+Image: ball04.png
+Group: The Felt
 
 Become minion of Caliborn
 7846
@@ -8,6 +11,9 @@ Assist Caliborn in his quest
 7965
 8011
 7906
+
+Midnight Crew: Act 1031
+2733
 
 Appear at the strike of four
 3152

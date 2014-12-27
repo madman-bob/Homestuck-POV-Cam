@@ -1,4 +1,7 @@
-@ Alpha Kids
+Name: Jane
+Colour: #00D5F2
+Image: jane.png
+Group: Alpha Kids
 
 Universe starts up
 Play piano
@@ -12,8 +15,10 @@ Look around
 Talk with Jake
 Talk with UU
 Talk with Roxy
-# No 6088 as 6036
-6022-6061
+6022-6036
+	6088
+<==
+6037-6061
 
 Sneak out of house
 Talk with Jake
@@ -57,11 +62,21 @@ Enter.
 6562-6565
 
 Arrive on LOCAH
+Talk with Calliope, Roxy, Jake
 Meet Gamzee
 Witness creation of Tavrisprite, Tavrisplosion
 6720
+	6721
+<==
+	6722
+<==
+	6723
+<==
 6724-6725
 6727-6737
+
+Snooze on Prospit
+6844
 
 Look for dad
 Talk to Lil' Hal, Caliope
@@ -134,7 +149,9 @@ Act 6 Act 5 Act 1 x2 combo
 7770-7774-2
 7778-7782-2
 7786-7792-2
-7798-7808-2
+7798-7802-2
+Colour: #FF0000
+7804-7808-2
 7814-7824-2
 
 Create GCat
@@ -216,6 +233,8 @@ Condesce arrives
 
 GAME OVER
 8801
+
+Colour: #00D5F2
 
 Follow the yellow brick road
 Find Jade, Calliope

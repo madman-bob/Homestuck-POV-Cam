@@ -1,9 +1,15 @@
-@ The Felt
+Name: Cans
+Colour: #950015
+Image: ball15.png
+Group: The Felt
 
 Become minion of Caliborn
 Witness intense staredown
 Punch John out of the panel
 8092-8104
+
+Midnight Crew: Act 1031
+2733
 
 Plow through the wall Kool-Aid Man style.
 Punch DD into next week, HB into another calendar

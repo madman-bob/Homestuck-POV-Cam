@@ -1,4 +1,7 @@
-@ Kids
+Name: Rose
+Colour: #B536DA
+Image: rose.png
+Group: Kids
 
 Be created
 3790-3791
@@ -43,6 +46,9 @@ Be introduced
 Reconnect
 2035-2122
 2124-2146
+
+Start on walkthrough
+2149
 
 Talk to John after he enters
 2156-2170
@@ -190,11 +196,15 @@ Talk to Jaspers, dream Jade
 Try to contact Dave
 3523-3530
 
-~ doomedrose
+==>
+	Talk with Dave
+	3543
 
 Future Dream Rose: Cease to exist.
 Fall asleep
-3553-3556
+3553-3554
+<==
+3555-3556
 
 Be snooped on by John
 3590-3594
@@ -245,7 +255,8 @@ Take apart turtle temple
 Talk with Kanaya
 Ask about the Green Sun
 4582-4592
-# No 4626 as 4592
+	4626
+<==
 4627-4631
 
 Be trolled by Eridan
@@ -371,6 +382,8 @@ Perform civic duty in can town
 Arrive in new session
 Be teleported to LOMAX
 8121-8134
+	R3UN1ON
+	9110-9119
 
 Somehow be on LOLAR
 Start glitching out
@@ -393,6 +406,7 @@ Arrive on LOFAF
 Ask Brain Ghost Dirk what's going on
 Save Roxy
 8650-8655
+8659-8661
 
 Auspisticize between Terezi and Gamzee
 8709-8720

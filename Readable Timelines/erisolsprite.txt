@@ -1,9 +1,12 @@
-@ Trolls
-@ Alpha Kids' Sprites
+Name: Erisolsprite
+Colour: #4AC925
+Image: erisolsprite.png
+Group: Alpha Kids' Sprites
 
 Hate self for being
 7412
 7416
+7573
 
 Witness tricksters
 Be dragged along for the party

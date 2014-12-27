@@ -1,5 +1,7 @@
-@ The Felt
-@ Cherubs
+Name: Lord English
+Colour: #2ED73A
+Image: lordenglish.png
+Group: The Felt
 
 Emerge from Doc Scratch's corpse
 6011

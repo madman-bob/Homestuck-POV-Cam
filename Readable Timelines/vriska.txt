@@ -1,4 +1,7 @@
-@ Trolls
+Name: Vriska
+Colour: #005682
+Image: vriska.png
+Group: Trolls
 
 Shooting star
 5374
@@ -135,7 +138,7 @@ Troll alt-John
 5805-5825
 5849-5853
 
-DOTA # ???
+DOTA
 6715
 
 Punch Hussie in face
@@ -144,8 +147,7 @@ DD: Ascend more casually.
 
 iRRRRRRRRECONCILA8LE
 6729-6733
-~ tavrisprite
-0
+~ Tavrisprite
 
 Decide to fuck shit up
 6738-6740
@@ -173,3 +175,6 @@ Have hair braided by Meenah
 
 Enter Dark Carnival with Meenah
 9063-9070
+
+Watch destruction of dream bubbles with Meenah
+9126-9130

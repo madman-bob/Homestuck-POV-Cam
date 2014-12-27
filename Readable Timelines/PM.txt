@@ -1,6 +1,8 @@
-@ Kids' Exiles
+Name: Parcel Mistress
+Colour: #FFFFFF
+Image: prospitian.png
+Group: Kids' Exiles
 
-Be Parcel Mistress
 2933
 3360-3362
 
@@ -25,7 +27,7 @@ WV?: Rise up.
 Trade crowns for package
 3849-3853
 
-Be Peregrine Mendicant
+Name: Peregrine Mendicant
 3848
 
 See WV go shooting overhead in dersite battleship
@@ -77,7 +79,8 @@ EGG!
 3446-3447
 3510-3511
 
-Be crowned Prospitian Monarch
+Name: Prospitian Monarch
+Be crowned
 3521-3522
 3878-3881
 
@@ -101,6 +104,8 @@ Save WV
 6278-6289
 
 Resume chase
+6681-6687
+6844
 7161
 7210-7226
 7258-7268

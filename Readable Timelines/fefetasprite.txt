@@ -1,5 +1,7 @@
-@ Trolls
-@ Alpha Kids' Sprites
+Name: Fefetasprite
+Colour: #B536DA
+Image: fefetasprite.png
+Group: Alpha Kids' Sprites
 
 Be at Jane's birthday
 7419-7420
@@ -12,5 +14,3 @@ Be found by tricksters
 7646-7661
 
 Dear, sweet precious Fefetasplode
-~ feferi-7852
-~ nepeta-7852

@@ -1,4 +1,7 @@
-@ The Felt
+Name: Fin
+Colour: #FF6000
+Image: ball05.png
+Group: The Felt
 
 Become minion of Caliborn
 7922
