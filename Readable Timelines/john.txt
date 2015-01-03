@@ -602,3 +602,8 @@ Write message on wall
 you don't need him.
 9146-9149
 9151-9163
+
+MURD3R
+Deploy witness at scene of Tavros's murder
+9184-9187
+9189-9201

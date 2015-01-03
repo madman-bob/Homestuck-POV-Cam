@@ -296,6 +296,9 @@ Send letter to meteor
 	Be found by Jane
 	Get excited about making Jane a trollsona
 	9092-9105
+	
+	Listen to story of own disappearance
+	9164-9173
 
 Name: Jade
 # Repeating name as need no-op to separate above split with below split

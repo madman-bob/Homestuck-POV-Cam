@@ -154,6 +154,18 @@ Colour: #FF0000
 7804-7808-2
 7814-7824-2
 
+	Colour: #00D5F2
+	
+	Follow the yellow brick road
+	Find Jade, Calliope
+	Recognise Calliope's symbol
+	Perform expression of in-person friendship: "hug"
+	Consider making trollsona
+	9088-9105
+	
+	Tell story
+	9164-9173
+
 Create GCat
 8178
 
@@ -233,12 +245,3 @@ Condesce arrives
 
 GAME OVER
 8801
-
-Colour: #00D5F2
-
-Follow the yellow brick road
-Find Jade, Calliope
-Recognise Calliope's symbol
-Perform expression of in-person friendship: "hug"
-Consider making trollsona
-9088-9105
