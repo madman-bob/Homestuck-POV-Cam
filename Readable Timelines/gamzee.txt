@@ -87,6 +87,15 @@ Be interrupted by Kanaya
 Lead Terezi into trap
 Taunt Terezi with Lil' Cal
 5618-5641
+	HONK
+	O_O
+	Notice John
+	Be noticed by Terezi
+	9255-9227
+	9229-9235
+	
+	Be tied up by Terezi
+	9237
 
 Have heads on display
 Flip.

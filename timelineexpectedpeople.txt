@@ -60,6 +60,7 @@ equius
 gamzee
 eridan
 feferi
+doomedfeferi
 
 jane
 roxy

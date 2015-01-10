@@ -607,3 +607,15 @@ MURD3R
 Deploy witness at scene of Tavros's murder
 9184-9187
 9189-9201
+
+JUST1C3
+Find Nepeta's corpse
+Plant note blaming Gamzee
+9202-9203
+9205-9218
+
+HONK
+Be noticed by Gamzee
+Honk horn
+9219-9221
+9223-9237

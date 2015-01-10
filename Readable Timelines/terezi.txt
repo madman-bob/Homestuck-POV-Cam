@@ -156,6 +156,8 @@ Investigate crime scene
 5262-5285
 	MURD3R
 	9189-9199
+	9201
+	9203
 
 Tell Karkat of unsettling discovery
 Be blocked by Karkat
@@ -179,11 +181,25 @@ Join others in dream bubble
 5504-5508
 
 Tell Dave of problems
+5597-5610
+	JUST1C3
+	Find note from John
+	9211-9218
+
 Find Nepeta's body
 Eject disc
+5611-5622
+	HONK
+	Notice Gamzee
+	9223-9227
+	9232-9235
+	
+	Tie Gamzee up
+	9237
+
 Scratch disc 2
 Ascend.
-5597-5645
+5623-5645
 
 Flip.
 5660
