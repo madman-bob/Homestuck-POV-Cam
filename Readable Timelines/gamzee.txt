@@ -96,6 +96,9 @@ Taunt Terezi with Lil' Cal
 	
 	Be tied up by Terezi
 	9237
+	
+	FL1P
+	9264-9288
 
 Have heads on display
 Flip.

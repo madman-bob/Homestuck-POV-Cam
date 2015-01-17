@@ -76,6 +76,10 @@ Wake up
 Talk to Terezi
 5376-5378
 
+	FL1P
+	wh0's talking.
+	9280-9288
+
 Goto roof
 5744-5746
 5748

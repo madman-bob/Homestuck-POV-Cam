@@ -196,6 +196,10 @@ Eject disc
 	
 	Tie Gamzee up
 	9237
+	
+	FL1P
+	Be interrupted before killing Vriska
+	9264-9288
 
 Scratch disc 2
 Ascend.

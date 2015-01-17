@@ -123,14 +123,26 @@ Flip.
 5660
 5670-5677
 
-View alt-Vriska
-5697-5707
-5710-5714
-5720-5737
+======>
+	View alt-Vriska
+	5697-5707
+	5710-5714
+	5720-5734
+
+5736
+
+	FL1P
+	John????????
+	Be knocked out
+	9264-9288
+
+Be killed by Terezi
+5737
 
 Say goodbye to John
-Have death judged
 5594
+
+Have death judged
 5750-5763
 
 Troll alt-John
