@@ -168,6 +168,9 @@ Colour: #FF0000
 	
 	Talk of unanticipated factor
 	9255-9258
+	
+	Be told of unexpected leader
+	9305-9307
 
 Create GCat
 8178

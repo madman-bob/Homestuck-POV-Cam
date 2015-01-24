@@ -135,6 +135,9 @@ Flip.
 	John????????
 	Be knocked out
 	9264-9288
+	
+	Put Jade to sleep
+	9305-9307
 
 Be killed by Terezi
 5737

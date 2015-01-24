@@ -300,6 +300,9 @@ Send letter to meteor
 	Listen to story of own disappearance
 	9164-9173
 	9255-9258
+	
+	Recall unexpected leader
+	9305-9307
 
 Name: Jade
 # Repeating name as need no-op to separate above split with below split

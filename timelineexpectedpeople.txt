@@ -72,6 +72,10 @@ fefetasprite
 arquiusprite
 erisolsprite
 
+damara
+rufioh
+mituna
+kankri
 aranea
 meenah
 

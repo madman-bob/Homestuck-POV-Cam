@@ -89,6 +89,8 @@ function modifypage() {
 		pageno = 7680;
 	} else if (document.location.pathname == "/GAMEOVER/") {
 		pageno = 8801;
+	} else if (document.location.pathname == "/shes8ack/") {
+		pageno = 9305;
 	} else {
 		pageno = parseInt(document.location.search.slice(7));
 	}
