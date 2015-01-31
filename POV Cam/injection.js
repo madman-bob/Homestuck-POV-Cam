@@ -138,7 +138,7 @@ function modifypage() {
 		outercontainer = outercontainer.parentElement;
 	}
 	
-	chrome.storage.sync.get({timelinesenabled: {}, autoopenpesterlog: "no", arrownavigation: "no", docscratchtext: "no", disableletext: "no", flashcontrols: "no"}, function(items) {
+	chrome.storage.sync.get({timelinesenabled: {}, autoopenpesterlog: "no", arrownavigation: "no", docscratchtext: "no", disableletext: "no", preretcon: "no", flashcontrols: "no"}, function(items) {
 		// Add links to page
 		for (var i in timelines[pageno]) {
 			var currentgroup = groups[timelines[pageno][i][3]];
@@ -191,6 +191,29 @@ function modifypage() {
 		// Give Lord English colourful links
 		if (items.disableletext == "no") {
 			lordenglishinit();
+		}
+		
+		// View pre-retcon pages
+		if (items.preretcon == "yes") {
+			sheet.addRule('img.preretcon:hover', 'opacity: 0;');
+			var currentimages = document.querySelectorAll("img[src*='retcon'");
+			for (var i = 0; i < currentimages.length; i ++) {
+				var doubleimagecontainer = document.createElement("div");
+				doubleimagecontainer.style.display = "inline-block";
+				doubleimagecontainer.style.position = "relative";
+				currentimages[i].parentElement.insertBefore(doubleimagecontainer, currentimages[i]);
+				doubleimagecontainer.appendChild(currentimages[i]);
+				
+				var preretconimg = document.createElement("img");
+				preretconimg.src = currentimages[i].src.replace("_retcon", "").replace("retcon", "");
+				preretconimg.style.position = "absolute";
+				preretconimg.style.top = 0;
+				preretconimg.style.left = 0;
+				preretconimg.className = "preretcon";
+				preretconimg.style.transition = "opacity 0.3s";
+				
+				doubleimagecontainer.appendChild(preretconimg);
+			}
 		}
 		
 		// Flash controls
