@@ -423,3 +423,7 @@ GAME OVER
 Be carried by Roxy to LOPAN
 Bleed out
 8863-8881
+
+	Appear in front of Caliborn
+	Be sucked into juju
+	9318-9325

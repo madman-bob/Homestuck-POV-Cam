@@ -217,3 +217,10 @@ Reunite with Frigglisprite
 Hold John's hand
 Be returned to narrative
 9289-9304
+
+	Appear in front of Caliborn
+	Witness bisection of Gamzee
+	Be defeated
+	Witness defeat of Caliborn
+	Banish Lil' Cal into the void
+	9318-9345

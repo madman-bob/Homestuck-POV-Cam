@@ -61,7 +61,11 @@ Beat Gamzee with crowbar
 Beat tower with crowbar
 Be given keys by Gamzee
 Unlock monitors showing Jake, Dirk, Roxy, Jane, Jack
-7340-7410
+7340-7389
+Colour: #126628
+7390
+Colour: #2ED73A
+7391-7410
 
 Jeer Jane
 7450-7456
@@ -128,3 +132,11 @@ GAME OVER
 
 Return to basics
 8821-8843
+
+Finish telling masterpiece
+Be ambushed by 8 kids
+Use superior weapon
+Defeat kids
+Be surprised by hope field
+Have soul shoved into Lil' Cal
+9309-9347

@@ -32,6 +32,8 @@ Change pesterchum handle
 Be introduced
 Mess around
 1901-2032
+	3560-3561
+<==
 3562
 
 Get trapped in room
@@ -629,3 +631,7 @@ Return to LOWAS
 Hold Roxy's hand
 Return LOWAS to narrative
 9289-9304
+
+	Appear in front of Caliborn
+	Be sucked into juju
+	9318-9325

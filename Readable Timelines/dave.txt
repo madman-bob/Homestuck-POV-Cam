@@ -85,7 +85,9 @@ Duel Bro
 2657
 2736
 2771
-2970-2972
+2970
+Image: davescratch.png
+2971-2972
 
 Mourn loss of Lil' Cal
 2982-2987
@@ -393,3 +395,7 @@ Chase dogs
 
 GAME OVER
 8801
+
+	Appear in front of Caliborn
+	Be sucked into juju
+	9318-9325

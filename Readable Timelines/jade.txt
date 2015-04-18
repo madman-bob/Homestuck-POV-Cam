@@ -392,3 +392,7 @@ Be KO'd by Jake
 Be killed by Aranea
 Have death be registered as just by intervention from Aranea
 8525-8552
+
+	Appear in front of Caliborn
+	Be sucked into juju
+	9318-9325

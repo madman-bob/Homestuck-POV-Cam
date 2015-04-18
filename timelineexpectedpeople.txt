@@ -13,6 +13,7 @@ dad
 nanna
 mom
 bro
+lilcal
 grandpa
 becquerel
 

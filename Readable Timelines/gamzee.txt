@@ -109,9 +109,14 @@ Shoosh, pap
 Become Karkat's moirail
 5746-5748
 5985-5995
+6004
 
 Cascade
 6009
+
+	The most important character in Homestuck fondly regards the miracle of a new beginning.
+	5118-5119
+<======
 
 Meet friends
 6225-6231
@@ -175,7 +180,6 @@ Be with Caliborn just before he conquers his final planet
 
 Receive Lil' Cal from Caliborn
 Go back to B2
-Send Lil' Cal to B2 Jack
 7708
 7576
 7579-7582
@@ -231,3 +235,8 @@ Condesce arrives
 
 GAME OVER
 8801
+
+	# Where should this go?
+	Be bisected
+	Have 1/2 soul shoved in Lil' Cal
+	9312-9344

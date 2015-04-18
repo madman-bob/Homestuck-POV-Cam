@@ -84,12 +84,13 @@ Goto roof
 5744-5746
 5748
 
-Attempt rare and highly dangerous 5x SHOWDOWN COMBO.
-5985
+Shoosh, pap
+5985-5995
 6004
 
-Join Aradia by Green Sun
-5898-5901
+	Join Aradia by Green Sun
+	5898-5901
+<======
 
 Cascade
 6009
