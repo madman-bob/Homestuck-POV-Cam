@@ -130,6 +130,12 @@ Name: The Mayor
 Be healed, re-found can town
 6588-6591
 
+	Meteor montage
+	9349
+	
+	shes 8ack
+	9305-9307
+
 Sleepwalking Roxy
 6884-6888
 

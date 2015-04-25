@@ -1,0 +1,7 @@
+Name: Tavrosprite
+Colour: #0715CD
+Image: tavrosprite.png
+Group: Alpha Kids' Sprites
+
+Be created by Vriska
+9349

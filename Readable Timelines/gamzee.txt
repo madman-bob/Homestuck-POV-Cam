@@ -99,6 +99,9 @@ Taunt Terezi with Lil' Cal
 	
 	FL1P
 	9264-9288
+	
+	Meteor montage
+	9349
 
 Have heads on display
 Flip.

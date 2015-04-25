@@ -136,6 +136,9 @@ Flip.
 	Be knocked out
 	9264-9288
 	
+	Meteor montage
+	9349
+	
 	Put Jade to sleep
 	9305-9307
 
@@ -196,3 +199,6 @@ Watch destruction of dream bubbles with Meenah
 
 Haha!
 9238-9253
+
+Meet live self
+9349

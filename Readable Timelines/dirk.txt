@@ -116,6 +116,11 @@ Adventure
 Message Jake
 7413-7414
 
+	Consider prototyping Lil' Hal
+	Meet Vriska, Equiusprite
+	Create ARquiusprite
+	9349
+
 Consider prototyping Lil' Hal
 Meet Equiusprite
 Create ARquiusprite

@@ -200,6 +200,12 @@ Eject disc
 	FL1P
 	Be interrupted before killing Vriska
 	9264-9288
+	
+	Meteor montage
+	9349
+	
+	shes 8ack
+	9305-9307
 
 Scratch disc 2
 Ascend.

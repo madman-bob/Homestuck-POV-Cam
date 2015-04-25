@@ -61,6 +61,25 @@ Have dream self protected by WQ
 Enter.
 6562-6565
 
+	Meet Tavrosprite
+	9349
+	
+	Follow the yellow brick road
+	Find Jade, Calliope
+	Recognise Calliope's symbol
+	Perform expression of in-person friendship: "hug"
+	Consider making trollsona
+	9088-9105
+	
+	Tell story
+	9164-9173
+	
+	Talk of unanticipated factor
+	9255-9258
+	
+	Be told of unexpected leader
+	9305-9307
+
 Arrive on LOCAH
 Talk with Calliope, Roxy, Jake
 Meet Gamzee
@@ -153,24 +172,6 @@ Act 6 Act 5 Act 1 x2 combo
 Colour: #FF0000
 7804-7808-2
 7814-7824-2
-
-	Colour: #00D5F2
-	
-	Follow the yellow brick road
-	Find Jade, Calliope
-	Recognise Calliope's symbol
-	Perform expression of in-person friendship: "hug"
-	Consider making trollsona
-	9088-9105
-	
-	Tell story
-	9164-9173
-	
-	Talk of unanticipated factor
-	9255-9258
-	
-	Be told of unexpected leader
-	9305-9307
 
 Create GCat
 8178
