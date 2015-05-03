@@ -218,6 +218,16 @@ Hold John's hand
 Be returned to narrative
 9289-9304
 
+Arrive in narrative
+Notice Rose
+Hug Rose
+9363-9377
+9381
+
+	Character select screen
+	9386
+<====
+
 	Appear in front of Caliborn
 	Witness bisection of Gamzee
 	Be defeated

@@ -141,6 +141,15 @@ Flip.
 	
 	Put Jade to sleep
 	9305-9307
+	
+	Wait for arrival of John, Roxy
+	Greet arrival of John, Roxy
+	9350-9377
+	9379-9380
+	
+		Character select screen
+		9386
+	<====
 
 Be killed by Terezi
 5737

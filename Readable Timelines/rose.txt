@@ -334,6 +334,15 @@ Cascade
 	
 	shes 8ack
 	9305-9307
+	
+	Wait for arrival of John, Roxy
+	Be hugged by Roxy
+	9350-9377
+	9381
+	
+		Character select screen
+		9386
+	<====
 
 Meet friends
 6231

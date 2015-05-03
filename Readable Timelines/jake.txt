@@ -163,6 +163,15 @@ Be beaten up by Jane
 Be taken to Derse
 7814-7824-2
 
+	Wait for arrival of John, Roxy
+	Nervously talk with John
+	9350-9377
+	9382
+	
+		Character select screen
+		9386
+	<====
+
 Glitch out
 Have glitches fixed by John
 Be intimidated by Jane in Derse cell

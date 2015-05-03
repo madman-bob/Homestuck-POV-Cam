@@ -3,6 +3,13 @@ Colour: #E00707
 Image: arquiusprite.png
 Group: Alpha Kids' Sprites
 
+	Attempt to remove tiaratop from Jane
+	9350-9377
+	
+		Character select screen
+		9386
+	<====
+
 7547-7554
 Name: ARquiusprite
 7555-7557
@@ -18,7 +25,7 @@ Glitch out
 It is exceeding a certain amount in quantity
 8501-8505
 
-Surprise Caliborn
-Get caught in crossfire
-Have soul shoved in Lil' Cal
-9340-9344
+	Surprise Caliborn
+	Get caught in crossfire
+	Have soul shoved in Lil' Cal
+	9340-9344

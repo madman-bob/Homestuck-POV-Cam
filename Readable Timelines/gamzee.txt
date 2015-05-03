@@ -102,6 +102,10 @@ Taunt Terezi with Lil' Cal
 	
 	Meteor montage
 	9349
+	
+	Be locked in fridge
+	9359
+	9362
 
 Have heads on display
 Flip.

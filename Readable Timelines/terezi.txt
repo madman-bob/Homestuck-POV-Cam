@@ -206,6 +206,16 @@ Eject disc
 	
 	shes 8ack
 	9305-9307
+	
+	Wait for arrival of John, Roxy
+	9350-9377
+	
+	Admit to John that future self was probably messing with him
+	9379-9380
+	
+		Character select screen
+		9386
+	<====
 
 Scratch disc 2
 Ascend.

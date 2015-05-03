@@ -167,6 +167,17 @@ Apologise for giving Bilious Slick cancer
 	
 	shes 8ack
 	9305-9307
+	
+	Wait for arrival of John, Roxy
+	9350-9377
+	9383-9385
+	
+		Character select screen
+		9386
+	<====
+	
+	Talk with John
+	9387-9392
 
 See Terezi kill Vriska
 5741-5748

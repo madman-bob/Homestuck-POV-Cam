@@ -5,3 +5,11 @@ Group: Alpha Kids' Sprites
 
 Be created by Vriska
 9349
+
+Wait for arrival of John, Roxy
+9350-9377
+9382
+
+	Character select screen
+	9386
+<====
