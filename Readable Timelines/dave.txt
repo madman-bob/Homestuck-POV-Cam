@@ -315,6 +315,11 @@ Cascade
 	
 	Talk with John
 	9387-9392
+	
+	Talk with Rose, Roxy
+	Meet Rosesprite
+	9396
+	9402-9407
 
 Arrive on meteor
 Level up

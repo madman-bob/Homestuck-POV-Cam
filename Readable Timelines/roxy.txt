@@ -228,6 +228,18 @@ Hug Rose
 	9386
 <====
 
+Get to know Rose
+Be joined by Dave
+9393-9396
+
+Interrogate Dave
+Meet Rosesprite
+9402-9403
+	Wave at Jake
+	9397
+<====
+9404-9407
+
 	Appear in front of Caliborn
 	Witness bisection of Gamzee
 	Be defeated

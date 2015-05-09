@@ -343,6 +343,12 @@ Cascade
 		Character select screen
 		9386
 	<====
+	
+	Get to know Roxy
+	Be joined by Dave
+	Meet Rosesprite
+	9393-9396
+	9402-9407
 
 Meet friends
 6231
@@ -438,6 +444,8 @@ GAME OVER
 Be carried by Roxy to LOPAN
 Bleed out
 8863-8881
+
+~ Rosesprite
 
 	Appear in front of Caliborn
 	Be sucked into juju

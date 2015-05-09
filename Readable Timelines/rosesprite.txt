@@ -1,0 +1,7 @@
+Name: Rosesprite
+Colour: #B536DA
+Image: rosesprite.png
+Group: Alpha Kids' Sprites
+
+Arrive on frog platform
+9404-9407

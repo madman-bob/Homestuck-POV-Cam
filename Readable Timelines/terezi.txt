@@ -216,6 +216,9 @@ Eject disc
 		Character select screen
 		9386
 	<====
+	
+	Talk with Vriska
+	9400-9401
 
 Scratch disc 2
 Ascend.

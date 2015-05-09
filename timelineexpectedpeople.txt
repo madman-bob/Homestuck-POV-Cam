@@ -71,6 +71,7 @@ jake
 tavrisprite
 tavrosprite
 fefetasprite
+rosesprite
 arquiusprite
 erisolsprite
 

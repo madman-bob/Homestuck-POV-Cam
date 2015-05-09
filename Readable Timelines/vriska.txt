@@ -150,6 +150,18 @@ Flip.
 		Character select screen
 		9386
 	<====
+	
+	Talk with Terezi
+	9400-9401
+	
+	Talk with Tavrosprite, Jape
+	9398-9399
+	
+	Talk with Kanaya, Karkat
+	9408
+	
+	Give advise to Rose
+	9404-9405
 
 Be killed by Terezi
 5737

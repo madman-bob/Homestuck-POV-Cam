@@ -13,3 +13,7 @@ Wait for arrival of John, Roxy
 	Character select screen
 	9386
 <====
+
+Talk with Jake
+Be insulted by Vriska
+9397-9399

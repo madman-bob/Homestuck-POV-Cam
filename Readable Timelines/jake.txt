@@ -171,6 +171,11 @@ Be taken to Derse
 		Character select screen
 		9386
 	<====
+	
+	Pretend to talk with Tavrosprite
+	Wave at Roxy
+	Be joined by Vriska
+	9397-9399
 
 Glitch out
 Have glitches fixed by John
