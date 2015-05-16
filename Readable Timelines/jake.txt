@@ -176,6 +176,12 @@ Be taken to Derse
 	Wave at Roxy
 	Be joined by Vriska
 	9397-9399
+	
+	Talk with John
+	9413-9414
+	
+	Be assigned to fight Ro8o Jack
+	9415-9455
 
 Glitch out
 Have glitches fixed by John

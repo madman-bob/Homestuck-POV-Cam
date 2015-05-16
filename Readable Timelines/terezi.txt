@@ -219,6 +219,12 @@ Eject disc
 	
 	Talk with Vriska
 	9400-9401
+	
+	Be joined by Dave
+	9410-9412
+	
+	Be assigned to fight Lord Jack
+	9415-9455
 
 Scratch disc 2
 Ascend.

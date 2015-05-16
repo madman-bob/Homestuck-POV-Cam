@@ -106,6 +106,7 @@ Taunt Terezi with Lil' Cal
 	Be locked in fridge
 	9359
 	9362
+	9410
 
 Have heads on display
 Flip.

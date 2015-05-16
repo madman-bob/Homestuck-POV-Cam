@@ -162,6 +162,29 @@ Flip.
 	
 	Give advise to Rose
 	9404-9405
+	
+	Tell Dave to relax
+	Refuse to let Gamzee out of fridge
+	Leave Strider Express to its own devices
+	9410-9412
+	
+	Bring tactical meeting back to order
+	Sum up adversaries
+	Assign roles:
+	- Rosesprite: Scatter window portals
+	- Roxy, Rose, John: )(IC
+	- Jade: Dog Jack
+	- Dave, Terezi, Dirk (probably): Lord Jack
+	- Joke: Ro8o Jack
+	- Kanaya, Karkat: Echidna
+	Hand Earth to John
+	- Self: Lord English
+	Get fed up with Dave's moaning
+	Expedite matters
+	Shoot Dirk
+	Introduce Strider to Strider
+	Jump into void
+	9415-9453
 
 Be killed by Terezi
 5737

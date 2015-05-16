@@ -3,12 +3,20 @@ Colour: #E00707
 Image: arquiusprite.png
 Group: Alpha Kids' Sprites
 
+	Name: ARquiusprite
+	
 	Attempt to remove tiaratop from Jane
 	9350-9377
 	
 		Character select screen
 		9386
 	<====
+	
+	Talk with Dave
+	9410-9412
+	
+	Be assigned to do what you think appropriate
+	9415-9455
 
 7547-7554
 Name: ARquiusprite

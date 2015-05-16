@@ -120,6 +120,11 @@ Message Jake
 	Meet Vriska, Equiusprite
 	Create ARquiusprite
 	9349
+	
+	Enter window portal, shot by Vriska
+	Arrive on frog platform
+	Be introduced to Dave
+	9446-9455
 
 Consider prototyping Lil' Hal
 Meet Equiusprite

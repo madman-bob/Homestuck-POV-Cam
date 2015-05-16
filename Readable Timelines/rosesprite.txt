@@ -5,3 +5,6 @@ Group: Alpha Kids' Sprites
 
 Arrive on frog platform
 9404-9407
+
+Be assigned to scatter window portals
+9415-9455

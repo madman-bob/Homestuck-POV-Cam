@@ -320,6 +320,16 @@ Cascade
 	Meet Rosesprite
 	9396
 	9402-9407
+	
+	Talk with ARquiusprite
+	Suggest letting Gamzee out of fridge
+	Continue with Freudian slips
+	9410-9412
+	
+	Be assigned to fight Lord Jack
+	Annoy Vriska
+	Be introduced to Dirk
+	9415-9455
 
 Arrive on meteor
 Level up

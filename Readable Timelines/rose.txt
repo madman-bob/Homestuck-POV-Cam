@@ -349,6 +349,12 @@ Cascade
 	Meet Rosesprite
 	9393-9396
 	9402-9407
+	
+	Question if Dave's talking inappropriately about Jane
+	9412
+	
+	Be assigned to fight )(IC
+	9415-9455
 
 Meet friends
 6231
