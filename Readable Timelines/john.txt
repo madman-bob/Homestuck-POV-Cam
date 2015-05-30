@@ -653,7 +653,12 @@ Compliment Vriska's strategic analysis
 Be assigned to fight )(IC
 Be given Earth, to pass on to Jade
 Ask Vriska her role
-9415-9455
+9415-9460
+
+Witness disobedience of Jane
+Meet Jane
+Witness creation of Jasprosesprite^2
+9482-9492
 
 	Appear in front of Caliborn
 	Be sucked into juju

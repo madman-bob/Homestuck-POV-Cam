@@ -72,6 +72,7 @@ tavrisprite
 tavrosprite
 fefetasprite
 rosesprite
+jasprosesprite2
 arquiusprite
 erisolsprite
 

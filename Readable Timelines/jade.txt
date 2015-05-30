@@ -303,6 +303,15 @@ Send letter to meteor
 	
 	Recall unexpected leader
 	9305-9307
+	
+	Fall through spiral
+	Arrive on yellow brick road
+	Enter memory of Echidna's lair
+	Witness Jane's disappearance
+	9461-9481
+	
+	Be greeted by other Calliope
+	9493-9499
 
 Name: Jade
 # Repeating name as need no-op to separate above split with below split

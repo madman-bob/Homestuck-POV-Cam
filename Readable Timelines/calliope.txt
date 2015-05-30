@@ -96,3 +96,16 @@ Ask Jane to tell story
 
 Listen to Jade
 9305-9307
+
+Fall through spiral
+Arrive on yellow brick road
+Enter memory of Echidna's lair
+Witness Jane's disappearance
+9461-9481
+
+Meet Calliope
+9493-9499
+
+	Colour: #FF0000
+	Welcome Jade back
+	9496-9499

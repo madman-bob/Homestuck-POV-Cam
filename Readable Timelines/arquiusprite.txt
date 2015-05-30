@@ -16,7 +16,11 @@ Group: Alpha Kids' Sprites
 	9410-9412
 	
 	Be assigned to do what you think appropriate
-	9415-9455
+	9415-9460
+	
+	Finish removing tiaratop from Jane
+	Fly off dramatically
+	9482-9484
 
 7547-7554
 Name: ARquiusprite

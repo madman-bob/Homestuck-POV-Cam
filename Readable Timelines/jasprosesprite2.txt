@@ -1,0 +1,7 @@
+Name: Jasprosesprite^2
+Colour: #B536DA
+Image: jasprosesprite2.png
+Group: Alpha Kids' Sprites
+
+Meow meow motherfuckers.
+9490-9492

@@ -224,7 +224,11 @@ Eject disc
 	9410-9412
 	
 	Be assigned to fight Lord Jack
-	9415-9455
+	9415-9460
+	
+	Witness disobedience of Jane
+	Witness creation of Jasprosesprite^2
+	9482-9492
 
 Scratch disc 2
 Ascend.

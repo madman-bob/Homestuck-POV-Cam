@@ -79,6 +79,15 @@ Enter.
 	
 	Be told of unexpected leader
 	9305-9307
+	
+	Fall through spiral
+	Arrive on yellow brick road
+	Enter memory of Echidna's lair
+	Wake up
+	Reunite with Roxy
+	Meet John
+	Witness creation of Jasprosesprite^2
+	9461-9492
 
 Arrive on LOCAH
 Talk with Calliope, Roxy, Jake

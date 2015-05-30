@@ -7,12 +7,12 @@ patterns = {
 	"Pages": re.compile("^\d+(-\d+(-2)?)?$"),
 	"==>": re.compile("^=+>$"),
 	"<==": re.compile("^<=+$"),
-	"GOTO": re.compile("^~\s*[A-Z0-9_ ]+$", re.IGNORECASE),
-	"Name": re.compile("^Name:\s*[A-Z ()']+$", re.IGNORECASE),
+	"GOTO": re.compile("^~\s*[\w ()'^]+$", re.IGNORECASE),
+	"Name": re.compile("^Name:\s*[\w ()'^]+$", re.IGNORECASE),
 	"Colour": re.compile("^Colour:\s*#[0-9A-F]{6}$", re.IGNORECASE),
 	"Image": re.compile("^Image:\s*\w+\.\w+$", re.IGNORECASE),
-	"Group": re.compile("^Group:\s*[A-Z ()']+$", re.IGNORECASE),
-	"Caption": re.compile("^Caption:\s*[A-Z0-9_ ]+$", re.IGNORECASE)
+	"Group": re.compile("^Group:\s*[\w ()']+$", re.IGNORECASE),
+	"Caption": re.compile("^Caption:\s*[\w ]+$", re.IGNORECASE)
 }
 
 def parsePersonFile(fileLocation):
