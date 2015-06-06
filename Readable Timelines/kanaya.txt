@@ -165,6 +165,12 @@ Talk with Jade about her breeding attempts
 	
 	Be assigned to meet Echidna
 	9415-9460
+	
+	Leave Echidna's lair
+	Discuss duties with Karkat
+	Admit agreeing to protect Karkat
+	Knock Karkat unconscious
+	9535-9546
 
 Meet up on roof
 5741-5748

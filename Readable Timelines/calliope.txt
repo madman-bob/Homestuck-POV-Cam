@@ -104,8 +104,20 @@ Witness Jane's disappearance
 9461-9481
 
 Meet Calliope
-9493-9499
+Talk with Calliope in private
+Have disguise removed by Calliope
+Listen to Calliope's story of how she died
+Be told to live
+9493-9522
+
+Be surprised by Roxy
+Return to life
+9523-9534
 
 	Colour: #FF0000
 	Welcome Jade back
-	9496-9499
+	Talk with Calliope in private
+	Remove Calliope's disguise
+	Tell Calliope of own death
+	Tell Calliope to live
+	9496-9521

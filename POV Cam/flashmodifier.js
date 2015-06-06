@@ -55,7 +55,8 @@ flashlengths = {
 
 function initFlashControls() {
 	var x = document.embeds;
-	if ((x.length > (document.location.pathname == "/trickster.php")) && (flashlengths[pageno] != -1)) {
+	if ((x.length > (document.location.pathname == "/trickster.php" || document.location.pathname == "/index_hscrollb.php"))
+		&& (flashlengths[pageno] != -1)) {
 		var flash = x[x.length - 1];
 		addFlashControls(flash);
 	}

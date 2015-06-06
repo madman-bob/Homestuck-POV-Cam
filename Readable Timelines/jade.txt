@@ -311,7 +311,10 @@ Send letter to meteor
 	9461-9481
 	
 	Be greeted by other Calliope
-	9493-9499
+	Wait for Calliope, Calliope
+	9493-9504
+	
+	9519-9521
 
 Name: Jade
 # Repeating name as need no-op to separate above split with below split

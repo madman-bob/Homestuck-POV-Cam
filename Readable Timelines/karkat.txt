@@ -189,6 +189,12 @@ Apologise for giving Bilious Slick cancer
 	Be put on drawing duty
 	Be assigned to visit Echidna
 	9415-9460
+	
+	Leave Echidna's lair
+	Discuss Blood, and need to fight
+	Be told Kanaya agreed to protect you
+	Be knocked unconscious by Kanaya
+	9535-9544
 
 See Terezi kill Vriska
 5741-5748

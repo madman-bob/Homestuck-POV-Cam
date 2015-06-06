@@ -251,6 +251,11 @@ Reunite with Jane
 Witness creation of Jasprosesprite^2
 9482-9492
 
+Surprise Calliope with ring
+Return Calliope to life
+Do voidy thing
+9523-9534
+
 	Appear in front of Caliborn
 	Witness bisection of Gamzee
 	Be defeated
