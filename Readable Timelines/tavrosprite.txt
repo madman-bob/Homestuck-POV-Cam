@@ -24,3 +24,6 @@ Have allergies set off by Jaspersprite
 Offer to assist Jape
 Be assigned to something else by Vriska
 9415-9460
+
+Be found by Jasprosesprite^2
+9562-9568

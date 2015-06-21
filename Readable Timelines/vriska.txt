@@ -185,6 +185,10 @@ Flip.
 	Introduce Strider to Strider
 	Jump into void
 	9415-9453
+	
+	*Cough.*
+	I'm going to need that treasure.
+	9590-9592
 
 Be killed by Terezi
 5737
@@ -244,5 +248,15 @@ Watch destruction of dream bubbles with Meenah
 Haha!
 9238-9253
 
+Name: (Vriska)
+
 Meet live self
 9349
+
+	Character select
+	9586
+<====
+Admit to being turned on around horses
+Ask what to do today
+Be interrupted by Vriska
+9587-9592

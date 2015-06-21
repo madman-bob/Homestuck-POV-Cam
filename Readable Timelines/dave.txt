@@ -330,6 +330,16 @@ Cascade
 	Annoy Vriska
 	Be introduced to Dirk
 	9415-9460
+	
+	Be found by Jasprosesprite^2
+	...
+	9557-9561
+	
+		Character select
+		9572
+	<====
+	Have awkward conversation with Dirk
+	9573-9580
 
 Arrive on meteor
 Level up

@@ -125,6 +125,16 @@ Message Jake
 	Arrive on frog platform
 	Be introduced to Dave
 	9446-9460
+	
+	Be found by Jasprosesprite^2
+	...
+	9557-9561
+	
+		Character select
+		9572
+	<====
+	Have awkward conversation with Dave
+	9573-9580
 
 Consider prototyping Lil' Hal
 Meet Equiusprite

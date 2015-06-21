@@ -114,6 +114,22 @@ Be surprised by Roxy
 Return to life
 9523-9534
 
+Be greeted by Jasprosesprite^2
+:O
+9547-9551
+
+Y34H, SH3'S JUST GONN4 BR1NG N3P3T4 B4CK 1SN'T SH3
+9569-9571
+
+	Character select
+	9581
+<====
+Be introduced
+Be flattered and insulted
+Be informed of ripped brother's cape
+Consider what you'll do next
+9582-9585
+
 	Colour: #FF0000
 	Welcome Jade back
 	Talk with Calliope in private
