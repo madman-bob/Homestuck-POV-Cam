@@ -674,6 +674,18 @@ Flatter Calliope
 Inform Calliope of ripped brother's cape
 9582-9585
 
+	Character select
+	9596
+<====
+Talk with Jane, Rose
+Be called a N333RD by Terezi
+<3<
+9597-9599
+
+Notice reappearence of Jasprosesprite^2
+Witness Jane being taken away by Jasprosesprite^2
+9614-9616
+
 	Appear in front of Caliborn
 	Be sucked into juju
 	9318-9325

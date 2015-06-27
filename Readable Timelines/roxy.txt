@@ -270,6 +270,25 @@ Introduce Calliope
 Flatter Calliope
 9582-9585
 
+	Character select
+	9593
+<====
+Ask Calliope to help make egg
+9594-9595
+
+	Character select
+	9600
+<====
+EGG!
+9601-9612
+
+	Character select
+	9625
+<====
+Take Calliope to LOFAF
+Ask Calliope to look after Jade, the Mayor
+9626-9632
+
 	Appear in front of Caliborn
 	Witness bisection of Gamzee
 	Be defeated

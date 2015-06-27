@@ -130,6 +130,22 @@ Be informed of ripped brother's cape
 Consider what you'll do next
 9582-9585
 
+	Character select
+	9593
+<====
+Try to be useful
+9594-9595
+
+EGG!
+9601-9612
+
+	Character select
+	9625
+<====
+Be taken to LOFAF by Roxy
+Be asked to look after Jade, the Mayor
+9626-9632
+
 	Colour: #FF0000
 	Welcome Jade back
 	Talk with Calliope in private

@@ -375,6 +375,16 @@ Cascade
 	Be introduced to Calliope
 	Try to work out how Calliope fits into this
 	9582-9585
+	
+		Character select
+		9596
+	<====
+	Talk with John
+	9597-9599
+	
+	Notice reappearence of Jasprosesprite^2
+	Witness Jane being taken away by Jasprosesprite^2
+	9614-9616
 
 Meet friends
 6231

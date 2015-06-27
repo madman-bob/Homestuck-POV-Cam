@@ -101,6 +101,20 @@ Enter.
 	Be introduced to Calliope
 	Flatter Calliope
 	9582-9585
+	
+		Character select
+		9596
+	<====
+	Talk with John
+	9597-9599
+	
+		Character select
+		9613
+	<====
+	Notice Jasprosesprite^2 reappear
+	Be taken to LOCAH by Japrosesprite^2
+	Be introduced to Nannasprite
+	9614-9624
 
 Arrive on LOCAH
 Talk with Calliope, Roxy, Jake
