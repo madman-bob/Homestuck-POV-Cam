@@ -340,6 +340,16 @@ Cascade
 	<====
 	Have awkward conversation with Dirk
 	9573-9580
+	
+		Character select
+		9633
+	<====
+	Confirm which version of Jack Noir you're fighting
+	...
+	Talk with Dirk about alternate selves
+	...
+	Actually talk with Dirk
+	9634-9665
 
 Arrive on meteor
 Level up

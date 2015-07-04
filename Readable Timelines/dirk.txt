@@ -135,6 +135,16 @@ Message Jake
 	<====
 	Have awkward conversation with Dave
 	9573-9580
+	
+		Character select
+		9633
+	<====
+	Confirm which version of Jack Noir you're fighting
+	...
+	Talk with Dave about alternate selves
+	...
+	Actually talk with Dave
+	9634-9665
 
 Consider prototyping Lil' Hal
 Meet Equiusprite

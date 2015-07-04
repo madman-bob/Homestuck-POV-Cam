@@ -72,3 +72,10 @@ Admit to being turned on around horses
 Ask what to do today
 Be interrupted by Vriska
 9587-9592
+
+	Character select (sorta)
+	9684
+<====
+Break up with (Vriska)
+Leave with Vriska
+9685-9703

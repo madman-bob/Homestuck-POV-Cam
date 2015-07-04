@@ -189,6 +189,14 @@ Flip.
 	*Cough.*
 	I'm going to need that treasure.
 	9590-9592
+	
+		Character select (sorta)
+		9684
+	<====
+	Call (Vriska) a loser
+	Verbally attack (Vriska)
+	Take Meenah
+	9685-9703
 
 Be killed by Terezi
 5737
@@ -260,3 +268,11 @@ Admit to being turned on around horses
 Ask what to do today
 Be interrupted by Vriska
 9587-9592
+
+	Character select (sorta)
+	9684
+<====
+Be called a loser
+Be verbally attacked by Vriska
+Be broken up with by Meenah
+9685-9703

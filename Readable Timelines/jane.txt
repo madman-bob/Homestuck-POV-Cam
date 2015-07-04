@@ -115,6 +115,13 @@ Enter.
 	Be taken to LOCAH by Japrosesprite^2
 	Be introduced to Nannasprite
 	9614-9624
+	
+		Character select
+		9704
+	<====
+	Talk with Nannasprite
+	Meet Nannaspritex2
+	9705-9709
 
 Arrive on LOCAH
 Talk with Calliope, Roxy, Jake
