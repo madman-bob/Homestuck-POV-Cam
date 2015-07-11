@@ -79,3 +79,11 @@ Be interrupted by Vriska
 Break up with (Vriska)
 Leave with Vriska
 9685-9703
+
+Debrief Vriska
+Fail to come up with plan
+TAVROS????????
+9739-9759
+
+Gain control of Tavros's army
+9760-9770

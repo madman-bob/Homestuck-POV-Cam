@@ -197,6 +197,31 @@ Flip.
 	Verbally attack (Vriska)
 	Take Meenah
 	9685-9703
+	
+	Call Jake
+	Request debriefing from Meenah
+	Fail to come up with plan
+	TAVROS????????
+	9723-9754
+	
+	Admit Tavros did something useful
+	Be mocked by Tavros
+	9755-9759
+	
+	Tavros.
+	9760
+	
+	Tavros.
+	9761
+	
+	Tavros.
+	9762
+	
+	TAVROS!!!!!!!!
+	9763
+	
+	Witness Meenah's inspirational speech
+	9764-9770
 
 Be killed by Terezi
 5737

@@ -33,3 +33,10 @@ Reappear
 Take Jane to LOCAH
 Introduce Jane to Nannasprite
 9614-9624
+
+Go back to Jake, Tavrosprite
+Create Nepetasprite
+9710-9722
+
+Witness creation of GCatavrosprite
+9731-9739

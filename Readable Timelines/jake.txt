@@ -185,6 +185,21 @@ Be taken to Derse
 	
 	Be found by Jasprosesprite^2
 	9562-9568
+	
+		Character select
+		9704
+	<====
+	
+	Nickname Tavvy
+	Be asked by Jasprosesprite^2 where your kernel is
+	Witness creation of Nepetasprite
+	9710-9722
+	
+	Be called by Vriska
+	Summon GCat
+	Be told to ask Tavrosprite to pick up GCat
+	Witness creation of Gcatavrosprite
+	9723-9739
 
 Glitch out
 Have glitches fixed by John
