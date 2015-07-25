@@ -65,3 +65,9 @@ Arrive in new session
 Meet other sprites
 IT IS E%CEEDING A CERTAIN AMOUNT IN QUANTITY
 8501-8505
+
+Arrive at tea party in post-retcon session
+Greet Nepetasprite
+9774-9777
+
+~ Davepetasprite^2

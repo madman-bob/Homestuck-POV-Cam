@@ -313,8 +313,12 @@ Send letter to meteor
 	Be greeted by other Calliope
 	Wait for Calliope, Calliope
 	9493-9504
-	
 	9519-9521
+	
+	Ask Calliope where you're going
+	Question if you should wake up
+	Be educated on aspects
+	9787-9794
 
 Name: Jade
 # Repeating name as need no-op to separate above split with below split

@@ -107,6 +107,7 @@ Taunt Terezi with Lil' Cal
 	9359
 	9362
 	9410
+	9773-9775
 
 Have heads on display
 Flip.

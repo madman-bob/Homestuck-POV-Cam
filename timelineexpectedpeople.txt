@@ -76,6 +76,7 @@ jasprosesprite2
 arquiusprite
 erisolsprite
 nepetasprite
+davepetasprite2
 
 damara
 rufioh

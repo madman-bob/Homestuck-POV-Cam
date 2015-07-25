@@ -200,6 +200,13 @@ Be taken to Derse
 	Be told to ask Tavrosprite to pick up GCat
 	Witness creation of Gcatavrosprite
 	9723-9739
+	
+	Attend tea party with Nepetasprite, Jasprosesprite^2, Tavrosprite
+	Witness creation of Davepetasprite^2
+	9771-9780
+	
+	Be in background
+	9795-9798
 
 Glitch out
 Have glitches fixed by John

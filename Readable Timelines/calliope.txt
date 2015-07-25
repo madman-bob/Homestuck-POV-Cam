@@ -146,6 +146,11 @@ Be taken to LOFAF by Roxy
 Be asked to look after Jade, the Mayor
 9626-9632
 
+Look around Jade's house
+Meet the Mayor
+Find sleeping Jade
+9781-9786
+
 	Colour: #FF0000
 	Welcome Jade back
 	Talk with Calliope in private
@@ -153,3 +158,9 @@ Be asked to look after Jade, the Mayor
 	Tell Calliope of own death
 	Tell Calliope to live
 	9496-9521
+	
+	Be asked by Jade where you're going
+	Tell Jade it is not time to wake yet
+	Educate Jade on aspects
+	9787-9789
+	9793-9794

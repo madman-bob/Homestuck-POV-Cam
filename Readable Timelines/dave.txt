@@ -350,6 +350,10 @@ Cascade
 	...
 	Actually talk with Dirk
 	9634-9665
+	
+	Continue talking with Dirk
+	You're welcome for me existing.
+	9817-9822
 
 Arrive on meteor
 Level up

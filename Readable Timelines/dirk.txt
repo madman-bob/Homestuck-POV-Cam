@@ -145,6 +145,10 @@ Message Jake
 	...
 	Actually talk with Dave
 	9634-9665
+	
+	Continue talking with Dave
+	You're welcome for me existing.
+	9817-9822
 
 Consider prototyping Lil' Hal
 Meet Equiusprite
