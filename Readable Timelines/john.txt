@@ -334,8 +334,12 @@ Enter village.
 Proceed to Quest Bed.
 Be tricked by Vriska, to tell Vriska to put you to sleep
 Be killed
+4975-4986
+	Remem8er.
+	9859
+
 RISE UP.
-4975-4987
+4987
 
 Meet with WV on battlefield
 Find Dad's wallet
@@ -685,6 +689,12 @@ Be called a N333RD by Terezi
 Notice reappearence of Jasprosesprite^2
 Witness Jane being taken away by Jasprosesprite^2
 9614-9616
+
+Notice arrival of Kanaya, Roxy
+hello, hummingbird.
+where's karkat?
+BYE, IDIOT!!!!!!!
+9829-9838
 
 	Appear in front of Caliborn
 	Be sucked into juju

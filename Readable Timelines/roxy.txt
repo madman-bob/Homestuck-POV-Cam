@@ -82,6 +82,8 @@ Be killed by the Red Miles
 7076-7080
 7083-7084
 7086
+	Remem8er.
+	9859
 
 Be revived by Dirk
 Find Jane's body
@@ -297,6 +299,10 @@ hey!!!!!!!!!
 Give Kanaya matriorb
 Take Kanaya to fight
 9667-9683
+
+Arrive back on frog pad
+Witness John's black flirting with Terezi
+9829-9838
 
 	Appear in front of Caliborn
 	Witness bisection of Gamzee

@@ -309,6 +309,8 @@ Be killed
 5678-5688
 5696
 5750
+	Remem8er.
+	9859
 
 Be revived
 5770
@@ -385,6 +387,10 @@ Cascade
 	Notice reappearence of Jasprosesprite^2
 	Witness Jane being taken away by Jasprosesprite^2
 	9614-9616
+	
+	Notice arrival of Kanaya, Roxy
+	Threaten John with acrobatic pirouette if he denies leadership
+	9829-9838
 
 Meet friends
 6231

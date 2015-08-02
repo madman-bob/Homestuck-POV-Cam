@@ -222,6 +222,9 @@ Flip.
 	
 	Witness Meenah's inspirational speech
 	9764-9770
+	
+	Congratulate Tavros
+	9841
 
 Be killed by Terezi
 5737
@@ -301,3 +304,6 @@ Be called a loser
 Be verbally attacked by Vriska
 Be broken up with by Meenah
 9685-9703
+
+Remem8er.
+9859

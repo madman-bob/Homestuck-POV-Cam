@@ -253,6 +253,18 @@ Eject disc
 	Notice reappearence of Jasprosesprite^2
 	Witness Jane being taken away by Jasprosesprite^2
 	9614-9616
+	
+	Notice arrival of Kanaya, Roxy
+	Be called to fight by Dave
+	Be insulted by John
+	9829-9836
+	
+	Monologue to Vriska
+	Do mindy thing
+	9839-9858
+	
+	Remem8er.
+	9859
 
 Scratch disc 2
 Ascend.
@@ -365,3 +377,7 @@ Burn out
 	Draw chalk outline for self
 	Die
 	9071-9085
+	
+	Name: (Terezi)
+	Remem8er.
+	9859

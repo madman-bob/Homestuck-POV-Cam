@@ -79,12 +79,6 @@ Witness dual
 Be killed by Eridan
 5221-5233
 
-Have corpse examined by Karkat
-5252
-
-Have head in motherfuckin JURY
-5660
-
 Meet Jade in dream bubble
 4890-4894
 
@@ -93,3 +87,6 @@ Meet Jade in dream bubble
 Be in Vriska's crew
 7848-7914
 7923-7946
+
+	Remem8er.
+	9859

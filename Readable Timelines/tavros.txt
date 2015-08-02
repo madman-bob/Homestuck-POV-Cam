@@ -72,13 +72,6 @@ Troll Jade further along her timeline
 Be killed
 5197-5200
 
-Have corpse inspected
-5269-5285
-
-Have corpse stolen
-5927
-5660
-
 Meet coinflip Dave in dream bubble
 5391-5392
 
@@ -124,3 +117,6 @@ The Tavros is feeling pretty pleased with himself all of a sudden air guitar
 
 Pass control of army to Meenah
 9764-9770
+
+Be congratulated by Vriska
+9841

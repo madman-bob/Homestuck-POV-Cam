@@ -87,3 +87,6 @@ TAVROS????????
 
 Gain control of Tavros's army
 9760-9770
+
+Congratulate Tavros
+9841

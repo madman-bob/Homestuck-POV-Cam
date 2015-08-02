@@ -143,6 +143,10 @@ Be trolled by Tavros
 Witness destruction of Prospit's moon
 Have dream self die, robot explode
 3840
+	Remem8er.
+	9859
+	
+	~ Jadesprite
 
 Be thrown out of window
 Land on bed
@@ -408,6 +412,9 @@ Be KO'd by Jake
 Be killed by Aranea
 Have death be registered as just by intervention from Aranea
 8525-8552
+
+Remem8er.
+9859
 
 	Appear in front of Caliborn
 	Be sucked into juju

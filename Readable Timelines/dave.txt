@@ -171,6 +171,9 @@ Go to burn book
 	4963-4964
 	3763-3764
 	
+	Remem8er.
+	9859
+	
 	Be double killed
 	7161
 
@@ -451,6 +454,9 @@ Chase dogs
 
 GAME OVER
 8801
+
+Remem8er.
+9859
 
 	Appear in front of Caliborn
 	Be sucked into juju
