@@ -357,6 +357,30 @@ Cascade
 	Continue talking with Dirk
 	You're welcome for me existing.
 	9817-9822
+	
+	Prepare to fight Jacks on LOTAK
+	did someone just bark
+	ok this exchange is asinine it was probably just jade
+	Tell Jade off for being awake
+	Be complimented on kissing ability
+	Witness Jade teleport away
+	9925-9933
+	
+	Be told by Dirk to ask him anything
+	Witness arrival of Jacks
+	why are we so fucking awesome
+	That's the best fucking question,
+	9934-9944
+	9985
+	
+	Collide
+	Fight Jacks
+	Cut off heads of Jack, Jack, Dirk
+	9987
+	
+	Witness Dirk's revival
+	Be on frog platform
+	9993-9994
 
 Arrive on meteor
 Level up

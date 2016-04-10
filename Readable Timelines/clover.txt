@@ -44,3 +44,13 @@ Enter remains of A2
 Enter Biscuit's oven
 8025-8032
 8034-8041
+
+Be dropped off on LOMAX by SS
+9864-9869
+9984
+
+Collide
+Fight Jake
+Fight Karkat
+Be defeated by Karkat
+9987

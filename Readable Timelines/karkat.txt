@@ -197,6 +197,27 @@ Apologise for giving Bilious Slick cancer
 	Be told Kanaya agreed to protect you
 	Be knocked unconscious by Kanaya
 	9535-9544
+	
+	Arrive in dream bubble
+	Meet Meenah
+	Notice Meenah's army
+	Give speech to self
+	9887-9896
+	
+	Follow Meenah
+	Find Vriska, with treasure
+	9945-9948
+	
+	Witness arrival of Lord English
+	9949-9959
+	9983
+	
+	Collide
+	Attempt to fight Lord English
+	Immediately wake up
+	Fight Clover
+	Defeat Clover
+	9987
 
 See Terezi kill Vriska
 5741-5748

@@ -90,3 +90,20 @@ Gain control of Tavros's army
 
 Congratulate Tavros
 9841
+
+Find Karkat
+Recruit Karkat
+Convince Karkat to give speech over there
+9889-9894
+
+Lead army
+Find Vriska, with treasure
+9945-9948
+
+Witness arrival of Lord English
+9949-9959
+9983
+
+Collide
+Fight Lord English
+9987

@@ -207,6 +207,14 @@ Be taken to Derse
 	
 	Be in background
 	9795-9798
+	
+	Witness arrival of Spades Slick, the Felt
+	9863-9869
+	9984
+	
+	Collide
+	Fight the Felt
+	9987
 
 Glitch out
 Have glitches fixed by John

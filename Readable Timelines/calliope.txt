@@ -151,6 +151,17 @@ Meet the Mayor
 Find sleeping Jade
 9781-9786
 
+Notice Jade wake
+Point out note to Jade
+Exit house
+9915-9924
+
+Collide
+9987
+
+Greet Jade
+9996-9997
+
 	Colour: #FF0000
 	Welcome Jade back
 	Talk with Calliope in private
@@ -164,3 +175,11 @@ Find sleeping Jade
 	Educate Jade on aspects
 	9787-9789
 	9793-9794
+	
+	Arrive at Green Sun
+	Tell Jade to stay asleep
+	Say goodbye to Jade
+	9897-9902
+	
+	Collide
+	9987

@@ -113,6 +113,28 @@ Resume chase
 Enter B2 universe
 8121
 
+	Arrive in incipisphere
+	Land in remains of Prospit
+	Prepare to fight Jack Noir
+	9967-9981
+	
+	Collide
+	Fight Jack Noir
+	Be interrupted by Jade
+	Punch Jade
+	Cut off Jack's arm
+	Claim Jack's ring
+	9987
+	
+	Reunite with WV
+	10007
+	
+	Have ring removed by WV
+	10008-10010
+	
+	Point WV towards the forge
+	10011
+
 Rescue Jade
 8612-8614
 8618-8631

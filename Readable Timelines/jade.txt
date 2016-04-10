@@ -323,6 +323,46 @@ Send letter to meteor
 	Question if you should wake up
 	Be educated on aspects
 	9787-9794
+	
+	Arrive at Green Sun
+	Be told by Calliope to stay asleep
+	Say goodbye to Calliope
+	9897-9902
+	
+	Meet Davepetasprite^2
+	Be kissed by Davepetasprite^2
+	was that supposed to wake me up?
+	B33 < no
+	B33 < that was just goodbye
+	Be stabbed/woken by Davepetasprite^2
+	9903-9912
+	
+	Wake up
+	Notice Mayor, Calliope
+	Notice note from Dave
+	Exit house
+	Teleport away
+	9913-9924
+	
+	Arrive on LOTAK
+	Be told off by Dave for being awake
+	i am very much awake! 
+	and i intend to stay that way :)
+	Compliment Dave's kissing ability
+	Teleport away
+	9928-9933
+	
+	Collide
+	Interrupt fight between Jack Noir, PM
+	Be punched by PM
+	9987
+	
+	Get up
+	Look at Jack Noir
+	9995
+	
+	Greet Calliope, Ms. Paint
+	9996-9997
 
 Name: Jade
 # Repeating name as need no-op to separate above split with below split

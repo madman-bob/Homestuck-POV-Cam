@@ -2,7 +2,31 @@
 
 The POV Cam is a Chrome extension (found in the Chrome store [here](https://chrome.google.com/webstore/detail/homestuck-pov-cam/amojmegbfaaookabgifgaiblfdlgapoj)), which modifies the links of Homestuck so that one may follow the events from the point of view of a single character.
 
-### Timeline language
+These links are displayed beneath the normal links, in the colour that that person types, and with a symbol of that person next to them. Clicking on that link takes you to the page, that that person goes to after this one.
+
+Hovering over the links will show you the name of the person, and any further clarification as needed.
+
+## Options
+
+The POV Cam options page can be reached either by clicking on the `Options` link in the Chrome Extension Settings page, or by clicking on `POV Cam Options` beneath the links on any ordinary Homestuck page.
+
+### Enabled timelines
+
+This allows you to enable and disable groups of timelines at once, which is useful if you think the pages get a little cluttered. For example, if you only want to follow the Beta Kids, then you can uncheck all the timelines apart from them. You can even disable all timelines if you only want to use the other features of this extension.
+
+### View pre-retcon pages
+
+Pages that have been retconned are changed back to their original images. Hover over the image to revert to post-retcon.
+
+### Add controls to (most) flash pages
+
+Adds a scroll bar and a pause button to most flash pages. The scroll bar allows you to move to different parts of the flash. Unfortunately this doesn't work on Cascade due to domain restrictions.
+
+### Other
+
+Other features, which should be self explanitory, are the auto-opening of pesterlogs, using left and right arrow keys for navigation, highlighting Doc Scratch's text with a green background, and turning off the flashing of Lord English's links.
+
+## Timeline language
 
 In the `Readable Timelines` folder are a number of files, each containing the timeline data for a single person.
 
@@ -33,7 +57,7 @@ This allows you to comment on the timeline, without it effecting the resultant f
 
 ### `timelines.js`
 
-The Python script `timelinecompiler.py` then takes these files to produce the Javascript file `timelines.js`.
+The Python script `timelinecompiler.py` then takes files of the above form to produce the Javascript file `timelines.js`.
 The main contents of this file gives is the variable `timelines`, which describes the links between the various pages.
 
  * `timelines` is a dictionary, where the index is a page number.
@@ -44,4 +68,4 @@ The main contents of this file gives is the variable `timelines`, which describe
    where the various IDs are indices into the appropriate arrays.
  * Each page of `NextPages` is a tuple of the format
    `NextPage = [PageNumber, Index, Caption]`,
-   where `PageNumber` is the number of the next page, `Index` is the index of (put better words here), and `Caption` (if it exists) is the text that appears on hover-over.
+   where `PageNumber` is the number of the next page, `Index` is the index of that persons position in the links on that page, and `Caption` (if it exists) is the text that appears on hover-over.

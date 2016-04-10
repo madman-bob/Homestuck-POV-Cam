@@ -122,6 +122,31 @@ Enter.
 	Talk with Nannasprite
 	Meet Nannaspritex2
 	9705-9709
+	
+	Be on Derse
+	Prepare to fight Condesce
+	Witness arrival of Condesce
+	9876-9886
+	9986
+	
+	Collide
+	Revive Rose, Kanaya, Jake
+	9987
+	
+	Be healed by Nannasprite
+	9989
+	
+	Be helped up by John
+	9990
+	
+	Fly off
+	9991
+	
+	Revive Dirk
+	9993
+	
+	Be on frog platform
+	9994
 
 Arrive on LOCAH
 Talk with Calliope, Roxy, Jake

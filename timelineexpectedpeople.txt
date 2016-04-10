@@ -63,6 +63,8 @@ eridan
 feferi
 doomedfeferi
 
+condesce
+
 jane
 roxy
 dirk
@@ -77,6 +79,8 @@ arquiusprite
 erisolsprite
 nepetasprite
 davepetasprite2
+
+jacknoirb2
 
 damara
 rufioh

@@ -151,6 +151,28 @@ Message Jake
 	Continue talking with Dave
 	You're welcome for me existing.
 	9817-9822
+	
+	Prepare to fight Jacks on LOTAK
+	did someone just bark
+	ok this exchange is asinine it was probably just jade
+	Witness Jade teleport away
+	9925-9933
+	
+	Tell Dave to ask you anything
+	Witness arrival of Jacks
+	why are we so fucking awesome
+	That's the best fucking question,
+	9934-9944
+	9985
+	
+	Collide
+	Fight Jacks
+	Have head cut off by Dave
+	9987
+	
+	Be revived by Jane
+	Be on frog platform
+	9993-9994
 
 Consider prototyping Lil' Hal
 Meet Equiusprite

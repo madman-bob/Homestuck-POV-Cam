@@ -43,6 +43,9 @@ Group: Alpha Kids' Sprites
 	
 	The greatest MOMENT in Homestuck history
 	9828
+	
+	Collide
+	9987
 
 7547-7554
 Name: ARquiusprite

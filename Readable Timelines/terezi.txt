@@ -265,6 +265,24 @@ Eject disc
 	
 	Remem8er.
 	9859
+	
+	Prepare to fight Jacks on LOTAK
+	did someone just bark
+	ok this exchange is asinine it was probably just jade
+	Witness Jade teleport away
+	9925-9933
+	
+	Insult Jade
+	Witness arrival of Jacks
+	9934-9944
+	9985
+	
+	Collide
+	Fight Jacks
+	9987
+	
+	Talk with John
+	9993-9994
 
 Scratch disc 2
 Ascend.

@@ -108,6 +108,21 @@ Be chased by PM
 Enter B2 universe
 8121
 
+	Arrive in incipisphere
+	Land in remains of Prospit
+	Prepare to fight PM
+	9967-9981
+	
+	Collide
+	Fight PM
+	Be interrupted by Jade
+	Have arm cut off by PM
+	Lose ring
+	9987
+	
+	Be tended to by Ms. Paint
+	9995-10000
+
 Rescue Jade
 8612-8614
 8618-8631

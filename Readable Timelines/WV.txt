@@ -152,6 +152,22 @@ Be healed, re-found can town
 	
 	Meet Calliope in Jade's house
 	9783-9786
+	
+	Meet Jade in Jade's house
+	Exit house
+	9914-9924
+	
+	Collide
+	9987
+	
+	Reunite with PM
+	10007
+	
+	Remove PM's ring
+	10008-10010
+	
+	Be pointed towards the forge by PM
+	10011
 
 Sleepwalking Roxy
 6884-6888

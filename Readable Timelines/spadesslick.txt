@@ -150,3 +150,17 @@ Take 13 of Stars
 Set Doc Scratches apartment on fire
 Enter B2
 8012-8050
+
+Arrive on LOMAX
+Drop off the Felt
+Notice Jack English
+9860-9875
+
+Follow Jack English to LOTAK
+9938-9944
+9985
+
+Collide
+Fight Jack English, Dave, Terezi, Dirk
+Have head cut off by Dave
+9987

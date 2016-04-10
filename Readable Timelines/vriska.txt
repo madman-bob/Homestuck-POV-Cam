@@ -225,6 +225,21 @@ Flip.
 	
 	Congratulate Tavros
 	9841
+	
+	Have treasure
+	Be found by Meenah, army
+	9947-9948
+	
+	Witness arrival of Lord English
+	9949-9959
+	9983
+	
+	Collide
+	Fight Hussie
+	9987
+	
+	Walk away from defeated Hussie, with treasure
+	10001
 
 Be killed by Terezi
 5737

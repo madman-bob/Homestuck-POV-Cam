@@ -60,8 +60,8 @@ function createlink(link) {
 			sucker.style.boxShadow = "0px 0px 2px 2px " + colour;
 			
 			link.appendChild(sucker);
-		} else if (name == "Lord English") {
-			// Give Lord English colourful links
+		} else if (name.indexOf("English") != -1) {
+			// Give Lord English, Jack English colourful links
 			link.appendChild(lordenglishtext(names[nextpageno]));
 		} else {
 			link.innerText = names[nextpageno];
@@ -91,6 +91,8 @@ function modifypage() {
 		pageno = 8801;
 	} else if (document.location.pathname == "/shes8ack/") {
 		pageno = 9305;
+	} else if (document.location.pathname == "/collide.html") {
+		pageno = 9987;
 	} else {
 		pageno = parseInt(document.location.search.slice(7));
 	}
@@ -104,6 +106,9 @@ function modifypage() {
 	a = document.querySelectorAll("font[size='5']");
 	if (a.length > 0) {
 		linkcontainer = a[a.length - 1];
+	} else if (pageno == 9987) {
+		// Collide uses a different size font tag
+		linkcontainer = document.querySelector("font[size='6']");
 	} else {
 		// Can't find next page link
 		// Try to create one in right place

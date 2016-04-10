@@ -57,3 +57,24 @@ IT IS E%CEEDING A CERTAIN AMOUNT IN QUANTITY
 Name: Nannaspritex2
 Prank Jane
 9706-9709
+
+# Not sure which Nannasprite helps in Collide
+# So send both here for now
+<==
+Name: Nannasprite
+
+Collide
+Assist Jane
+9987
+
+Heal Jane
+9989
+
+Watch everyone talk
+9990
+
+Watch everyone fly off
+9991
+
+Greet Jane's dad
+9992

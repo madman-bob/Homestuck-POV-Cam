@@ -133,6 +133,18 @@ GAME OVER
 Return to basics
 8821-8843
 
+Visit Yaldabaoth
+9960-9966
+9982
+
+Collide
+Kill Yaldabaoth
+Claim prize
+9987
+
+Open prize
+10006
+
 Finish telling masterpiece
 Be ambushed by 8 kids
 Use superior weapon

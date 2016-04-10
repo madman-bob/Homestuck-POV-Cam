@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	
 	"name": "Homestuck POV Cam",
-	"version": "3.18",
+	"version": "3.19",
 	"description": "View Homestuck from the point of view of any character",
 	"options_page": "options.html",
 	
@@ -30,7 +30,8 @@
 				"http://*.mspaintadventures.com/007680/*",
 				"http://*.mspaintadventures.com/GAMEOVER/",
 				"http://*.mspaintadventures.com/index_pw.php",
-				"http://*.mspaintadventures.com/shes8ack/"
+				"http://*.mspaintadventures.com/shes8ack/",
+				"http://*.mspaintadventures.com/collide.html"
 			],
 			"js": [
 				"timelines.js",
@@ -39,7 +40,8 @@
 				"injection.js",
 				"flashmodifier.js"
 			],
-			"run_at": "document_end"
+			"run_at": "document_end",
+			"all_frames": true
 		}
 	]
 }
