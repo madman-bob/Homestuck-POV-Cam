@@ -240,6 +240,10 @@ Flip.
 	
 	Walk away from defeated Hussie, with treasure
 	10001
+	
+	ACT 7
+	Use treasure on Lord English
+	10027
 
 Be killed by Terezi
 5737

@@ -218,6 +218,16 @@ Apologise for giving Bilious Slick cancer
 	Fight Clover
 	Defeat Clover
 	9987
+	
+	Greet Dave
+	10012
+	10014
+	
+	Witness John meeting Dad
+	10016-10022
+	
+	ACT 7
+	10027
 
 See Terezi kill Vriska
 5741-5748

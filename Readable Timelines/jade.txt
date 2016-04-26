@@ -363,6 +363,19 @@ Send letter to meteor
 	
 	Greet Calliope, Ms. Paint
 	9996-9997
+	
+	Greet John
+	10012-10013
+	
+	Witness John meeting Dad
+	10016-10022
+	
+	ACT 7
+	10027
+	
+	Appear in front of Caliborn
+	Be sucked into juju
+	9318-9325
 
 Name: Jade
 # Repeating name as need no-op to separate above split with below split
@@ -455,7 +468,3 @@ Have death be registered as just by intervention from Aranea
 
 Remem8er.
 9859
-
-	Appear in front of Caliborn
-	Be sucked into juju
-	9318-9325

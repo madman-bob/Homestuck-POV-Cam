@@ -721,6 +721,15 @@ Fly off
 Be on frog platform
 9993-9994
 
-	Appear in front of Caliborn
-	Be sucked into juju
-	9318-9325
+Greet Jade
+10012-10013
+
+Meet Dad
+10016-10022
+
+ACT 7
+10027
+
+Appear in front of Caliborn
+Be sucked into juju
+9318-9325

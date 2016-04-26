@@ -145,6 +145,12 @@ Claim prize
 Open prize
 10006
 
+ACT 7
+Close prize
+Destroy clock
+Gain clockwork majyyks
+10027
+
 Finish telling masterpiece
 Be ambushed by 8 kids
 Use superior weapon

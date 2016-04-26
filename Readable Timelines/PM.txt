@@ -134,6 +134,14 @@ Enter B2 universe
 	
 	Point WV towards the forge
 	10011
+	
+	Ascend forge with WV
+	10023-10026
+	
+	ACT 7
+	Throw rings in the forge
+	Rebuild civilization
+	10027
 
 Rescue Jade
 8612-8614

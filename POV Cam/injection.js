@@ -93,6 +93,8 @@ function modifypage() {
 		pageno = 9305;
 	} else if (document.location.pathname == "/collide.html") {
 		pageno = 9987;
+	} else if (document.location.pathname == "/ACT7.html") {
+		pageno = 10027;
 	} else {
 		pageno = parseInt(document.location.search.slice(7));
 	}
@@ -109,6 +111,9 @@ function modifypage() {
 	} else if (pageno == 9987) {
 		// Collide uses a different size font tag
 		linkcontainer = document.querySelector("font[size='6']");
+	} else if (pageno == 10027) {
+		// ACT 7 also uses a different size font tag
+		linkcontainer = document.querySelector("font[size='8']");
 	} else {
 		// Can't find next page link
 		// Try to create one in right place

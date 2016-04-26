@@ -410,6 +410,25 @@ Cascade
 	
 	Be on frog platform
 	9993-9994
+	
+	Be dragged by Kanaya
+	10012
+	
+	Inform Kanaya you're going to talk with someone else
+	10014
+	
+	Greet Dirk
+	10015
+	
+	Witness John meeting Dad
+	10016-10022
+	
+	ACT 7
+	10027
+	
+	Appear in front of Caliborn
+	Be sucked into juju
+	9318-9325
 
 Meet friends
 6231
@@ -507,7 +526,3 @@ Bleed out
 8863-8881
 
 ~ Rosesprite
-
-	Appear in front of Caliborn
-	Be sucked into juju
-	9318-9325

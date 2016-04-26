@@ -215,6 +215,22 @@ Be taken to Derse
 	Collide
 	Fight the Felt
 	9987
+	
+	Talk with Dirk
+	10012
+	10015
+	
+	Witness John meeting Dad
+	10016-10022
+	
+	ACT 7
+	10027
+	
+	Appear in front of Caliborn
+	Witness bisection of Gamzee
+	Be defeated
+	Cause hopesplosion
+	9318-9345
 
 Glitch out
 Have glitches fixed by John
@@ -271,9 +287,3 @@ GAME OVER
 
 Remem8er.
 9859
-
-	Appear in front of Caliborn
-	Witness bisection of Gamzee
-	Be defeated
-	Cause hopesplosion
-	9318-9345

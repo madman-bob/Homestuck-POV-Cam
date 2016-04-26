@@ -168,6 +168,15 @@ Be healed, re-found can town
 	
 	Be pointed towards the forge by PM
 	10011
+	
+	Ascend forge with PM
+	10023-10026
+	
+	ACT 7
+	Throw rings in the forge
+	Rebuild civilization
+	Become mayor
+	10027
 
 Sleepwalking Roxy
 6884-6888

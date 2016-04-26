@@ -381,6 +381,20 @@ Cascade
 	Witness Dirk's revival
 	Be on frog platform
 	9993-9994
+	
+	Greet Karkat
+	10012
+	10014
+	
+	Witness John meeting Dad
+	10016-10022
+	
+	ACT 7
+	10027
+	
+	Appear in front of Caliborn
+	Be sucked into juju
+	9318-9325
 
 Arrive on meteor
 Level up
@@ -481,7 +495,3 @@ GAME OVER
 
 Remem8er.
 9859
-
-	Appear in front of Caliborn
-	Be sucked into juju
-	9318-9325

@@ -162,6 +162,15 @@ Collide
 Greet Jade
 9996-9997
 
+Be hugged by Roxy
+10012-10013
+
+Witness John meeting Dad
+10016-10022
+
+ACT 7
+10027
+
 	Colour: #FF0000
 	Welcome Jade back
 	Talk with Calliope in private
@@ -182,4 +191,10 @@ Greet Jade
 	9897-9902
 	
 	Collide
+	Head towards Green Sun
 	9987
+	
+	ACT 7
+	Take the path of the martyr
+	Destroy Green Sun
+	10027

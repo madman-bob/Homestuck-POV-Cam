@@ -281,8 +281,21 @@ Eject disc
 	Fight Jacks
 	9987
 	
+	Be on frog platform
 	Talk with John
 	9993-9994
+	
+	Wander off
+	10012
+	
+	Stare into distance
+	10014-10015
+	
+	Witness John meeting Dad
+	10016-10022
+	
+	ACT 7
+	10027
 
 Scratch disc 2
 Ascend.

@@ -328,9 +328,18 @@ Fly off
 Be on frog platform
 9993-9994
 
-	Appear in front of Caliborn
-	Witness bisection of Gamzee
-	Be defeated
-	Witness defeat of Caliborn
-	Banish Lil' Cal into the void
-	9318-9345
+Hug Calliope, Jane
+10012-10013
+
+Witness John meeting Dad
+10016-10022
+
+ACT 7
+10027
+
+Appear in front of Caliborn
+Witness bisection of Gamzee
+Be defeated
+Witness defeat of Caliborn
+Banish Lil' Cal into the void
+9318-9345
