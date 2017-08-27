@@ -1,7 +1,7 @@
 from os import listdir, path
 import re
 
-from timelineobjects import *
+from timelineobjects import Link, get_person, people, next_page_links
 
 patterns = {
     "Pages": re.compile("^\d+(-\d+(-2)?)?$"),
@@ -16,34 +16,41 @@ patterns = {
 }
 
 
-def parse_person_file(file_location):
+def tokenize_person_file(file_location):
     indent_level = 0
     with open(file_location, "r") as person_file:
         for line in person_file:
             potential_command = line.strip()
             pattern_match = next((pattern for pattern in patterns if patterns[pattern].match(potential_command)), None)
-            if pattern_match:
-                # Good enough in most cases
-                # May want to improve later
-                next_indent_level = len(line) - len(line.lstrip())
-                if next_indent_level > indent_level:
-                    yield ("BOT",)
-                elif next_indent_level < indent_level:
-                    yield ("EOT",)
-                indent_level = next_indent_level
+
+            if pattern_match is None:
+                continue
+
+            # Good enough in most cases
+            # May want to improve later
+            next_indent_level = len(line) - len(line.lstrip())
+            if next_indent_level > indent_level:
+                yield ("BOT",)
+            elif next_indent_level < indent_level:
+                yield ("EOT",)
+            indent_level = next_indent_level
 
             if pattern_match == "Pages":
-                command = [pattern_match] + [int(s) for s in potential_command.split("-")]
-                if len(command) == 2:
-                    command.append(command[1])
-                command[2] += 1
-                yield tuple(command)
+                args = [int(s) for s in potential_command.split("-")]
+                if len(args) == 1:
+                    args.append(args[0])
+                args[1] += 1
+                yield (pattern_match,) + tuple(args)
+
             elif pattern_match == "GOTO":
                 yield (pattern_match, potential_command[1:].strip())
+
             elif pattern_match in {"Name", "Colour", "Image", "Group", "Caption"}:
                 yield (pattern_match, potential_command.split(":")[1].strip())
-            elif pattern_match is not None:
+
+            else:
                 yield (pattern_match,)
+
     yield ("EOT",)
 
 
@@ -56,50 +63,60 @@ def parse_person_tokens(command_iterator, previous_pages=None, current_person=No
     # Page to pass into next splinter timeline
     splinter_pages = []
     # Page returned from splinter timeline
-    return_page = None
+    return_pages = []
 
     if previous_pages is None:
         previous_pages = []
 
-    for command in command_iterator:
-        if command[0] == "Pages":
-            for page_number in range(*command[1:]):
+    for command, *args in command_iterator:
+        if command == "Pages":
+            for page_number in range(*args):
                 next_link = Link(page_number, current_person, current_colour, current_image, current_group)
                 for page in previous_pages:
                     page.link_to(next_link, next_caption)
                 previous_pages = [next_link]
                 next_caption = None
-        elif command[0] == "==>":
+
+        elif command == "==>":
             splinter_pages = previous_pages
-        elif command[0] == "<==":
+
+        elif command == "<==":
             previous_pages.extend(return_pages)
-        elif command[0] == "GOTO":
+
+        elif command == "GOTO":
             for page in previous_pages:
-                page.link_to(command[1])
-            previous_pages = [Link(command[1])]
+                page.link_to(args[0])
+            previous_pages = [Link(args[0])]
             next_caption = None
-        elif command[0] == "EOT":
+
+        elif command == "EOT":
             current_person.last_pages = previous_pages
             return previous_pages
-        elif command[0] == "BOT":
+
+        elif command == "BOT":
             return_pages = parse_person_tokens(command_iterator, splinter_pages, current_person, current_colour, current_image, current_group)
             splinter_pages = []
-        elif command[0] == "Name":
-            current_person = get_person(command[1])
-        elif command[0] == "Colour":
-            if not command[1] in colours:
-                colours.append(command[1])
-            current_colour = colours.index(command[1])
-        elif command[0] == "Image":
-            if not command[1] in images:
-                images.append(command[1])
-            current_image = images.index(command[1])
-        elif command[0] == "Group":
-            if not command[1] in groups:
-                groups.append(command[1])
-            current_group = groups.index(command[1])
-        elif command[0] == "Caption":
-            next_caption = command[1]
+
+        elif command == "Name":
+            current_person = get_person(args[0])
+
+        elif command == "Colour":
+            if not args[0] in colours:
+                colours.append(args[0])
+            current_colour = colours.index(args[0])
+
+        elif command == "Image":
+            if not args[0] in images:
+                images.append(args[0])
+            current_image = images.index(args[0])
+
+        elif command == "Group":
+            if not args[0] in groups:
+                groups.append(args[0])
+            current_group = groups.index(args[0])
+
+        elif command == "Caption":
+            next_caption = args[0]
 
 
 if __name__ == "__main__":
@@ -109,27 +126,31 @@ if __name__ == "__main__":
 
     current_location = path.dirname(__file__)
 
-    people_with_files = set(listdir(path.join(current_location, "Readable Timelines")))
-    expected_people = set()
+    timeline_file_locations = set(listdir(path.join(current_location, "Readable Timelines")))
+    expected_timelines = set()
 
     # Get information from files
     with open(path.join(current_location, "timelineexpectedpeople.txt"), "r") as people_file:
         for line in people_file:
-            if line.strip() != "":
-                name = line.strip() + ".txt"
-                expected_people.add(name)
-                if name in people_with_files:
-                    parse_person_tokens(parse_person_file(path.join(current_location, "Readable Timelines", name)))
+            if not line.strip():
+                continue
+
+            name = line.strip() + ".txt"
+            expected_timelines.add(name)
+            if name in timeline_file_locations:
+                parse_person_tokens(tokenize_person_file(path.join(current_location, "Readable Timelines", name)))
 
     # Pass through, replacing links from relative locations with absolute locations
     # (Note: still have links to relative locations)
     for person_name in people:
-        if person_name in next_page_links:
-            for page in next_page_links[person_name]:
-                for next_link in page.next_links:
-                    for last_page in people[person_name].last_pages:
-                        last_page.link_to(next_link)
-            del next_page_links[person_name]
+        if person_name not in next_page_links:
+            continue
+
+        for page in next_page_links[person_name]:
+            for next_link in page.next_links:
+                for last_page in people[person_name].last_pages:
+                    last_page.link_to(next_link)
+        del next_page_links[person_name]
 
     missing_jumps = [page_number for page_number in next_page_links if isinstance(page_number, str)]
     if missing_jumps:
@@ -139,29 +160,20 @@ if __name__ == "__main__":
 
     # Now write it to file
     with open(path.join(current_location, "POV Cam", "timelines.js"), "w") as output_file:
-        output_file.write("peoplenames = ")
-        output_file.write(str(list(people.keys())))
-        output_file.write(";\n")
-
-        output_file.write("colours = ")
-        output_file.write(str(colours))
-        output_file.write(";\n")
-
-        output_file.write("images = ")
-        output_file.write(str(images))
-        output_file.write(";\n")
-
-        output_file.write("groups = ")
-        output_file.write(str(groups))
-        output_file.write(";\n")
+        output_file.write("peoplenames = {};\n".format(list(people.keys())))
+        output_file.write("colours = {};\n".format(colours))
+        output_file.write("images = {};\n".format(images))
+        output_file.write("groups = {};\n".format(groups))
 
         output_file.write("\ntimelines = {")
         for page_number in sorted(next_page_links.keys()):
-            output_file.write("\n\t" + str(page_number) + ": [")
-            for l in next_page_links[page_number]:
-                output_file.write(l.output_for_js())
-                output_file.write(",")
-            output_file.write("],")
+            output_file.write("\n\t{}: [{}],".format(
+                page_number,
+                "".join(
+                    l.output_for_js() + ","
+                    for l in next_page_links[page_number]
+                )
+            ))
         output_file.write("\n}")
 
     # Any errors?
@@ -176,8 +188,8 @@ if __name__ == "__main__":
     for image in existing_images:
         print(image + " is not expected")
 
-    for person in people_with_files.symmetric_difference(expected_people):
-        if person in people_with_files:
+    for person in timeline_file_locations.symmetric_difference(expected_timelines):
+        if person in timeline_file_locations:
             print(person + " is not expected")
         else:
             print(person + " is missing")
