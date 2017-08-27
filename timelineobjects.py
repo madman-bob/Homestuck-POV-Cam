@@ -1,27 +1,14 @@
 from collections import defaultdict, OrderedDict
 
+from timeline_compiler.objects import Person
+
 people = OrderedDict()
 
 
-class Person:
-    def __init__(self, name):
-        self.name = name
-        if name not in people:
-            people[name] = self
-        self.person_id = list(people.keys()).index(name)
-
-        self.first_page = None
-        self.last_pages = []
-
-    def __str__(self):
-        return str(self.name)
-
-
 def get_person(person_name):
-    if person_name in people:
-        return people[person_name]
-    else:
-        return Person(person_name)
+    if person_name not in people:
+        people[person_name] = Person(len(people), person_name)
+    return people[person_name]
 
 
 next_page_links = defaultdict(list)
