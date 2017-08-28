@@ -1,8 +1,10 @@
-from collections import defaultdict, OrderedDict
 from os import listdir, path
 import re
 
 from timeline_compiler.objects import Person, Link
+from timeline_compiler.timeline import Timeline
+
+timeline = Timeline()
 
 patterns = {
     "Pages": re.compile("^\d+(-\d+(-2)?)?$"),
@@ -55,11 +57,6 @@ def tokenize_person_file(file_location):
     yield ("EOT",)
 
 
-colours = []
-images = []
-groups = []
-
-
 def parse_person_tokens(command_iterator, previous_pages=None, current_person=None, current_colour=None, current_image=None, current_group=None, next_caption=None):
     # Page to pass into next splinter timeline
     splinter_pages = []
@@ -77,7 +74,7 @@ def parse_person_tokens(command_iterator, previous_pages=None, current_person=No
                 if isinstance(current_person, Person) and current_person.first_page is None:
                     current_person.first_page = next_link
 
-                next_page_links[page_number].append(next_link)
+                timeline.next_page_links[page_number].append(next_link)
 
                 for page in previous_pages:
                     page.link_to(next_link, next_caption)
@@ -94,7 +91,7 @@ def parse_person_tokens(command_iterator, previous_pages=None, current_person=No
             for page in previous_pages:
                 page.link_to(args[0])
             previous_pages = [Link(args[0])]
-            next_page_links[args[0]].append(previous_pages[0])
+            timeline.next_page_links[args[0]].append(previous_pages[0])
             next_caption = None
 
         elif command == "EOT":
@@ -106,35 +103,25 @@ def parse_person_tokens(command_iterator, previous_pages=None, current_person=No
             splinter_pages = []
 
         elif command == "Name":
-            current_person = get_person(args[0])
+            current_person = timeline.get_person(args[0])
 
         elif command == "Colour":
-            if not args[0] in colours:
-                colours.append(args[0])
-            current_colour = colours.index(args[0])
+            if not args[0] in timeline.colours:
+                timeline.colours.append(args[0])
+            current_colour = timeline.colours.index(args[0])
 
         elif command == "Image":
-            if not args[0] in images:
-                images.append(args[0])
-            current_image = images.index(args[0])
+            if not args[0] in timeline.images:
+                timeline.images.append(args[0])
+            current_image = timeline.images.index(args[0])
 
         elif command == "Group":
-            if not args[0] in groups:
-                groups.append(args[0])
-            current_group = groups.index(args[0])
+            if not args[0] in timeline.groups:
+                timeline.groups.append(args[0])
+            current_group = timeline.groups.index(args[0])
 
         elif command == "Caption":
             next_caption = args[0]
-
-
-next_page_links = defaultdict(list)
-people = OrderedDict()
-
-
-def get_person(person_name):
-    if person_name not in people:
-        people[person_name] = Person(len(people), person_name)
-    return people[person_name]
 
 
 if __name__ == "__main__":
@@ -148,8 +135,8 @@ if __name__ == "__main__":
     expected_timelines = set()
 
     # Get information from files
-    with open(path.join(current_location, "timelineexpectedpeople.txt"), "r") as people_file:
-        for line in people_file:
+    with open(path.join(current_location, "timelineexpectedpeople.txt"), "r") as timeline.people_file:
+        for line in timeline.people_file:
             if not line.strip():
                 continue
 
@@ -160,17 +147,17 @@ if __name__ == "__main__":
 
     # Pass through, replacing links from relative locations with absolute locations
     # (Note: still have links to relative locations)
-    for person_name in people:
-        if person_name not in next_page_links:
+    for person_name in timeline.people:
+        if person_name not in timeline.next_page_links:
             continue
 
-        for page in next_page_links[person_name]:
+        for page in timeline.next_page_links[person_name]:
             for next_link in page.next_links:
-                for last_page in people[person_name].last_pages:
+                for last_page in timeline.people[person_name].last_pages:
                     last_page.link_to(next_link)
-        del next_page_links[person_name]
+        del timeline.next_page_links[person_name]
 
-    missing_jumps = [page_number for page_number in next_page_links if isinstance(page_number, str)]
+    missing_jumps = [page_number for page_number in timeline.next_page_links if isinstance(page_number, str)]
     if missing_jumps:
         print("Missing required jumps:")
         print(missing_jumps)
@@ -178,18 +165,18 @@ if __name__ == "__main__":
 
     # Now write it to file
     with open(path.join(current_location, "POV Cam", "timelines.js"), "w") as output_file:
-        output_file.write("peoplenames = {};\n".format(list(people.keys())))
-        output_file.write("colours = {};\n".format(colours))
-        output_file.write("images = {};\n".format(images))
-        output_file.write("groups = {};\n".format(groups))
+        output_file.write("peoplenames = {};\n".format(list(timeline.people.keys())))
+        output_file.write("colours = {};\n".format(timeline.colours))
+        output_file.write("images = {};\n".format(timeline.images))
+        output_file.write("groups = {};\n".format(timeline.groups))
 
         output_file.write("\ntimelines = {")
-        for page_number in sorted(next_page_links.keys()):
+        for page_number in sorted(timeline.next_page_links.keys()):
             output_file.write("\n\t{}: [{}],".format(
                 page_number,
                 "".join(
-                    l.output_for_js(get_person, next_page_links) + ","
-                    for l in next_page_links[page_number]
+                    l.output_for_js(timeline.get_person, timeline.next_page_links) + ","
+                    for l in timeline.next_page_links[page_number]
                 )
             ))
         output_file.write("\n}")
@@ -198,7 +185,7 @@ if __name__ == "__main__":
     print("Problems:")
 
     existing_images = set(listdir(path.join(current_location, "POV Cam", "images")))
-    for image in images:
+    for image in timeline.images:
         if image in existing_images:
             existing_images.remove(image)
         else:
