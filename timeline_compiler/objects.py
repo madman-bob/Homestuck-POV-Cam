@@ -18,9 +18,13 @@ class Link:
         self.next_link_captions = []
 
     def __str__(self):
-        return str(self.current_page_number) + " ==> " + \
-               str([next_link.current_page_number if isinstance(next_link, Link) else next_link for next_link in self.next_links]) + ": " + \
-               str(self.person) + " " + str(self.colour_id) + " " + str(self.image_id)
+        return "{} ==> {}: {} {} {}".format(
+            self.current_page_number,
+            [next_link.current_page_number if isinstance(next_link, Link) else next_link for next_link in self.next_links],
+            self.person.name,
+            self.colour_id,
+            self.image_id
+        )
 
     def link_to(self, next_link, caption=None):
         self.next_links.append(next_link)
