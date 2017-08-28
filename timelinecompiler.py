@@ -1,8 +1,8 @@
+from collections import defaultdict, OrderedDict
 from os import listdir, path
 import re
 
-from timelineobjects import Person, get_person, people, next_page_links
-from timeline_compiler.objects import Link
+from timeline_compiler.objects import Person, Link
 
 patterns = {
     "Pages": re.compile("^\d+(-\d+(-2)?)?$"),
@@ -125,6 +125,16 @@ def parse_person_tokens(command_iterator, previous_pages=None, current_person=No
 
         elif command == "Caption":
             next_caption = args[0]
+
+
+next_page_links = defaultdict(list)
+people = OrderedDict()
+
+
+def get_person(person_name):
+    if person_name not in people:
+        people[person_name] = Person(len(people), person_name)
+    return people[person_name]
 
 
 if __name__ == "__main__":
