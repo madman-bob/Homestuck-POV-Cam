@@ -1,7 +1,8 @@
 from os import listdir, path
 import re
 
-from timelineobjects import Link, get_person, people, next_page_links
+from timelineobjects import Person, get_person, people, next_page_links
+from timeline_compiler.objects import Link
 
 patterns = {
     "Pages": re.compile("^\d+(-\d+(-2)?)?$"),
@@ -72,6 +73,12 @@ def parse_person_tokens(command_iterator, previous_pages=None, current_person=No
         if command == "Pages":
             for page_number in range(*args):
                 next_link = Link(page_number, current_person, current_colour, current_image, current_group)
+
+                if isinstance(current_person, Person) and current_person.first_page is None:
+                    current_person.first_page = next_link
+
+                next_page_links[page_number].append(next_link)
+
                 for page in previous_pages:
                     page.link_to(next_link, next_caption)
                 previous_pages = [next_link]
@@ -87,6 +94,7 @@ def parse_person_tokens(command_iterator, previous_pages=None, current_person=No
             for page in previous_pages:
                 page.link_to(args[0])
             previous_pages = [Link(args[0])]
+            next_page_links[args[0]].append(previous_pages[0])
             next_caption = None
 
         elif command == "EOT":
@@ -170,7 +178,7 @@ if __name__ == "__main__":
             output_file.write("\n\t{}: [{}],".format(
                 page_number,
                 "".join(
-                    l.output_for_js() + ","
+                    l.output_for_js(get_person, next_page_links) + ","
                     for l in next_page_links[page_number]
                 )
             ))
