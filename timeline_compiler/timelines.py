@@ -4,7 +4,7 @@ import re
 from timeline_compiler.objects import Person, Link
 
 
-class Timeline:
+class Timelines:
     patterns = {
         "Pages": re.compile("^\d+(-\d+(-2)?)?$"),
         "==>": re.compile("^=+>$"),
