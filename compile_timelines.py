@@ -6,7 +6,7 @@ if __name__ == "__main__":
     current_location = path.dirname(__file__)
     compile_timelines(
         timelines_directory=path.join(current_location, "Readable Timelines"),
-        expected_timelines_path=path.join(current_location, "timelineexpectedpeople.txt"),
+        expected_timelines_path=path.join(current_location, "expected_timelines.txt"),
         images_directory=path.join(current_location, "POV Cam", "images"),
         output_path=path.join(current_location, "POV Cam", "timelines.js")
     )
