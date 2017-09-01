@@ -1,82 +1,13 @@
 from os import listdir, path
 
-from timeline_compiler.objects import Person, Link
 from timeline_compiler.timeline import Timeline
-
-timeline = Timeline()
-
-
-def parse_person_tokens(command_iterator, previous_pages=None, current_person=None, current_colour=None, current_image=None, current_group=None, next_caption=None):
-    # Page to pass into next splinter timeline
-    splinter_pages = []
-    # Page returned from splinter timeline
-    return_pages = []
-
-    if previous_pages is None:
-        previous_pages = []
-
-    for command, *args in command_iterator:
-        if command == "Pages":
-            for page_number in range(*args):
-                next_link = Link(page_number, current_person, current_colour, current_image, current_group)
-
-                if isinstance(current_person, Person) and current_person.first_page is None:
-                    current_person.first_page = next_link
-
-                timeline.next_page_links[page_number].append(next_link)
-
-                for page in previous_pages:
-                    page.link_to(next_link, next_caption)
-                previous_pages = [next_link]
-                next_caption = None
-
-        elif command == "==>":
-            splinter_pages = previous_pages
-
-        elif command == "<==":
-            previous_pages.extend(return_pages)
-
-        elif command == "GOTO":
-            for page in previous_pages:
-                page.link_to(args[0])
-            previous_pages = [Link(args[0])]
-            timeline.next_page_links[args[0]].append(previous_pages[0])
-            next_caption = None
-
-        elif command == "EOT":
-            current_person.last_pages = previous_pages
-            return previous_pages
-
-        elif command == "BOT":
-            return_pages = parse_person_tokens(command_iterator, splinter_pages, current_person, current_colour, current_image, current_group)
-            splinter_pages = []
-
-        elif command == "Name":
-            current_person = timeline.get_person(args[0])
-
-        elif command == "Colour":
-            if not args[0] in timeline.colours:
-                timeline.colours.append(args[0])
-            current_colour = timeline.colours.index(args[0])
-
-        elif command == "Image":
-            if not args[0] in timeline.images:
-                timeline.images.append(args[0])
-            current_image = timeline.images.index(args[0])
-
-        elif command == "Group":
-            if not args[0] in timeline.groups:
-                timeline.groups.append(args[0])
-            current_group = timeline.groups.index(args[0])
-
-        elif command == "Caption":
-            next_caption = args[0]
-
 
 if __name__ == "__main__":
     # Get order of expected people from designated file
     # Read timelines in order
     # Check expected images present
+
+    timeline = Timeline()
 
     current_location = path.dirname(__file__)
 
@@ -92,7 +23,7 @@ if __name__ == "__main__":
             name = line.strip() + ".txt"
             expected_timelines.add(name)
             if name in timeline_file_locations:
-                parse_person_tokens(timeline.tokenize_timeline_file(path.join(current_location, "Readable Timelines", name)))
+                timeline.add_timeline(path.join(current_location, "Readable Timelines", name))
 
     # Pass through, replacing links from relative locations with absolute locations
     # (Note: still have links to relative locations)

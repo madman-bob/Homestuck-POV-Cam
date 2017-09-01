@@ -1,7 +1,7 @@
 from collections import defaultdict, OrderedDict
 import re
 
-from timeline_compiler.objects import Person
+from timeline_compiler.objects import Person, Link
 
 
 class Timeline:
@@ -71,3 +71,72 @@ class Timeline:
                 yield (pattern_match,)
 
         yield ("EOT",)
+
+    def add_timeline(self, timeline_file_location):
+        self.exec_timeline_tokens(self.tokenize_timeline_file(timeline_file_location))
+
+    def exec_timeline_tokens(self, command_iterator, previous_pages=None, current_person=None, current_colour=None, current_image=None, current_group=None, next_caption=None):
+        # Page to pass into next splinter timeline
+        splinter_pages = []
+        # Page returned from splinter timeline
+        return_pages = []
+
+        if previous_pages is None:
+            previous_pages = []
+
+        for command, *args in command_iterator:
+            if command == "Pages":
+                for page_number in range(*args):
+                    next_link = Link(page_number, current_person, current_colour, current_image, current_group)
+
+                    if isinstance(current_person, Person) and current_person.first_page is None:
+                        current_person.first_page = next_link
+
+                    self.next_page_links[page_number].append(next_link)
+
+                    for page in previous_pages:
+                        page.link_to(next_link, next_caption)
+                    previous_pages = [next_link]
+                    next_caption = None
+
+            elif command == "==>":
+                splinter_pages = previous_pages
+
+            elif command == "<==":
+                previous_pages.extend(return_pages)
+
+            elif command == "GOTO":
+                for page in previous_pages:
+                    page.link_to(args[0])
+                previous_pages = [Link(args[0])]
+                self.next_page_links[args[0]].append(previous_pages[0])
+                next_caption = None
+
+            elif command == "EOT":
+                current_person.last_pages = previous_pages
+                return previous_pages
+
+            elif command == "BOT":
+                return_pages = self.exec_timeline_tokens(command_iterator, splinter_pages, current_person, current_colour, current_image, current_group)
+                splinter_pages = []
+
+            elif command == "Name":
+                current_person = self.get_person(args[0])
+
+            elif command == "Colour":
+                if not args[0] in self.colours:
+                    self.colours.append(args[0])
+                current_colour = self.colours.index(args[0])
+
+            elif command == "Image":
+                if not args[0] in self.images:
+                    self.images.append(args[0])
+                current_image = self.images.index(args[0])
+
+            elif command == "Group":
+                if not args[0] in self.groups:
+                    self.groups.append(args[0])
+                current_group = self.groups.index(args[0])
+
+            elif command == "Caption":
+                next_caption = args[0]
