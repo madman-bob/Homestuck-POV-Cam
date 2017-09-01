@@ -2,18 +2,17 @@ from os import listdir, path
 
 from timeline_compiler.timelines import Timelines
 
-if __name__ == "__main__":
+
+def compile_timelines(timelines_directory, expected_timelines_path, images_directory, output_path):
     # Get order of expected people from designated file
     # Read timelines in order
     # Check expected images present
 
     timelines = Timelines()
 
-    current_location = path.dirname(__file__)
+    actual_timeline_paths = set(listdir(timelines_directory))
 
-    actual_timeline_paths = set(listdir(path.join(current_location, "Readable Timelines")))
-
-    with open(path.join(current_location, "timelineexpectedpeople.txt"), "r") as people_file:
+    with open(expected_timelines_path, "r") as people_file:
         expected_timeline_paths = [
             '{}.txt'.format(line.strip()) for line in people_file if line.strip()
         ]
@@ -29,7 +28,7 @@ if __name__ == "__main__":
     }
 
     for timeline_path in timeline_paths:
-        timelines.add_timeline(path.join(current_location, "Readable Timelines", timeline_path))
+        timelines.add_timeline(path.join(timelines_directory, timeline_path))
 
     # Pass through, replacing links from relative locations with absolute locations
     # (Note: still have links to relative locations)
@@ -50,7 +49,7 @@ if __name__ == "__main__":
         raise Exception("")
 
     # Now write it to file
-    with open(path.join(current_location, "POV Cam", "timelines.js"), "w") as output_file:
+    with open(output_path, "w") as output_file:
         output_file.write("peoplenames = {};\n".format(list(timelines.people.keys())))
         output_file.write("colours = {};\n".format(timelines.colours))
         output_file.write("images = {};\n".format(timelines.images))
@@ -67,7 +66,7 @@ if __name__ == "__main__":
             ))
         output_file.write("\n}")
 
-    existing_images = set(listdir(path.join(current_location, "POV Cam", "images")))
+    existing_images = set(listdir(images_directory))
     missing_images = {
         image for image in timelines.images if image not in existing_images
     }
