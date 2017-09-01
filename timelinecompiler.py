@@ -1,60 +1,9 @@
 from os import listdir, path
-import re
 
 from timeline_compiler.objects import Person, Link
 from timeline_compiler.timeline import Timeline
 
 timeline = Timeline()
-
-patterns = {
-    "Pages": re.compile("^\d+(-\d+(-2)?)?$"),
-    "==>": re.compile("^=+>$"),
-    "<==": re.compile("^<=+$"),
-    "GOTO": re.compile("^~\s*[\w ()'^]+$", re.IGNORECASE),
-    "Name": re.compile("^Name:\s*[\w ()'^]+$", re.IGNORECASE),
-    "Colour": re.compile("^Colour:\s*#[0-9A-F]{6}$", re.IGNORECASE),
-    "Image": re.compile("^Image:\s*\w+\.\w+$", re.IGNORECASE),
-    "Group": re.compile("^Group:\s*[\w ()']+$", re.IGNORECASE),
-    "Caption": re.compile("^Caption:\s*[\w ]+$", re.IGNORECASE)
-}
-
-
-def tokenize_person_file(file_location):
-    indent_level = 0
-    with open(file_location, "r") as person_file:
-        for line in person_file:
-            potential_command = line.strip()
-            pattern_match = next((pattern for pattern in patterns if patterns[pattern].match(potential_command)), None)
-
-            if pattern_match is None:
-                continue
-
-            # Good enough in most cases
-            # May want to improve later
-            next_indent_level = len(line) - len(line.lstrip())
-            if next_indent_level > indent_level:
-                yield ("BOT",)
-            elif next_indent_level < indent_level:
-                yield ("EOT",)
-            indent_level = next_indent_level
-
-            if pattern_match == "Pages":
-                args = [int(s) for s in potential_command.split("-")]
-                if len(args) == 1:
-                    args.append(args[0])
-                args[1] += 1
-                yield (pattern_match,) + tuple(args)
-
-            elif pattern_match == "GOTO":
-                yield (pattern_match, potential_command[1:].strip())
-
-            elif pattern_match in {"Name", "Colour", "Image", "Group", "Caption"}:
-                yield (pattern_match, potential_command.split(":")[1].strip())
-
-            else:
-                yield (pattern_match,)
-
-    yield ("EOT",)
 
 
 def parse_person_tokens(command_iterator, previous_pages=None, current_person=None, current_colour=None, current_image=None, current_group=None, next_caption=None):
@@ -143,7 +92,7 @@ if __name__ == "__main__":
             name = line.strip() + ".txt"
             expected_timelines.add(name)
             if name in timeline_file_locations:
-                parse_person_tokens(tokenize_person_file(path.join(current_location, "Readable Timelines", name)))
+                parse_person_tokens(timeline.tokenize_timeline_file(path.join(current_location, "Readable Timelines", name)))
 
     # Pass through, replacing links from relative locations with absolute locations
     # (Note: still have links to relative locations)
