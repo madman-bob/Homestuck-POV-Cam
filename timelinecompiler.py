@@ -11,19 +11,25 @@ if __name__ == "__main__":
 
     current_location = path.dirname(__file__)
 
-    timeline_file_locations = set(listdir(path.join(current_location, "Readable Timelines")))
-    expected_timelines = set()
+    actual_timeline_paths = set(listdir(path.join(current_location, "Readable Timelines")))
 
-    # Get information from files
-    with open(path.join(current_location, "timelineexpectedpeople.txt"), "r") as timelines.people_file:
-        for line in timelines.people_file:
-            if not line.strip():
-                continue
+    with open(path.join(current_location, "timelineexpectedpeople.txt"), "r") as people_file:
+        expected_timeline_paths = [
+            '{}.txt'.format(line.strip()) for line in people_file if line.strip()
+        ]
 
-            name = line.strip() + ".txt"
-            expected_timelines.add(name)
-            if name in timeline_file_locations:
-                timelines.add_timeline(path.join(current_location, "Readable Timelines", name))
+    timeline_paths = [
+        timeline_path for timeline_path in expected_timeline_paths if timeline_path in actual_timeline_paths
+    ]
+    missing_timeline_paths = {
+        timeline_path for timeline_path in expected_timeline_paths if timeline_path not in actual_timeline_paths
+    }
+    unexpected_timeline_paths = {
+        timeline_path for timeline_path in actual_timeline_paths if timeline_path not in expected_timeline_paths
+    }
+
+    for timeline_path in timeline_paths:
+        timelines.add_timeline(path.join(current_location, "Readable Timelines", timeline_path))
 
     # Pass through, replacing links from relative locations with absolute locations
     # (Note: still have links to relative locations)
@@ -61,20 +67,29 @@ if __name__ == "__main__":
             ))
         output_file.write("\n}")
 
-    # Any errors?
-    print("Problems:")
-
     existing_images = set(listdir(path.join(current_location, "POV Cam", "images")))
-    for image in timelines.images:
-        if image in existing_images:
-            existing_images.remove(image)
-        else:
-            print(image + " is missing")
-    for image in existing_images:
-        print(image + " is not expected")
+    missing_images = {
+        image for image in timelines.images if image not in existing_images
+    }
+    unexpected_images = {
+        image for image in existing_images if image not in timelines.images
+    }
 
-    for person in timeline_file_locations.symmetric_difference(expected_timelines):
-        if person in timeline_file_locations:
-            print(person + " is not expected")
-        else:
-            print(person + " is missing")
+    if any((missing_images, unexpected_images, missing_timeline_paths, unexpected_timeline_paths)):
+        print("Problems:")
+
+        if missing_images:
+            print("\nMissing images:")
+            print("\n".join(sorted(missing_images)))
+
+        if unexpected_images:
+            print("\nUnexpected images:")
+            print("\n".join(sorted(unexpected_images)))
+
+        if missing_timeline_paths:
+            print("\nMissing timeline files:")
+            print("\n".join(sorted(missing_timeline_paths)))
+
+        if unexpected_timeline_paths:
+            print("\nUnexpected timeline files:")
+            print("\n".join(sorted(unexpected_timeline_paths)))
