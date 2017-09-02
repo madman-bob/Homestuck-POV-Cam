@@ -37,11 +37,17 @@
             "js": [
                 "timelines.js",
                 "page-captions.js",
+
                 "lord-english-text.js",
+                "pre-retcon-images/pre-retcon-images.js",
+
                 "injection.js",
 
                 "flash-controls/flash-lengths.js",
                 "flash-controls/flash-controls.js"
+            ],
+            "css": [
+                "pre-retcon-images/pre-retcon-images.css"
             ],
             "run_at": "document_end",
             "all_frames": true

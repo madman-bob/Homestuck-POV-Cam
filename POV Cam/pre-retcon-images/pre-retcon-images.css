@@ -1,0 +1,15 @@
+div.retcon-container {
+    display: inline-block;
+    position: relative;
+}
+
+img.pre-retcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
+
+img.pre-retcon:hover {
+    opacity: 0;
+}

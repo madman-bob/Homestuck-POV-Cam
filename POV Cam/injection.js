@@ -214,25 +214,9 @@ function modifyPage() {
 
         // View pre-retcon pages
         if (items.preretcon == "yes") {
-            sheet.addRule('img.preretcon:hover', 'opacity: 0;');
-            var currentImages = document.querySelectorAll("img[src*='retcon'");
-            for (var i = 0; i < currentImages.length; i++) {
-                var doubleImageContainer = document.createElement("div");
-                doubleImageContainer.style.display = "inline-block";
-                doubleImageContainer.style.position = "relative";
-                currentImages[i].parentElement.insertBefore(doubleImageContainer, currentImages[i]);
-                doubleImageContainer.appendChild(currentImages[i]);
-
-                var preRetconImage = document.createElement("img");
-                preRetconImage.src = currentImages[i].src.replace("_retcon", "").replace("retcon", "");
-                preRetconImage.style.position = "absolute";
-                preRetconImage.style.top = 0;
-                preRetconImage.style.left = 0;
-                preRetconImage.className = "preretcon";
-                preRetconImage.style.transition = "opacity 0.3s";
-
-                doubleImageContainer.appendChild(preRetconImage);
-            }
+            document.querySelectorAll("img[src*='retcon']").forEach(postRetconImage => {
+                overlayPreRetconImage(postRetconImage);
+            });
         }
 
         // Flash controls
