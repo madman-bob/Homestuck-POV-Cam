@@ -247,7 +247,7 @@ function modifyPage() {
     if (sogb) {
         sogb = sogb.parentElement.parentElement;
         var optionsLink = document.createElement("a");
-        optionsLink.href = chrome.extension.getURL("options.html");
+        optionsLink.href = chrome.extension.getURL("options/options.html");
         optionsLink.innerText = "POV Cam Options";
         optionsLink.style["font-weight"] = "bold";
         optionsLink.style["font-size"] = "10px";

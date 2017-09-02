@@ -4,21 +4,21 @@
     "name": "Homestuck POV Cam",
     "version": "3.20",
     "description": "View Homestuck from the point of view of any character",
-    "options_page": "options.html",
+    "options_page": "options/options.html",
 
     "permissions": [
         "storage"
     ],
 
     "web_accessible_resources": [
-        "options.html",
+        "options/options.html",
         "images/*.png"
     ],
 
     "icons": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
     },
 
     "content_scripts": [
@@ -36,10 +36,12 @@
             ],
             "js": [
                 "timelines.js",
-                "names.js",
-                "lordenglishtext.js",
+                "page-captions.js",
+                "lord-english-text.js",
                 "injection.js",
-                "flashmodifier.js"
+
+                "flash-controls/flash-lengths.js",
+                "flash-controls/flash-controls.js"
             ],
             "run_at": "document_end",
             "all_frames": true
