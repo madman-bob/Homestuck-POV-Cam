@@ -172,7 +172,9 @@ function modifyPage() {
 
         // Auto-open pesterlog
         if (items.autoopenpesterlog == "yes") {
-            buttons = outerContainer.getElementsByTagName("button");
+            // First button is "Show Pesterlog", second "Hide Pesterlog"
+            // In Act 6 Act 5 Act 1 x2 combo, can have another pair of buttons
+            var buttons = outerContainer.getElementsByTagName("button");
             for (var i = 0; i < buttons.length; i += 2) {
                 buttons[i].click();
             }
