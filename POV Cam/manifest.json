@@ -1,48 +1,48 @@
 {
-	"manifest_version": 2,
-	
-	"name": "Homestuck POV Cam",
-	"version": "3.20",
-	"description": "View Homestuck from the point of view of any character",
-	"options_page": "options.html",
-	
-	"permissions": [
-		"storage"
-	],
-	
-	"web_accessible_resources": [
-		"options.html",
-		"images/*.png"
-	],
-	
-	"icons": {
-		"16": "icon16.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
-	},
-	
-	"content_scripts": [
-		{
-			"matches": [
-				"http://*.mspaintadventures.com/*s=6&p=*",
-				"http://*.mspaintadventures.com/DOTA/",
-				"http://*.mspaintadventures.com/007395/",
-				"http://*.mspaintadventures.com/007680/*",
-				"http://*.mspaintadventures.com/GAMEOVER/",
-				"http://*.mspaintadventures.com/index_pw.php",
-				"http://*.mspaintadventures.com/shes8ack/",
-				"http://*.mspaintadventures.com/collide.html",
-				"http://*.mspaintadventures.com/ACT7.html"
-			],
-			"js": [
-				"timelines.js",
-				"names.js",
-				"lordenglishtext.js",
-				"injection.js",
-				"flashmodifier.js"
-			],
-			"run_at": "document_end",
-			"all_frames": true
-		}
-	]
+    "manifest_version": 2,
+
+    "name": "Homestuck POV Cam",
+    "version": "3.20",
+    "description": "View Homestuck from the point of view of any character",
+    "options_page": "options.html",
+
+    "permissions": [
+        "storage"
+    ],
+
+    "web_accessible_resources": [
+        "options.html",
+        "images/*.png"
+    ],
+
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*.mspaintadventures.com/*s=6&p=*",
+                "http://*.mspaintadventures.com/DOTA/",
+                "http://*.mspaintadventures.com/007395/",
+                "http://*.mspaintadventures.com/007680/*",
+                "http://*.mspaintadventures.com/GAMEOVER/",
+                "http://*.mspaintadventures.com/index_pw.php",
+                "http://*.mspaintadventures.com/shes8ack/",
+                "http://*.mspaintadventures.com/collide.html",
+                "http://*.mspaintadventures.com/ACT7.html"
+            ],
+            "js": [
+                "timelines.js",
+                "names.js",
+                "lordenglishtext.js",
+                "injection.js",
+                "flashmodifier.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ]
 }
