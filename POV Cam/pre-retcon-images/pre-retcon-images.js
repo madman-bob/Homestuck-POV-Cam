@@ -6,7 +6,7 @@
 function createPreRetconImage(postRetconImage) {
     var preRetconImage = document.createElement("img");
 
-    preRetconImage.src = postRetconImage.src.replace("_retcon", "").replace("retcon", "");
+    preRetconImage.src = postRetconImage.src.replace("retconheir", "").replace("_retcon", "").replace("retcon", "");
     preRetconImage.className = "pre-retcon";
 
     return preRetconImage;
