@@ -30,12 +30,12 @@ class Link:
         self.next_links.append(next_link)
         self.next_link_captions.append(caption)
 
-    def output_for_js(self, get_person, next_page_links):
+    def to_json(self, get_person, next_page_links):
         next_links = (next_link if isinstance(next_link, Link) else get_person(next_link).first_page for next_link in self.next_links)
-        return str([
+        return [
             self.person.person_id, self.colour_id, self.image_id, self.group_id,
             [
                 [next_link.current_page_number, next_page_links[next_link.current_page_number].index(next_link)] + ([caption] if caption is not None else [])
                 for next_link, caption in zip(next_links, self.next_link_captions)
             ]
-        ]).replace(" ", "")
+        ]

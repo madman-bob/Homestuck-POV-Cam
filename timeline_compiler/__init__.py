@@ -1,6 +1,12 @@
 from os import listdir, path
+from collections import OrderedDict
+import json
 
 from timeline_compiler.timelines import Timelines
+
+
+def to_json(obj):
+    return json.dumps(obj, indent=4)
 
 
 def compile_timelines(timelines_directory, expected_timelines_path, images_directory, output_path):
@@ -50,21 +56,15 @@ def compile_timelines(timelines_directory, expected_timelines_path, images_direc
 
     # Now write it to file
     with open(output_path, "w") as output_file:
-        output_file.write("peoplenames = {};\n".format(list(timelines.people.keys())))
-        output_file.write("colours = {};\n".format(timelines.colours))
-        output_file.write("images = {};\n".format(timelines.images))
-        output_file.write("groups = {};\n".format(timelines.groups))
+        output_file.write("peoplenames = {};\n".format(to_json(list(timelines.people.keys()))))
+        output_file.write("colours = {};\n".format(to_json(timelines.colours)))
+        output_file.write("images = {};\n".format(to_json(timelines.images)))
+        output_file.write("groups = {};\n".format(to_json(timelines.groups)))
 
-        output_file.write("\ntimelines = {")
-        for page_number in sorted(timelines.next_page_links.keys()):
-            output_file.write("\n\t{}: [{}],".format(
-                page_number,
-                "".join(
-                    l.output_for_js(timelines.get_person, timelines.next_page_links) + ","
-                    for l in timelines.next_page_links[page_number]
-                )
-            ))
-        output_file.write("\n}")
+        output_file.write("\ntimelines = {};".format(to_json(OrderedDict(
+            (page_number, [link.to_json(timelines.get_person, timelines.next_page_links) for link in next_page_links])
+            for page_number, next_page_links in sorted(timelines.next_page_links.items())
+        ))))
 
     existing_images = set(listdir(images_directory))
     missing_images = {
