@@ -38,6 +38,7 @@
                 "timelines.js",
                 "page-captions.js",
 
+                "next-page-links.js",
                 "arrow-navigation.js",
                 "lord-english-text.js",
                 "pre-retcon-images/pre-retcon-images.js",
