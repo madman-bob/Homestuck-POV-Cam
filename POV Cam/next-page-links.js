@@ -2,21 +2,26 @@ function zeroPad(pageNo) {
     return ("00" + pageNo).slice(-6);
 }
 
-function createLink(link) {
-    var name = peoplenames[link[0]];
-    var colour = colours[link[1]];
-    var image = images[link[2]];
-    var nextPages = link[4];
+class LinkData {
+    constructor(rawLinkData) {
+        this.name = peoplenames[rawLinkData[0]];
+        this.colour = colours[rawLinkData[1]];
+        this.image = images[rawLinkData[2]];
+        this.group = groups[rawLinkData[3]];
+        this.nextPages = rawLinkData[4];
+    }
+}
 
+function createLink(linkData) {
     var container = document.createElement("div");
 
-    if (nextPages.length == 0) {
+    if (linkData.nextPages.length == 0) {
         var personIcon = document.createElement("img");
-        personIcon.src = chrome.extension.getURL("images/" + image);
+        personIcon.src = chrome.extension.getURL("images/" + linkData.image);
         personIcon.width = 32;
         personIcon.height = 32;
         personIcon.style["vertical-align"] = "middle";
-        personIcon.title = name;
+        personIcon.title = linkData.name;
         container.appendChild(personIcon);
 
         var enterCommand = document.createElement("span");
@@ -26,11 +31,11 @@ function createLink(link) {
         return container;
     }
 
-    while (nextPages.length > 0) {
-        var nextPage = nextPages.pop();
+    while (linkData.nextPages.length > 0) {
+        var nextPage = linkData.nextPages.pop();
         var nextPageNo = nextPage[0];
         var nextPageIndex = nextPage[1];
-        var nextPageCaption = name;
+        var nextPageCaption = linkData.name;
         if (nextPage.length == 4) {
             nextPageCaption = nextPageCaption + " - " + nextPage[2];
         }
@@ -38,7 +43,7 @@ function createLink(link) {
         var innerContainer = document.createElement("div");
 
         var personIcon = document.createElement("img");
-        personIcon.src = chrome.extension.getURL("images/" + image);
+        personIcon.src = chrome.extension.getURL("images/" + linkData.image);
         personIcon.width = 32;
         personIcon.height = 32;
         personIcon.style["vertical-align"] = "middle";
@@ -60,18 +65,18 @@ function createLink(link) {
 
             var sucker = document.createElement("img");
             sucker.src = "http://mspaintadventures.com/images/trickster_sitegraphics/sucker.gif";
-            sucker.style.backgroundColor = colour;
-            sucker.style.boxShadow = "0px 0px 2px 2px " + colour;
+            sucker.style.backgroundColor = linkData.colour;
+            sucker.style.boxShadow = "0px 0px 2px 2px " + linkData.colour;
 
             link.appendChild(sucker);
-        } else if (name.indexOf("English") != -1) {
+        } else if (linkData.name.indexOf("English") != -1) {
             // Give Lord English, Jack English colourful links
             link.appendChild(lordEnglishText(pageCaptions[nextPageNo]));
         } else {
             link.innerText = pageCaptions[nextPageNo];
         }
 
-        link.style.color = colour;
+        link.style.color = linkData.colour;
         innerContainer.appendChild(link);
 
         container.appendChild(innerContainer);

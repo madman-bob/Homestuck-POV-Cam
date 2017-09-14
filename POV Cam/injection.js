@@ -78,13 +78,13 @@ function modifyPage() {
     }, function (items) {
         // Add links to page
         for (var i in timelines[pageNo]) {
-            var currentgroup = groups[timelines[pageNo][i][3]];
-            if (items.timelinesenabled[currentgroup] != false) {
-                currentlink = createLink(timelines[pageNo][i]);
+            var linkData = new LinkData(timelines[pageNo][i]);
+            if (items.timelinesenabled[linkData.group] != false) {
+                var currentLink = createLink(linkData);
                 if ("#" + i == document.location.hash) {
-                    nextPageLink = currentlink.getElementsByTagName("a")[0];
+                    nextPageLink = currentLink.getElementsByTagName("a")[0];
                 }
-                linkContainer.appendChild(currentlink);
+                linkContainer.appendChild(currentLink);
             }
         }
 
