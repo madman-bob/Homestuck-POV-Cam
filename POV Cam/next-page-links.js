@@ -50,9 +50,6 @@ function createLink(linkData) {
         var nextPageNo = nextPage[0];
         var nextPageIndex = nextPage[1];
         var nextPageCaption = linkData.name;
-        if (nextPage.length == 4) {
-            nextPageCaption = nextPageCaption + " - " + nextPage[2];
-        }
 
         var innerContainer = linkData.createCommandPrompt(nextPageCaption);
 
