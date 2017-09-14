@@ -10,26 +10,40 @@ class LinkData {
         this.group = groups[rawLinkData[3]];
         this.nextPages = rawLinkData[4];
     }
-}
 
-function createLink(linkData) {
-    var container = document.createElement("div");
+    createIcon(caption) {
+        var icon = document.createElement("img");
+        icon.src = chrome.extension.getURL("images/" + this.image);
+        icon.width = 32;
+        icon.height = 32;
+        icon.style["vertical-align"] = "middle";
+        icon.title = caption;
 
-    if (linkData.nextPages.length == 0) {
-        var personIcon = document.createElement("img");
-        personIcon.src = chrome.extension.getURL("images/" + linkData.image);
-        personIcon.width = 32;
-        personIcon.height = 32;
-        personIcon.style["vertical-align"] = "middle";
-        personIcon.title = linkData.name;
-        container.appendChild(personIcon);
+        return icon;
+    }
 
-        var enterCommand = document.createElement("span");
-        enterCommand.innerText = "> ";
-        container.appendChild(enterCommand);
+    static createAnonCommandPrompt() {
+        var commandPrompt = document.createElement("span");
+        commandPrompt.innerText = "> ";
+        return commandPrompt;
+    }
+
+    createCommandPrompt(caption) {
+        var container = document.createElement("div");
+
+        container.appendChild(this.createIcon(caption));
+        container.appendChild(LinkData.createAnonCommandPrompt());
 
         return container;
     }
+}
+
+function createLink(linkData) {
+    if (linkData.nextPages.length == 0) {
+        return linkData.createCommandPrompt(linkData.name);
+    }
+
+    var container = document.createElement("div");
 
     while (linkData.nextPages.length > 0) {
         var nextPage = linkData.nextPages.pop();
@@ -40,19 +54,7 @@ function createLink(linkData) {
             nextPageCaption = nextPageCaption + " - " + nextPage[2];
         }
 
-        var innerContainer = document.createElement("div");
-
-        var personIcon = document.createElement("img");
-        personIcon.src = chrome.extension.getURL("images/" + linkData.image);
-        personIcon.width = 32;
-        personIcon.height = 32;
-        personIcon.style["vertical-align"] = "middle";
-        personIcon.title = nextPageCaption;
-        innerContainer.appendChild(personIcon);
-
-        var enterCommand = document.createElement("span");
-        enterCommand.innerText = "> ";
-        innerContainer.appendChild(enterCommand);
+        var innerContainer = linkData.createCommandPrompt(nextPageCaption);
 
         var link = document.createElement("a");
         link.href = "/?s=6&p=" + zeroPad(nextPageNo);
