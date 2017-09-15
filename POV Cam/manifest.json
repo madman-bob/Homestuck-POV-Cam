@@ -36,7 +36,7 @@
             ],
             "js": [
                 "timelines.js",
-                "page-captions.js",
+                "page-captions/en.js",
 
                 "next-page-links.js",
                 "arrow-navigation.js",

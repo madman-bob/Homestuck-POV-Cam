@@ -45,7 +45,7 @@ class DestinationLink {
     }
 
     get pageCaption() {
-        return pageCaptions[this.pageNo];
+        return pageCaptions["en"][this.pageNo];
     }
 
     createLinkElement(caption) {

@@ -1,4 +1,6 @@
-var pageCaptions = {
+var pageCaptions = {};
+
+pageCaptions["en"] = {
     1901: "Homestuck",
     1902: "Enter name.",
     1903: "Try again.",
