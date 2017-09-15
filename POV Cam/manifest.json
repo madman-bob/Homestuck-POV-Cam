@@ -37,6 +37,7 @@
             "js": [
                 "timelines.js",
                 "page-captions/en.js",
+                "page-captions/ru.js",
 
                 "next-page-links.js",
                 "arrow-navigation.js",
