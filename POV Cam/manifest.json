@@ -45,6 +45,8 @@
                 "http://*.mspaintadventures.ru/ACT7.html"
             ],
             "js": [
+                "localization.js",
+
                 "timelines.js",
                 "page-captions/en.js",
                 "page-captions/ru.js",
