@@ -32,7 +32,17 @@
                 "http://*.mspaintadventures.com/index_pw.php",
                 "http://*.mspaintadventures.com/shes8ack/",
                 "http://*.mspaintadventures.com/collide.html",
-                "http://*.mspaintadventures.com/ACT7.html"
+                "http://*.mspaintadventures.com/ACT7.html",
+
+                "http://*.mspaintadventures.ru/*s=6&p=*",
+                "http://*.mspaintadventures.ru/DOTA/",
+                "http://*.mspaintadventures.ru/007395/",
+                "http://*.mspaintadventures.ru/007680/*",
+                "http://*.mspaintadventures.ru/GAMEOVER/",
+                "http://*.mspaintadventures.ru/index_pw.php",
+                "http://*.mspaintadventures.ru/shes8ack/",
+                "http://*.mspaintadventures.ru/collide.html",
+                "http://*.mspaintadventures.ru/ACT7.html"
             ],
             "js": [
                 "timelines.js",
