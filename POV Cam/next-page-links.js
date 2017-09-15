@@ -8,7 +8,7 @@ class LinkData {
         this.colour = colours[rawLinkData[1]];
         this.image = images[rawLinkData[2]];
         this.group = groups[rawLinkData[3]];
-        this.nextPages = rawLinkData[4];
+        this.nextPages = rawLinkData[4].map(rawNextPageData => new DestinationLink(rawNextPageData));
     }
 
     createIcon(caption) {
@@ -38,6 +38,27 @@ class LinkData {
     }
 }
 
+class DestinationLink {
+    constructor(rawLinkData) {
+        this.pageNo = rawLinkData[0];
+        this.nextLinkIndex = rawLinkData[1];
+    }
+
+    get pageCaption() {
+        return pageCaptions[this.pageNo];
+    }
+
+    createLinkElement(caption) {
+        var link = document.createElement("a");
+
+        link.href = "/?s=6&p=" + zeroPad(this.pageNo);
+        link.hash = this.nextLinkIndex;
+        link.title = caption;
+
+        return link;
+    }
+}
+
 function createLink(linkData) {
     if (linkData.nextPages.length == 0) {
         return linkData.createCommandPrompt(linkData.name);
@@ -46,21 +67,16 @@ function createLink(linkData) {
     var container = document.createElement("div");
 
     while (linkData.nextPages.length > 0) {
-        var nextPage = linkData.nextPages.pop();
-        var nextPageNo = nextPage[0];
-        var nextPageIndex = nextPage[1];
+        var destinationLink = linkData.nextPages.pop();
         var nextPageCaption = linkData.name;
 
         var innerContainer = linkData.createCommandPrompt(nextPageCaption);
 
-        var link = document.createElement("a");
-        link.href = "/?s=6&p=" + zeroPad(nextPageNo);
-        link.hash = nextPageIndex;
-        link.title = nextPageCaption;
+        var link = destinationLink.createLinkElement(nextPageCaption);
 
-        if ((document.location.pathname == "/trickster.php") && (pageCaptions[nextPageNo].indexOf("==>") != -1)) {
+        if ((document.location.pathname == "/trickster.php") && (destinationLink.pageCaption.indexOf("==>") != -1)) {
             // In trickster section, replace "==>" in page name with sucker image
-            link.innerHTML = pageCaptions[nextPageNo].replace("==>", "");
+            link.innerHTML = destinationLink.pageCaption.replace("==>", "");
 
             var sucker = document.createElement("img");
             sucker.src = "http://mspaintadventures.com/images/trickster_sitegraphics/sucker.gif";
@@ -70,9 +86,9 @@ function createLink(linkData) {
             link.appendChild(sucker);
         } else if (linkData.name.indexOf("English") != -1) {
             // Give Lord English, Jack English colourful links
-            link.appendChild(lordEnglishText(pageCaptions[nextPageNo]));
+            link.appendChild(lordEnglishText(destinationLink.pageCaption));
         } else {
-            link.innerText = pageCaptions[nextPageNo];
+            link.innerText = destinationLink.pageCaption;
         }
 
         link.style.color = linkData.colour;
