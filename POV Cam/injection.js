@@ -72,9 +72,9 @@ function modifyPage() {
     });
 
     // Add link to go to the options page
-    var sogb = getSOGB(outerContainer);
+    var SOLinkContainer = getStartOverLinkContainer();
 
-    if (sogb) {
+    if (SOLinkContainer) {
         var optionsLink = document.createElement("a");
         optionsLink.href = chrome.extension.getURL("options/options.html");
         optionsLink.innerText = "POV Cam Options";
@@ -82,7 +82,7 @@ function modifyPage() {
         optionsLink.style["font-size"] = "10px";
         optionsLink.style.display = "block";
 
-        sogb.parentElement.insertBefore(optionsLink, sogb);
+        SOLinkContainer.parentElement.insertBefore(optionsLink, SOLinkContainer);
     }
 }
 

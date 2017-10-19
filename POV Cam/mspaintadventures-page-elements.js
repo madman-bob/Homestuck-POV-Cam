@@ -76,12 +76,11 @@ function getStandardNextPageLink() {
     return linkContainer;
 }
 
-function getSOGB(container) {
-    // sogb = Start Over | Go Back
-    var sogb = container.querySelector("a[href='?s=6']");
-    if (sogb) {
-        sogb = sogb.parentElement.parentElement;
+function getStartOverLinkContainer() {
+    var SOLink = document.querySelector("a[href$='?s=6']");
+    if (SOLink) {
+        SOLink = SOLink.parentElement.parentElement;
 
-        return sogb;
+        return SOLink;
     }
 }
