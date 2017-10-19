@@ -38,39 +38,33 @@ function getOuterContainer(elem) {
 
 function getStandardNextPageLink() {
     // Try to find where to put the links
-    var a = document.querySelectorAll("font[size='5']");
-    var linkContainer;
-    if (a.length > 0) {
-        linkContainer = a[a.length - 1];
-    } else if (pageNo == 9987) {
-        // Collide uses a different size font tag
-        linkContainer = document.querySelector("font[size='6']");
-    } else if (pageNo == 10027) {
-        // ACT 7 also uses a different size font tag
-        linkContainer = document.querySelector("font[size='8']");
+    var linkContainer = document.querySelector("font > a[href*='?s=6&p=']").parentElement;
+
+    if (linkContainer) {
+        return linkContainer;
+    }
+
+    // Can't find next page link
+    // Try to create one in right place
+    linkContainer = document.createElement("font");
+    linkContainer.size = "5";
+
+    // Try to find "Save Game" menu
+    var saveGameMenu = document.querySelector("span[style='font-size: 10px;']");
+    if (saveGameMenu) {
+        // If we've found it, then the link container is normally the first child of it's parent
+        var linkLocation = saveGameMenu.parentNode;
+        linkLocation.insertBefore(linkContainer, linkLocation.firstElementChild);
     } else {
-        // Can't find next page link
-        // Try to create one in right place
-        linkContainer = document.createElement("font");
-        linkContainer.size = "5";
+        // Still not found it. Just add it to the end of the body
+        document.body.appendChild(linkContainer);
 
-        // Try to find "Save Game" menu
-        var saveGameMenu = document.querySelector("span[style='font-size: 10px;']");
-        if (saveGameMenu) {
-            // If we've found it, then the link container is normally the first child of it's parent
-            var linkLocation = saveGameMenu.parentNode;
-            linkLocation.insertBefore(linkContainer, linkLocation.firstElementChild);
-        } else {
-            // Still not found it. Just add it to the end of the body
-            document.body.appendChild(linkContainer);
-
-            // Add some formatting to try and make it look right
-            linkContainer.style.display = "block";
-            linkContainer.style.width = 600;
-            linkContainer.style.margin = "auto";
-            linkContainer.style["margin-top"] = 20;
-            linkContainer.style["font-family"] = "Verdana, Arial, Helvetica, sans-serif";
-        }
+        // Add some formatting to try and make it look right
+        linkContainer.style.display = "block";
+        linkContainer.style.width = 600;
+        linkContainer.style.margin = "auto";
+        linkContainer.style["margin-top"] = 20;
+        linkContainer.style["font-family"] = "Verdana, Arial, Helvetica, sans-serif";
     }
 
     return linkContainer;
