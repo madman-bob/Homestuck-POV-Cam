@@ -101,3 +101,5 @@ function addFlashControls(flashPanel) {
         }
     }
 }
+
+initFlashControls();

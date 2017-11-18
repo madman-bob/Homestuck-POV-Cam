@@ -12,7 +12,10 @@
 
     "web_accessible_resources": [
         "options/options.html",
-        "images/*.png"
+        "images/*.png",
+
+        "flash-controls/flash-lengths.js",
+        "flash-controls/flash-controls.js"
     ],
 
     "icons": {
@@ -57,10 +60,7 @@
                 "pre-retcon-images/pre-retcon-images.js",
 
                 "mspaintadventures-page-elements.js",
-                "injection.js",
-
-                "flash-controls/flash-lengths.js",
-                "flash-controls/flash-controls.js"
+                "injection.js"
             ],
             "css": [
                 "pre-retcon-images/pre-retcon-images.css"

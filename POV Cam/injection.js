@@ -67,7 +67,9 @@ function modifyPage() {
 
         // Flash controls
         if (items.flashcontrols == "yes") {
-            initFlashControls();
+            injectPageContextJS("pageNo = " + pageNo);
+            injectPageContextJSFile('flash-controls/flash-lengths.js');
+            injectPageContextJSFile('flash-controls/flash-controls.js');
         }
     });
 
@@ -84,6 +86,20 @@ function modifyPage() {
 
         SOLinkContainer.parentElement.insertBefore(optionsLink, SOLinkContainer);
     }
+}
+
+function injectPageContextScript(scriptAttr, scriptValue) {
+    var script = document.createElement('script');
+    script[scriptAttr] = scriptValue;
+    document.head.appendChild(script);
+}
+
+function injectPageContextJS(scriptCode) {
+    return injectPageContextScript('textContent', scriptCode);
+}
+
+function injectPageContextJSFile(fileLocation) {
+    return injectPageContextScript('src', chrome.extension.getURL(fileLocation));
 }
 
 modifyPage();
