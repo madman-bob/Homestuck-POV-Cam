@@ -31,11 +31,11 @@ function modifyPage() {
 
         // Auto-open pesterlog
         if (items.autoopenpesterlog == "yes") {
-            // First button is "Show Pesterlog", second "Hide Pesterlog"
-            // In Act 6 Act 5 Act 1 x2 combo, can have another pair of buttons
             var buttons = outerContainer.getElementsByTagName("button");
-            for (var i = 0; i < buttons.length; i += 2) {
-                buttons[i].click();
+            for (var i = 0; i < buttons.length; i++) {
+                if (buttons[i].innerText.toLowerCase().indexOf("show") != -1) {
+                    buttons[i].click();
+                }
             }
         }
 

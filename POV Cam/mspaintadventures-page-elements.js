@@ -1,3 +1,5 @@
+isHomestuckDomain = document.location.hostname.indexOf("homestuck") != -1;
+
 function getPageNo() {
     var pageNo;
 
@@ -16,7 +18,11 @@ function getPageNo() {
     } else if (document.location.pathname == "/ACT7.html") {
         pageNo = 10027;
     } else {
-        pageNo = parseInt(document.location.search.slice(7));
+        if (isHomestuckDomain) {
+            pageNo = parseInt(document.location.pathname.slice(7) || "1") + 1900;
+        } else {
+            pageNo = parseInt(document.location.search.slice(7));
+        }
     }
 
     if ((pageNo > 7688) && (pageNo < 7826)) {
@@ -38,7 +44,7 @@ function getOuterContainer(elem) {
 
 function getStandardNextPageLink() {
     // Try to find where to put the links
-    var linkContainer = document.querySelector("font > a[href*='?s=6&p=']").parentElement;
+    var linkContainer = document.querySelector("font > a[href*='?s=6&p='], a[href*='/story']").parentElement;
 
     if (linkContainer) {
         return linkContainer;
@@ -71,7 +77,7 @@ function getStandardNextPageLink() {
 }
 
 function getStartOverLinkContainer() {
-    var SOLink = document.querySelector("a[href$='?s=6']");
+    var SOLink = document.querySelector("a[href$='?s=6'], #o_start-over");
     if (SOLink) {
         SOLink = SOLink.parentElement.parentElement;
 

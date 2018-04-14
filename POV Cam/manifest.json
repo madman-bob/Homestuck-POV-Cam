@@ -27,6 +27,8 @@
     "content_scripts": [
         {
             "matches": [
+                "https://*.homestuck.com/story/*",
+
                 "http://*.mspaintadventures.com/*s=6&p=*",
                 "http://*.mspaintadventures.com/DOTA/",
                 "http://*.mspaintadventures.com/007395/",
