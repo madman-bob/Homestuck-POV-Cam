@@ -74,12 +74,14 @@ function createLink(linkData) {
 
         var link = destinationLink.createLinkElement(nextPageCaption);
 
-        if ((document.location.pathname == "/trickster.php") && (destinationLink.pageCaption.indexOf("==>") != -1)) {
+        var originalSucker = document.querySelector("img[src*='sucker']");
+
+        if (originalSucker && (destinationLink.pageCaption.indexOf("==>") != -1)) {
             // In trickster section, replace "==>" in page name with sucker image
             link.innerHTML = destinationLink.pageCaption.replace("==>", "");
 
             var sucker = document.createElement("img");
-            sucker.src = "http://mspaintadventures.com/images/trickster_sitegraphics/sucker.gif";
+            sucker.src = originalSucker.src;
             sucker.style.backgroundColor = linkData.colour;
             sucker.style.boxShadow = "0px 0px 2px 2px " + linkData.colour;
 
