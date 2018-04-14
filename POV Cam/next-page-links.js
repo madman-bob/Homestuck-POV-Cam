@@ -51,7 +51,7 @@ class DestinationLink {
     createLinkElement(caption) {
         var link = document.createElement("a");
 
-        link.href = "/?s=6&p=" + zeroPad(this.pageNo);
+        link.href = isHomestuckDomain ? "/story/" + (this.pageNo - 1900) : "/?s=6&p=" + zeroPad(this.pageNo);
         link.hash = this.nextLinkIndex;
         link.title = caption;
 
