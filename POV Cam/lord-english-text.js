@@ -1,7 +1,6 @@
 function lordEnglishInit() {
     var LEColourOrder = [[0, 2], [1, 3], [2, 0], [3, 1], [4, 6], [5, 0], [6, 4], [0, 2], [1, 3], [2, 0], [3, 1], [4, 6], [0, 5], [6, 4]];
     var LEColours = ["#FFEA00", "#4040FD", "#DF0000", "#A357FF", "#FF6000", "#008140", "#950015", "#000000"];
-    var sheet = document.styleSheets[0];
     for (var i = 0; i < 14; i++) {
         sheet.addRule("@-webkit-keyframes le" + i, "0% {color:" + LEColours[LEColourOrder[i][0]] + ";} 49% {color:" + LEColours[LEColourOrder[i][0]] + ";} 50% {color:" + LEColours[LEColourOrder[i][1]] + ";} 100% {color:" + LEColours[LEColourOrder[i][1]] + ";}");
         sheet.addRule("letter.lordenglish:nth-of-type(14n + " + (i + 1) + ")", "-webkit-animation: le" + i + " 0.2s infinite;");
